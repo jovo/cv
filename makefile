@@ -5,7 +5,7 @@ BIBTEX = bibtex
 
 default: $(TEX).tex 
 	$(LATEX) $(TEX); $(BIBTEX) other.aux; $(BIBTEX) pre.aux; $(BIBTEX) pres.aux; $(BIBTEX) peer.aux; $(BIBTEX) talks.aux; $(LATEX) $(TEX); $(LATEX) $(TEX);
-	$(RM) -f  *.blg *.dvi *.log *.toc *.lof *.lot *.cb *.bbl *.brf *.out $(TEX).ps 
+	$(RM) -f  *.blg *.dvi *.log *.toc *.lof *.lot *.cb *.bbl *.brf *.out *.aux $(TEX).ps 
 	open $(TEX).pdf &
 
 view: $(TEX).tex 
