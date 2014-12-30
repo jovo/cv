@@ -3,13 +3,15 @@
 \moderncvtheme[blue]{classic}
 \usepackage[utf8]{inputenc}
 \usepackage[resetlabels]{multibib}
-\newcites{pre,peer,conf,pres,talks,other}{%
+\newcites{pre,peer,conf,pres,talks,other,prog,unp}{%
  , % Pre-prints
  , % Peer Reviewed Articles
  , % Conference Proceedings
  , % Posters
  , % Talks
  % Other Publications
+ ,
+ ,
 }
 \renewcommand{\bibliographyitemlabel}{\@{\arabic{enumiv}}}
 
@@ -179,6 +181,19 @@
 \bibliographypres{jovo}
 
 
+\section{Works in Progress -- Pre-prints available upon request}
+\vspace{-15pt}
+\nociteprog{DunsCurr,MaggCurr,ChenCurr,GoldCurr,MarcChrr,GreeCurr,SismCurr}
+\bibliographystyleprog{plain}
+\bibliographyprog{jovo}
+
+
+
+\section{Unpublished Works}
+\vspace{-15pt}
+\nociteunp{ConnUnp,YounUnp,MoraUnp}
+\bibliographystyleunp{plain}
+\bibliographyunp{jovo}
 
 \section{Advising}
 
