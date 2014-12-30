@@ -1,7 +1,7 @@
 LATEX = pdflatex
 SPELL = aspell
 TEX = jovo_cv
-BIBTEX = bibtex/Users/jovo/Research/Grants/pending/SIMPLEX/JHU-Proposal/makefile
+BIBTEX = bibtex
 
 default: $(TEX).tex 
 	$(LATEX) $(TEX); $(BIBTEX) $(TEX); $(LATEX) $(TEX); $(LATEX) $(TEX);
