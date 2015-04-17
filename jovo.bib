@@ -1,3 +1,7 @@
+@misc{SatuReco,
+title = {{Saturated Reconstruction of a Small Volume of Neocortex}},
+note = {Joint work with Bobby Kasthuri et al.}
+}
 @misc{DunsCurr,
 title = {{Robust Bayesian Inference via Lq-Likelihood}},
 note = {Joint work with D.B. Dunson, Carey E. Priebe, Y. Qin}
@@ -79,6 +83,10 @@ author = {Vogenstein, Joshua T and Paninski, L},
 booktitle = {Integrative Approaches to Brain Complexity},
 title = {\href{http://dx.doi.org/10.6084/m9.figshare.1285827}{Inferring Spike Trains, Learning Tuning Curves, and Estimating Connectivity from Calcium Imaging}},
 year = {2008}
+}
+@inproceedings{Vogelstein2008,
+author = {Vogelstein, Joshua T and Paninski, L},
+booktitle = {Statistical and Applied Mathematical Sciences Institute (SAMSI) Program on Sequential Monte Carlo Methods},
 }
 @inproceedings{Vogelstein2008,
 author = {Vogelstein, Joshua T and Paninski, L},
@@ -303,6 +311,10 @@ year = {1999}
 author = {Airan, R and Vogelstein, Joshua T and Pillai, J J and Caffo, B and Pekar, J and Sair, H},
 title = {{Stability and localization of inter-individual differences in functional connectivity}}
 }
+@article{Lyzinski2015,
+author = {Lyzinski, Vince and Sussman, Daniel L and Fishkind, Donniell E and Pao, Henry and Chen, Li and Vogelstein, Joshua T and Park, Youngser and Priebe, Carey E},
+abstract = {We present a parallelized bijective graph matching algorithm that leverages seeds and is designed to match very large graphs. Our algorithm combines spectral graph embedding with existing state-of-the-art seeded graph matching procedures. We justify our approach by proving that modestly correlated, large stochastic block model random graphs are correctly matched utilizing very few seeds through our divide-and-conquer procedure. We also demonstrate the effectiveness of our approach in matching very large graphs in simulated and real data examples, showing up to a factor of 8 improvement in runtime with minimal sacrifice in accuracy.},
+title = {\href{http://www.sciencedirect.com/science/article/pii/S0167819115000484}{Spectral clustering for divide-and-conquer graph matching}},
 @article{Weiler2014,
 author = {Weiler, Nicholas C and Collman, Forrest and Vogelstein, Joshua T and Burns, Randal and Smith, Stephen J},
 doi = {10.1038/sdata.2014.46},
@@ -412,6 +424,11 @@ organization = {NIPS workshop on Philosophy and Machine Learning},
 title = {\href{http://dx.doi.org/10.6084/m9.figshare.1284180}{Are mental properties supervenient on brain properties}},
 year = {2011}
 }
+@proceedings{OpeSouPla,
+address = {Kavli},
+year = {2014},
+title = {\href{http://dx.doi.org/10.6084/m9.figshare.1381926}{Open-Science Platform for Heterogeneous Brain Data: Opportunities and Challenges}}
+}
 @proceedings{BigNeuSta,
 publisher = {Big Data: Practice Across Disciplines}, 
 address = {Kavli Salon},
@@ -488,6 +505,12 @@ address = {Baylor College of Medicine, Department of Neuroscience}
 address = {Cambridge University, Gatsby Unit, and University College London},
 title = {\href{http://dx.doi.org/10.6084/m9.figshare.1284091}{Inferring spike trains from Calcium Imaging}},
 year = {2008}
+}
+@proceedings{TopChaBig,
+address = {BRAIN Initiative Workshop},
+title = {\href{http://dx.doi.org/10.6084/m9.figshare.1381888}{Top Challenges of Big Data Neuroscience}},
+month = {Dec},
+year = {2014}
 }
 @article{Roncal2014a,
 archivePrefix = {arXiv},
@@ -1039,7 +1062,7 @@ arxivId = {1112.5506},
 author = {Vogelstein, Joshua T. and Priebe, Carey E.},
 eprint = {1112.5506},
 month = dec,
-title = {\href{http://arxiv.org/abs/1112.5506}{Shuffled Graph Classification: Theory and Connectome Applications}},
+title = {\href{http://link.springer.com/article/10.1007/s00357-015-9170-6?sa_campaign=email/event/articleAuthor/onlineFirst}{Shuffled Graph Classification: Theory and Connectome Applications}},
 url = {http://arxiv.org/abs/1112.5506},
 journal = {Journal of Classification},
 year = {2011}
@@ -1066,18 +1089,6 @@ author = {Sweeney, Elizabeth M and Vogelstein, Joshua T and Cuzzocreo, Jennifer 
 doi = {10.1371/journal.pone.0095753},
 isbn = {10.1371/journal.pone.0095753},
 issn = {1932-6203},
-journal = {PloS One},
-month = jan,
-number = {4},
-pages = {e95753},
-pmid = {24781953},
-publisher = {Public Library of Science},
-title = {\href{http://www.plosone.org/article/info:doi/10.1371/journal.pone.0095753\#pone-0095753-g008 https://www.researchgate.net/publication/261997908\_A\_Comparison\_of\_Supervised\_Machine\_Learning\_Algorithms\_and\_Feature\_Vectors\_for\_MS\_Lesion\_Segmentation\_Using\_Multimodal\_Structural\_MRI}{A comparison of supervised machine learning algorithms and feature vectors for MS lesion segmentation using multimodal structural MRI.}},
-url = {http://www.plosone.org/article/info:doi/10.1371/journal.pone.0095753\#pone-0095753-g008 https://www.researchgate.net/publication/261997908\_A\_Comparison\_of\_Supervised\_Machine\_Learning\_Algorithms\_and\_Feature\_Vectors\_for\_MS\_Lesion\_Segmentation\_Using\_Multimodal\_Structural\_MRI},
-volume = {9},
-year = {2014}
-}
-@article{Priebe2012,
 abstract = {Statistical inference on graphs is a burgeoning field in the applied and theoretical statistics communities, as well as throughout the wider world of science, engineering, business, etc. In many applications, we are faced with the reality of errorfully observed graphs. That is, the existence of an edge between two vertices is based on some imperfect assessment. In this paper, we consider a graph G = (V,E). We wish to perform an inference task - the it surrogate inference task considered here is "vertex classification". However, we do not observe G; rather, for each potential edge uv in Vchoose2 we observe an "edge-feature" which we use to classify uv as edge/not-edge. Thus we it errorfully observe G when we observe the graph widetildeG = (V,widetildeE). Moreover, we face a quantity/quality trade-off regarding the edge-features we observe - more informative edge-features are more expensive, and hence the number of potential edges that can be assessed decreases with the quality of the edge-features. We derive the optimal quantity/quality operating point for subsequent graph inference in the face of this trade-off.},
 archivePrefix = {arXiv},
 rxivId = {arXiv:1211.3601v4},
