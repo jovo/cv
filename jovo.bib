@@ -1,6 +1,10 @@
-@misc{SatuReco,
-title = {{Saturated Reconstruction of a Small Volume of Neocortex}},
-note = {Joint work with Bobby Kasthuri et al.}
+@article{Narayanan2015,
+abstract={We describe automated technologies to probe the structure of neural tissue at nanometer resolution and use them to generate a saturated reconstruction of a sub-volume of mouse neocortex in which all cellular objects (axons, dendrites, and glia) and many sub-cellular components (synapses, synaptic vesicles, spines, spine apparati, postsynaptic densities, and mitochondria) are rendered and itemized in a database. We explore these data to study physical properties of brain tissue. For example, by tracing the trajectories of all excitatory axons and noting their juxtapositions, both synaptic and non-synaptic, with every dendritic spine we refute the idea that physical proximity is sufficient to predict synaptic connectivity (the so-called Peters’ rule). This online minable database provides general access to the intrinsic complexity of the neocortex and enables further data-driven inquiries.},
+title = {\href{http://www.cell.com/cell/abstract/S0092-8674(15)00824-7}{Saturated Reconstruction of a Small Volume of Neocortex}},
+author = {Kasthuri, Narayanan and Hayworth, Kenneth Jeffrey and Berger, Daniel Raimund and Schalek, Richard Lee and Conchello, Jose Angel and Knowles-Barley, Seymour and Lee, Dongil and Vazquez-Reina and Kaynig, Verena and Jones, Thouis R and Roberts, Mike and Morgan, Josh L and Tapia, Juan Carlos and Seung, H Sebastian and Roncal, William Gray and Vogelstein, Joshua T and Burns, Randal and Sussman, Daniel L and Priebe, Carey E and Pfister, Hanspeter and Lichtman, Jeff W},
+journal={Cell},
+month=jul,
+year=2015
 }
 @misc{DunsCurr,
 title = {{Robust Bayesian Inference via Lq-Likelihood}},
@@ -305,6 +309,21 @@ note = {Lecture Notes in Computer Science, Volume 8211},
 title = {\href{http://www.cs.stonybrook.edu/~leman/pubs/13bhi-sexdifferences.pdf}{Sex Differences in the Human Connectome}},
 year = {2013}
 }
+@article{GrayRoncal2015a,
+archivePrefix = {arXiv},
+arxivId = {arXiv:submit/1254329},
+author = {{Gray Roncal}, William and Pekala, Michael and Kaynig-fittkau,
+Verena and Kleissas, Dean M and Vogelstein, Joshua T and Pfister, Hanspeter
+and Burns, Randal and Vogelstein, R Jacob and Chevillet, Mark A and Hager,
+Gregory D},
+eprint = {1254329},
+journal = {BMVC (in press)},
+pages = {1--9},
+primaryClass = {arXiv:submit},
+title = {\href{http://arxiv.org/abs/1403.3724}{VESICLE : Volumetric Evaluation of Synaptic Inferfaces using
+Computer vision at Large Scale}},
+year = {2015}
+}
 @article{Vogelstein1999,
 author = {Vogelstein, Joshua T and Vogelstein, R Jacob and B Vogelstein},
 journal = {Science},
@@ -524,12 +543,16 @@ month = {Dec},
 year = {2014}
 }
 @article{Roncal2014a,
+abstract={Reconstructing a map of neuronal connectivity is a critical challenge in contemporary neuroscience. Recent advances in high-throughput serial section electron microscopy (EM) have produced massive 3D image volumes of nanoscale brain tissue for the first time. The resolution of EM allows for individual neurons and their synaptic connections to be directly observed. Recovering neuronal networks by manually tracing each neuronal process at this scale is unmanageable, and therefore researchers are developing automated image processing modules. Thus far, state-of-the-art algorithms focus only on the solution to a particular task (e.g., neuron segmentation or synapse identification). 
+
+In this manuscript we present the first fully automated images-to-graphs pipeline (i.e., a pipeline that begins with an imaged volume of neural tissue and produces a brain graph without any human interaction). To evaluate overall performance and select the best parameters and methods, we also develop a metric to assess the quality of the output graphs. We evaluate a set of algorithms and parameters, searching possible operating points to identify the best available brain graph for our assessment metric. Finally, we deploy a reference end-to-end version of the pipeline on a large, publicly available data set. This provides a baseline result and framework for community analysis and future algorithm development and testing. All code and data derivatives have been made publicly available toward eventually unlocking new biofidelic computational primitives and understanding of neuropathologies.},
 archivePrefix = {arXiv},
 arxivId = {1411.6880},
 author = {Roncal, William Gray and Kleissas, Dean M. and Vogelstein, Joshua T. and Manavalan, Priya and Burns, Randal and Vogelstein, R. Jacob and Priebe, Carey E. and Chevillet, Mark A. and Hager, Gregory D.},
 eprint = {1411.6880},
 month = nov,
-title = {\href{http://arxiv.org/abs/1411.6880}{An Automated Images-to-Graphs Pipeline for High Resolution Connectomics}},
+title = {\href{http://journal.frontiersin.org/article/10.3389/fninf.2015.00020/abstract}{An Automated Images-to-Graphs Pipeline for High Resolution Connectomics}},
+journal = {Frontiers in Neuroinformatics},
 url = {http://arxiv.org/abs/1411.6880},
 year = {2014}
 }
@@ -678,6 +701,7 @@ arxivId = {1411.2158},
 author = {Binkiewicz, Norbert and Vogelstein, Joshua T. and Rohe, Karl},
 eprint = {1411.2158},
 month = nov,
+journal={arXiv},
 title = {\href{http://arxiv.org/abs/1411.2158}{Covariate Assisted Spectral Clustering}},
 url = {http://arxiv.org/abs/1411.2158},
 year = {2014}
@@ -999,19 +1023,17 @@ title = {\href{http://arxiv.org/abs/1401.3813}{Seeded Graph Matching Via Joint O
 url = {http://arxiv.org/abs/1401.3813},
 year = {2014}
 }
-@article{Lyzinski2013,
+@article{Lyzinski2015a,
 abstract = {We present a parallelized bijective graph matching algorithm that leverages seeds and is designed to match very large graphs. Our algorithm combines spectral graph embedding with existing state-of-the-art seeded graph matching procedures. We justify our approach by proving that modestly correlated, large stochastic block model random graphs are correctly matched utilizing very few seeds through our divide-and-conquer procedure.},
 archivePrefix = {arXiv},
 arxivId = {1310.1297},
-journal = {arXiv},
-volume = {1310.1297},
+journal = {Parallel Computing},
 author = {Lyzinski, Vince and Sussman, Daniel L. and Fishkind, Donniell E. and Pao, Henry and Chen, Li and Vogelstein, Joshua T. and Park, Youngser and Priebe, Carey E.},
 eprint = {1310.1297},
-month = oct,
-pages = {30},
+doi={10.1016/j.parco.2015.03.004},
 title = {\href{http://arxiv.org/abs/1310.1297}{Spectral Clustering for Divide-and-Conquer Graph Matching}},
 url = {http://arxiv.org/abs/1310.1297},
-year = {2013}
+year = {2015}
 }
 @article{Roncal2014,
 archivePrefix = {arXiv},
@@ -1109,13 +1131,13 @@ title = {\href{http://arxiv.org/abs/1211.3601}{Statistical inference on errorful
 url = {http://arxiv.org/abs/1211.3601},
 year = {2014}
 }
-@article{Roncal2014c,
+@article{Roncal2015b,
 abstract = {Reconstructing a map of neuronal connectivity is a critical challenge in contemporary neuroscience. Recent advances in high-throughput electron microscopy have produced massive images of nanoscale brain tissue for the first time. This resolution allows for individual neurons and their synaptic connections to be directly observed. Manually tracing each neuronal process at this scale is unmanageable, and therefore researchers are developing automated image processing modules. Thus far, state-of-the-art algorithms focus only on the solution to a particular task (e.g., neuron segmentation or synapse identification). 
 We have created the first fully automated images-to-graphs pipeline (i.e., a pipeline that begins with an imaged volume of neural tissue and produces a brain graph without any human interaction). To evaluate overall performance and select the best parameters and methods, we also develop a metric to assess the quality of the output graphs. We demonstrate our pipeline by selecting a set of algorithms and parameters, and search possible operating points to identify the best available brain graph. New algorithms can be easily integrated into our scalable pipeline, and used to improve results and facilitate analysis.},
 author = {Gray, William R and Kleissas, Dean M and Vogelstein, Joshua T and Manavalan, Priya and Burns, Randal R and Vogelstein, R Jacob and Priebe, Carey E and Chevillet, Mark A and Hager, Gregory D},
 journal = {arXiv},
 volume = {1411.6880},
-month = Nov,
+month = July,
 title = {\href{http://arxiv.org/abs/1411.6880}{An Automated Images-to-Graphs Pipeline for High Resolution Connectomics}},
-year = {2014}
+year = {2015}
 }
