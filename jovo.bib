@@ -3,8 +3,10 @@ abstract={Resurgent interest in synaptic circuitry and plasticity has emphasized
 title={\href{http://www.nature.com/articles/sdata201546}{A resource from 3D electron microscopy of hippocampal neuropil for user training and tool development}},
 author={Harris, Kristen M and Spacek, Josef and Bell, Maria Elizabeth and Parker, Patrick H and Lindsey, Laurence F and Baden, Alexander D and Vogelstein, Joshua T and Burns, Randal},
 journal={Scientific Data},
-month=aug,
-pages={},
+month={aug},
+volume={2},
+pages={150046},
+doi={0.1038/sdata.2015.46},
 year={2015}
 }
 @article{Narayanan2015,
@@ -12,7 +14,7 @@ abstract={We describe automated technologies to probe the structure of neural ti
 title = {\href{http://www.cell.com/cell/abstract/S0092-8674(15)00824-7}{Saturated Reconstruction of a Small Volume of Neocortex}},
 author = {Kasthuri, Narayanan and Hayworth, Kenneth Jeffrey and Berger, Daniel Raimund and Schalek, Richard Lee and Conchello, Jose Angel and Knowles-Barley, Seymour and Lee, Dongil and Vazquez-Reina and Kaynig, Verena and Jones, Thouis R and Roberts, Mike and Morgan, Josh L and Tapia, Juan Carlos and Seung, H Sebastian and Roncal, William Gray and Vogelstein, Joshua T and Burns, Randal and Sussman, Daniel L and Priebe, Carey E and Pfister, Hanspeter and Lichtman, Jeff W},
 journal={Cell},
-month=jul,
+month={jul},
 volume={162},
 pages={648--661},
 year={2015}
@@ -333,23 +335,23 @@ year = {2013}
 }
 @article{Airan,
 author = {Airan, R and Vogelstein, Joshua T and Pillai, J J and Caffo, B and Pekar, J and Sair, H},
-title = {\href{http://arxiv.org/abs/1509.03927#}{An M-Estimator for Reduced-Rank High-Dimensional Linear Dynamical System Identification}},
+title = {\href{http://arxiv.org/abs/1508.05414}{Stability and localization of inter-individual differences in functional connectivity}},
 journal = {arXiv},
 volume = {1508.05414},
-month = aug,
+month = {aug},
 year = {2015}
 
 }
 @article{Chen2015B,
 author = {Chen, Shaojie and Liu, Kai and Yang, Yuguang and Xu, Yuting and Lee, Seonjoo and Lindquist, Martin and Caffo, Brian S and Vogelstein, Joshua T},
 abstract = {High-dimensional time-series data are becoming increasingly abundant across a wide variety of domains, spanning economics, neuroscience, particle physics, and cosmology. Fitting statistical models to such data, to enable parameter estimation and time-series prediction, is an important computational primitive. Existing methods, however, are unable to cope with the high-dimensional nature of these problems, due to both computational and statistical reasons. We mitigate both kinds of issues via proposing an M-estimator for Reduced-rank System IDentification (MR. SID). A combination of low-rank approximations, L-1 and L-2 penalties, and some numerical linear algebra tricks, yields an estimator that is computationally efficient and numerically stable. Simulations and real data examples demonstrate the utility of this approach in a variety of problems. In particular, we demonstrate that MR. SID can estimate spatial filters, connectivity graphs, and time-courses from native resolution functional magnetic resonance imaging data. Other applications and extensions are immediately available, as our approach is a generalization of the classical Kalman Filter-Smoother Expectation-Maximization algorithm.},
-title = {\href{http://arxiv.org/abs/1508.05414}{Stability and localization of inter-individual differences in functional connectivity}},
-journal = {arXiv (in press)},
+title = {\href{http://arxiv.org/abs/1509.03927#}{An M-Estimator for Reduced-Rank High-Dimensional Linear Dynamical System Identification}},
+journal = {arXiv},
 volume = {1509.03927},
-month = sep,
+month = {sep},
 year = {2015}
 }
-@article{GrayRoncal2015a,
+@inproceedings{GrayRoncal2015a,
 archivePrefix = {arXiv},
 arxivId = {arXiv:submit/1254329},
 author = {{Gray Roncal}, William and Pekala, Michael and Kaynig-fittkau,
@@ -357,11 +359,10 @@ Verena and Kleissas, Dean M and Vogelstein, Joshua T and Pfister, Hanspeter
 and Burns, Randal and Vogelstein, R Jacob and Chevillet, Mark A and Hager,
 Gregory D},
 eprint = {1254329},
-journal = {BMVC (in press)},
+journal = {26th British Machine Vision Conference (BMVC)},
 pages = {1--9},
 primaryClass = {arXiv:submit},
-title = {\href{http://arxiv.org/abs/1403.3724}{VESICLE : Volumetric Evaluation of Synaptic Inferfaces using
-Computer vision at Large Scale}},
+title = {\href{http://bmvc2015.swansea.ac.uk/proceedings/papers/paper081/index.html}{VESICLE : Volumetric Evaluation of Synaptic Inferfaces using Computer vision at Large Scale}},
 year = {2015}
 }
 @article{Vogelstein1999,
@@ -376,7 +377,7 @@ year = {1999}
 author = {Lyzinski, Vince and Sussman, Daniel L and Fishkind, Donniell E and Pao, Henry and Chen, Li and Vogelstein, Joshua T and Park, Youngser and Priebe, Carey E},
 abstract = {We present a parallelized bijective graph matching algorithm that leverages seeds and is designed to match very large graphs. Our algorithm combines spectral graph embedding with existing state-of-the-art seeded graph matching procedures. We justify our approach by proving that modestly correlated, large stochastic block model random graphs are correctly matched utilizing very few seeds through our divide-and-conquer procedure. We also demonstrate the effectiveness of our approach in matching very large graphs in simulated and real data examples, showing up to a factor of 8 improvement in runtime with minimal sacrifice in accuracy.},
 title = {\href{http://www.sciencedirect.com/science/article/pii/S0167819115000484}{Spectral clustering for divide-and-conquer graph matching}},
-journal = {Parallel Computing (in press)},
+journal = {Parallel Computing},
 year = {2015},
 volume={47},
 pages={70--87},
@@ -619,16 +620,18 @@ year={2015}
 }
 @article{Roncal2015b,
 abstract={Reconstructing a map of neuronal connectivity is a critical challenge in contemporary neuroscience. Recent advances in high-throughput serial section electron microscopy (EM) have produced massive 3D image volumes of nanoscale brain tissue for the first time. The resolution of EM allows for individual neurons and their synaptic connections to be directly observed. Recovering neuronal networks by manually tracing each neuronal process at this scale is unmanageable, and therefore researchers are developing automated image processing modules. Thus far, state-of-the-art algorithms focus only on the solution to a particular task (e.g., neuron segmentation or synapse identification). 
-
 In this manuscript we present the first fully automated images-to-graphs pipeline (i.e., a pipeline that begins with an imaged volume of neural tissue and produces a brain graph without any human interaction). To evaluate overall performance and select the best parameters and methods, we also develop a metric to assess the quality of the output graphs. We evaluate a set of algorithms and parameters, searching possible operating points to identify the best available brain graph for our assessment metric. Finally, we deploy a reference end-to-end version of the pipeline on a large, publicly available data set. This provides a baseline result and framework for community analysis and future algorithm development and testing. All code and data derivatives have been made publicly available toward eventually unlocking new biofidelic computational primitives and understanding of neuropathologies.},
 archivePrefix = {arXiv},
 arxivId = {1411.6880},
 author = {Roncal, William Gray and Kleissas, Dean M. and Vogelstein, Joshua T. and Manavalan, Priya and Burns, Randal and Vogelstein, R. Jacob and Priebe, Carey E. and Chevillet, Mark A. and Hager, Gregory D.},
 eprint = {1411.6880},
 month = aug,
+volume=9,
+issue=20,
+doi={10.3389/fninf.2015.00020},
 title = {\href{http://journal.frontiersin.org/article/10.3389/fninf.2015.00020/abstract}{An Automated Images-to-Graphs Pipeline for High Resolution Connectomics}},
 journal = {Frontiers in Neuroinformatics},
-url = {http://arxiv.org/abs/1411.6880},
+url = {http://journal.frontiersin.org/article/10.3389/fninf.2015.00020/abstract},
 year = {2015}
 }
 @article{Vogelstein2011c,
@@ -1042,9 +1045,12 @@ arxivId = {1112.5507},
 author = {Vogelstein, Joshua T. and Conroy, John M. and Lyzinski, Vince and Podrazik, Louis J. and Kratzer, Steven G. and Harley, Eric T. and Fishkind, Donniell E. and Vogelstein, R. Jacob and Priebe, Carey E.},
 journal = {PLoS One},
 month = apr,
-title = {\href{http://arxiv.org/abs/1112.5507}{Fast Approximate Quadratic Programming for Large (Brain) Graph Matching}},
-url = {http://arxiv.org/abs/1112.5507},
-doi = {10.1371},
+volume = {10},
+issue = {4},
+pages = {e0121002},
+title = {\href{http://dx.doi.org/10.1371/journal.pone.0121002}{Fast Approximate Quadratic Programming for Graph Matching}},
+url = {http://dx.doi.org/10.1371/journal.pone.0121002},
+doi = {10.1371/journal.pone.0121002},
 year = {2015}
 }
 @article{Kazhdan2013,
@@ -1175,6 +1181,8 @@ title = {\href{http://link.springer.com/article/10.1007%2Fs00357-015-9170-6}{Shu
 url = {http://arxiv.org/abs/1112.5506},
 journal = {Journal of Classification},
 year = {2015},
+volume=32,
+issue=1,
 pages = {3--20}
 }
 @article{Vogelstein2014a,
@@ -1200,7 +1208,11 @@ title = {\href{http://journals.plos.org/plosone/article?id=10.1371/journal.pone.
 doi = {10.1371/journal.pone.0095753},
 isbn = {10.1371/journal.pone.0095753},
 issn = {1932-6203},
-month=april,
+month = {April},
+journal = {PLoS ONE},
+volume = {9},
+issue = {4},
+pages = {e95753},
 year = {2014}
 }
 @article{Priebe2014a.
