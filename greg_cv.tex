@@ -1,0 +1,173 @@
+\documentclass[10pt,colorlinks=true,urlcolor=teal]{moderncv}
+\usepackage{utopia}
+\moderncvtheme[green]{classic}
+\usepackage[utf8]{inputenc}
+\usepackage{verbatim}
+\usepackage[resetlabels]{multibib}
+\newcites{pre,peer,conf,pres,talks,other,prog,unp}{%
+ , % Pre-prints
+ , % Peer Reviewed Articles
+ , % Conference Proceedings
+ , % Posters
+ , % Talks
+ % Other Publications
+ ,
+ ,
+}
+\renewcommand{\bibliographyitemlabel}{\@{\arabic{enumiv}}}
+
+\usepackage[scale=0.8]{geometry}
+\newcommand{\cvdoublecolumn}[2]{%
+  \cvline{}{}{%
+    \begin{minipage}[t]{\listdoubleitemmaincolumnwidth}#1\end{minipage}%
+    \hfill%
+    \begin{minipage}[t]{\listdoubleitemmaincolumnwidth}#2\end{minipage}%
+    }%
+}
+%
+% usage: \cvreference{name}{address line 1}{address line 2}{address line 3}{address line 4}{e-mail address}{phone number}
+% Everything but the name is optxional
+% If \addresssymbol, \emailsymbol or \phonesymbol are specified, they will be used.
+% (Per default, \addresssymbol isn't specified, the other two are specified.)
+% If you don't like the symbols, remove them from the following code, including the tilde ~ (space).
+
+\newcommand{\cvreference}[7]{%
+    \textbf{#1}\newline% Name
+    \ifthenelse{\equal{#2}{}}{}{\addresssymbol~#2\newline}%
+    \ifthenelse{\equal{#3}{}}{}{#3}%
+    \ifthenelse{\equal{#4}{}}{}{#4}%
+    \ifthenelse{\equal{#5}{}}{}{#5}%
+    \ifthenelse{\equal{#6}{}}{}{\emailsymbol~\texttt{#6}\newline}%
+    \ifthenelse{\equal{#7}{}}{}{\phonesymbol~#7\newline}}
+
+  \AtBeginDocument{\recomputelengths} 
+  \firstname{Gregory S.~}
+  \familyname{Kiar} 
+  \address{2723 Saint Paul St., Apartment 2\\ }{Baltimore, MD, 21218} 
+  \email{gkiar@jhu.edu}
+  \phone{443-554-6865}
+  \extrainfo{\homepagesymbol~\textnormal{\href{http://ikiar.ca}{ikiar.ca}} \textnormal{|} \githubsocialsymbol~\textnormal{\href{http://github.com/gkiar}{gkiar}}}
+\begin{document}
+\maketitle
+
+\section{Education}
+\cventry{2014 -- now}{M.S.E. in Biomedical Engineering}{\newline Johns Hopkins Whiting School of Engineering, Supervised by Joshua Vogelstein}{}{}{Dissertation: Enabling neuroscience and discovery: developing and utilizing m2g, an open-source multimodal MR images to graphs reference pipeline and web service, for bulk processing of MRI data}
+\cventry{2010 -- 2014}{B.Eng in Biomedical and Electrical Engineering}{\newline Carleton University, supervised by Leonard MacEachern, Andrew Adler, and Rafik Goubran}{}{}{Capstone: Electrical muscle stimulation with concurrent EMG feedback of the upper arm for stroke rehabilitation}
+\cventry{10/15 -- 10/15}{Presenting Data and Information}{Edward Tufte, Baltimore, MD, USA}{}{}{}
+
+\section{Academic Experience}
+
+\subsection{Current Positions}
+
+\cventry{09/14 -- now}{Researcher under Dr. Joshua Vogelstein}{Dept. of Biomedical Engineering, Johns Hopkins University}{}{}{}
+\cventry{09/14 -- now}{Teaching Assistant}{Dept. of Biomedical Engineering, Johns Hopkins University}{}{}{Freshman Modeling and Design for BME (2014, 2015), Systems and Controls (2015), Introduction to Connectomics (2015), Statistical Connectomics (2015)}
+
+\subsection{Current Activities}
+\cventry{08/14 -- now}{Caporegime}{NeuroData (formerly the Open Connectome Project)}{}{}{\textnormal{\url{http://neurodata.io}}}
+\cventry{09/14 -- now}{Grandparent \& Volunteer}{Thread (formerly Incentive Mentoring Program)}{}{}{Inner-city Baltimore underprivileged and underperforming youth mentoring group}
+
+\subsection{Previous Positions}
+\cventry{09/12 -- 05/14}{Facilitator for Peer-Assisted Study Sessions}{Student Academic Success Center, Carleton University}{}{}{Instructed and demonstrated mastery of principles in electromagnetism and power engineering}
+\cventry{08/13 -- 05/14}{Facilitator Team Leader}{Student Academic Success Center, Carleton University}{}{}{Provided training, mentoring, and coaching to student instructors in a variety of disciplines}
+\cventry{01/13 -- 06/14}{Teaching Assistant}{Dept. of Systems and Computer Engineering}{}{}{Instructed introductory level C++ programming}
+
+\section{Work Experience}
+\cventry{09/13 -- 08/14}{Consultant}{Self-employed}{}{}{Developed data analysis tools, computer systems infrastructure, and websites for several university departments}
+\cventry{06/13 -- 09/13}{Research Assistant under Dr. Rafik Goubran}{Dept. of Biomedical Engineering, Carleton University}{}{}{Developed wireless medical data publish-subscribe system for viewing patient vital signs remotely}
+\cventry{06/12 -- 09/12}{Research Assistant under Dr. Andy Adler}{Dept. of Systems and Computer Engineering, Carleton University}{}{}{Utilized neural networks for inverse modeling of real and simulated biological systems}
+\cventry{06/11 -- 09/11}{Research Assistant under Dr. Jeffrey Dawson}{Dept. of Biology, Carleton University}{}{}{Developed robotics platform for studying insect locomotion patterns and behaviour}
+\cventry{01/09 -- 09/09}{Research Assistant under Dr. Jim Dimitroulakos}{CRC, Ottawa Hospital Research Institute}{}{}{Tested combination therapies of Lovastatin and Cisplatin drugs on colon and breast cancer strains}
+
+\section{Volunteer Experience}
+\cventry{06/13 -- 05/14}{President}{Carleton University Biomedical Engineering Society}{}{}{}
+\cventry{09/13 -- 06/14}{Co-Founder and Vice President}{PASS Talks}{}{}{}
+\cventry{12/12, 12/13}{Navigator and Driver}{Operation Red Nose Ottawa}{}{}{}
+\cventry{09/10 -- 09/11}{Emergency First Responder}{Carleton University Student Emergency Response Team}{}{}{}
+
+
+\section{Awards \& Honors}
+\cventry{2014}{ SEED Fund}{Carleton University Engineering Alumni}{}{}{}
+\cventry{2014}{Professional Engineers of Ontario Greatest Social Impact Paper}{Professional Engineering Ontario (PEO)}{}{}{}
+\cventry{2014}{IEEE Papers Showcase Local Winner}{IEEE Ottawa-Carleton Chapter}{}{}{}
+\cventry{2014}{IEEE Papers Showcase Provincial Runner-up}{IEEE}{}{}{}
+\cventry{2014}{Carleton Electronics Project Competition Champion}{Carleton University}{}{}{}
+\cventry{2013}{Engineering '65 and '66 Scholarship}{Carleton University}{}{}{}
+\cventry{2012--2014}{Dean's Honour List}{Carleton University}{}{}{}
+\cventry{2012}{Clarence C. Gibson Scholarship}{Carleton University}{}{}{}
+
+% \section{Publications}
+\begin{comment}
+\section{Under Review Pre-Prints}
+\vspace{-15pt}
+\nocitepre{Kiar2015b}
+\bibliographystylepre{unsrtinit}
+\bibliographypre{gkiar}
+\end{comment}
+
+
+
+\begin{comment}
+\section{Peer-Reviewed Journal Publications}
+\vspace{-15pt}
+\nocitepeer{}
+\bibliographystylepeer{unsrtinit}
+\bibliographypeer{gkiar}
+\end{comment}
+
+%\begin{comment}
+\section{Work in Progress -- Pre-prints Available upon Request}
+\vspace{-15pt}
+\nociteprog{Kiar2015b}
+\bibliographystyleprog{unsrtinit}
+\bibliographyprog{gkiar}
+%\end{comment}
+
+\section{Peer-Reviewed Conference Proceedings}
+\vspace{-15pt}
+\nociteconf{Kiar2013}
+\bibliographystyleconf{unsrtinit}
+\bibliographyconf{gkiar}
+
+\begin{comment}
+\section{Other Publications}
+\vspace{-15pt}
+\nociteother{}
+\bibliographystyleother{unsrtinit}
+\bibliographyother{gkiar}
+\end{comment}
+
+\begin{comment}
+\section{Unpublished Work}
+\vspace{-15pt}
+\nociteunp{}
+\bibliographystyleunp{unsrtinit}
+\bibliographyunp{gkiar}
+\end{comment}
+
+\begin{comment}
+\section{Invited Talks}
+\vspace{-15pt}
+\nocitetalks{}
+\bibliographystyletalks{unsrtinit}
+\bibliographytalks{gkiar}
+\end{comment}
+
+\section{Poster Presentations}
+\vspace{-15pt}
+\nocitepres{Vogelstein2015a,Kiar2015a}
+\bibliographystylepres{unsrtinit}
+\bibliographypres{gkiar}
+
+\section{Languages}
+\cventry{Proficient}{English, American Sign Language, MATLAB, Python, R, LaTeX, HTML, CSS, Love}{}{}{}{}
+\cventry{Inproficient}{C}{}{}{}{}
+
+\section{References}
+\cventry{}{\textnormal{Professional, academic, and character references available upon request}}{}{}{}{}
+\end{document}
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: t
+%%% End: 
+%
+~
