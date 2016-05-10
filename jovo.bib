@@ -1,3 +1,38 @@
+@article{Kutten2016,
+abstract = {The CLARITY method renders brains optically transparent to enable high-resolution imaging in the structurally intact brain.  Anatomically annotating CLARITY brains is necessary for discovering which regions contain signals of interest. Manually annotating whole-brain, terabyte CLARITY images is difficult, time-consuming, subjective, and error-prone. Automatically registering CLARITY images to a pre-annotated brain atlas offers a solution, but is difficult for several reasons. Removal of the brain from the skull and subsequent storage and processing cause variable non-rigid deformations, thus compounding inter-subject anatomical variability. Additionally, the signal in CLARITY images arises from various biochemical contrast agents which only sparsely label brain structures. This sparse labeling challenges the most commonly used registration algorithms that need to match image histogram statistics to the more densely labeled histological brain atlases. The standard method is a multiscale Mutual Information B-spline algorithm that dynamically generates an average template as an intermediate registration target. We determined that this method performs poorly when registering CLARITY brains to the Allen Institute's Mouse Reference Atlas (ARA), because the image histogram statistics are poorly matched. Therefore, we developed a method (Mask-LDDMM) for registering CLARITY images, that automatically find the brain boundary and learns the optimal deformation between the brain and atlas masks. Using Mask-LDDMM without an average template provided better results than the standard approach when registering CLARITY brains to the ARA. The LDDMM pipelines developed here provide a fast automated way to anatomically annotate CLARITY images. Our code is available as open source software at \href{http://neurodata.io./}{this url}},
+author = {Kutten, Kwame S. and Vogelstein, Joshua T. and Charon, Nicolas and Ye, Li and Deisseroth, Karl and Miller, Michael I.},
+journal = {arXiv},
+volume = {1605.02060},
+title = {\href{http://arxiv.org/abs/1605.02060}{Deformably Registering and Annotating Whole CLARITY Brains to an Atlas via Masked LDDMM}},
+year = {2016}
+}
+@article{Chen2016b, 
+author={L. Chen and C. Shen and J. T. Vogelstein and C. E. Priebe}, 
+journal={IEEE Transactions on Pattern Analysis and Machine Intelligence}, 
+title={\href{http://dx.doi.org/10.1109/TPAMI.2015.2456913}{Robust Vertex Classification}}, 
+year={2016}, 
+volume={38}, 
+number={3}, 
+pages={578-590}, 
+abstract={For random graphs distributed according to stochastic blockmodels, a special case of latent position graphs, adjacency spectral embedding followed by appropriate vertex classification is asymptotically Bayes optimal; but this approach requires knowledge of and critically depends on the model dimension. In this paper, we propose a sparse representation vertex classifier which does not require information about the model dimension. This classifier represents a test vertex as a sparse combination of the vertices in the training set and uses the recovered coefficients to classify the test vertex. We prove consistency of our proposed classifier for stochastic blockmodels, and demonstrate that the sparse representation classifier can predict vertex labels with higher accuracy than adjacency spectral embedding approaches via both simulation studies and real data experiments. Our results demonstrate the robustness and effectiveness of our proposed vertex classifier when the model dimension is unknown.}, 
+keywords={Bayes methods;graph theory;pattern classification;adjacency spectral embedding approaches;asymptotically Bayes optimal vertex classification;latent position graphs;model dimension;random graphs;robust vertex classification;sparse representation vertex classifier;stochastic blockmodels;Analytical models;Biological system modeling;Contamination;Couplings;Eigenvalues and eigenfunctions;Robustness;Stochastic processes;Sparse representation;adjacency spectral embedding;classification consistency;latent position model;model dimension;robustness;sparse representation;stochastic blockmodel;vertex classification}, 
+doi={10.1109/TPAMI.2015.2456913}, 
+url={http://dx.doi.org/10.1109/TPAMI.2015.2456913}
+ISSN={0162-8828}, 
+month={March},}
+@article {Raag2016,
+author = {Airan, Raag D. and Vogelstein, Joshua T. and Pillai, Jay J. and Caffo, Brian and Pekar, James J. and Sair, Haris I.},
+title = {\href{http://dx.doi.org/10.1002/hbm.23150}{Factors affecting characterization and localization of interindividual differences in functional connectivity using MRI}},
+journal = {Human Brain Mapping},
+issn = {1097-0193},
+url = {http://dx.doi.org/10.1002/hbm.23150},
+doi = {10.1002/hbm.23150},
+keywords = {resting state fMRI, functional connectivity, subject-level differences},
+year = {2016},
+abstract = {
+Much recent attention has been paid to quantifying anatomic and functional neuroimaging on the individual subject level. For optimal individual subject characterization, specific acquisition and analysis features need to be identified that maximize interindividual variability while concomitantly minimizing intra-subject variability. We delineate the effect of various acquisition parameters (length of acquisition, sampling frequency) and analysis methods (time course extraction, region of interest parcellation, and thresholding of connectivity-derived network graphs) on characterizing individual subject differentiation. We utilize a non-parametric statistical metric that quantifies the degree to which a parameter set allows this individual subject differentiation by both maximizing interindividual variance and minimizing intra-individual variance. We apply this metric to analysis of four publicly available test-retest resting-state fMRI (rs-fMRI) data sets. We find that for the question of maximizing individual differentiation, (i) for increasing sampling, there is a relative tradeoff between increased sampling frequency and increased acquisition time; (ii) for the sizes of the interrogated data sets, only 3-4 min of acquisition time was sufficient to maximally differentiate each subject with an algorithm that utilized no a priori information regarding subject identification; and (iii) brain regions that most contribute to this individual subject characterization lie in the default mode, attention, and executive control networks. These findings may guide optimal rs-fMRI experiment design and may elucidate the neural bases for subject-to-subject differences. Hum Brain Mapp, 2016. © 2016 Wiley Periodicals, Inc.
+},
+}
 @article{Harris2015,
 abstract={Resurgent interest in synaptic circuitry and plasticity has emphasized the importance of 3D reconstruction from serial section electron microscopy (3DEM). Three volumes of hippocampal CA1 neuropil from adult rat were imaged at X-Y resolution of ~2 nm on serial sections of ~50–60 nm thickness. These are the first densely reconstructed hippocampal volumes. All axons, dendrites, glia, and synapses were reconstructed in a cube (~10 μm3) surrounding a large dendritic spine, a cylinder (~43 μm3) surrounding an oblique dendritic segment (3.4 μm long), and a parallelepiped (~178 μm3) surrounding an apical dendritic segment (4.9 μm long). The data provide standards for identifying ultrastructural objects in 3DEM, realistic reconstructions for modeling biophysical properties of synaptic transmission, and a test bed for enhancing reconstruction tools. Representative synapses are quantified from varying section planes, and microtubules, polyribosomes, smooth endoplasmic reticulum, and endosomes are identified and reconstructed in a subset of dendrites. The original images, traces, and Reconstruct software and files are freely available and visualized at the Open Connectome Project},
 title={\href{http://www.nature.com/articles/sdata201546}{A resource from 3D electron microscopy of hippocampal neuropil for user training and tool development}},
@@ -276,6 +311,17 @@ booktitle = {Duke Workshop on Sensing and Analysis of HighDimensional Data},
 title = {{Nonparametric Two-Sample Testing on Graph-Valued Data.}},
 year = {2013}
 }
+@article{Zheng2016,
+    author={Zheng, Da and Mhembere, Disa and Vogelstein, Joshua T. and Priebe, Carey E. and Burns, Randal},
+    title={\href{http://arxiv.org/abs/1604.06414v1}{FlashMatrix: Parallel, Scalable Data Analysis with Generalized Matrix Operations using Commodity SSDs}}, 
+    year={2016},
+    archivePrefix = {arXiv},
+    arxivId = {1604.06414},
+    journal = {arXiv},
+    volume = {1604.06414},
+    url={http://arxiv.org/abs/1604.06414v1},
+    abstract={FlashMatrix is a matrix-oriented programming framework for general data analysis with high-level functional programming interface. It scales matrix operations beyond memory capacity by utilizing solid-state drives (SSDs) in non-uniform memory architecture (NUMA). It provides a small number of generalized matrix operations (GenOps) and reimplements a large number of matrix operations in the R framework with GenOps. As such, it executes R code in parallel and out of core automatically. FlashMatrix uses vectorized user-defined functions (VUDF) to reduce the overhead of function calls and fuses matrix operations to reduce data movement between CPU and SSDs. We implement multiple machine learning algorithms in R to benchmark the performance of FlashMatrix. On a large parallel machine, out-of-core execution of these R implementations in FlashMatrix has performance comparable to in-memory execution on a billion-scale dataset while significantly outperforming the in-memory implementations of Spark MLlib.}
+    }
 @inproceedings{Zheng2015,
 author = {Zheng, Da and Mhembere, Disa and Burns, Randal and Vogenstein, Joshua T and Priebe, Carey E and Szalay, Alexander S},
 booktitle = {USENIX Conference on File and Storage Technologies},
@@ -626,12 +672,14 @@ year = {2014}
 }
 @article{Chen2015,
 abstract = {We investigate joint graph inference for the chemical and electrical connectomes of the \textit{Caenorhabditis elegans} roundworm. The \textit{C.elegans} connectomes consist of 253 non-isolated neurons with known functional attributes, and there are two types of synaptic connectomes, resulting in a pair of graphs. We formulate our joint graph inference from the perspectives of seeded graph matching and joint vertex classification. Our results suggest that connectomic inference should proceed in the joint space of the two connectomes, which has significant neuroscientific implications.},
-archivePrefix={arXiv},
-arxivId={1507.08376},
+journal = {Worm},
+doi = {10.1080/21624054.2016.1142041},
+URL = {http://dx.doi.org/10.1080/21624054.2016.1142041},
+eprint = {http://dx.doi.org/10.1080/21624054.2016.1142041},
 author={Chen, Li and Vogelstein, Joshua T and Lyzinski, Vince and Priebe, Carey E},
-title={\href{http://arxiv.org/abs/1507.08376}{A Joint Graph Inference Case Study: the C. Elegans Chemical and Electrical Connectomes}},
+title={\href{http://dx.doi.org/10.1080/21624054.2016.1142041}{A Joint Graph Inference Case Study: the C. Elegans Chemical and Electrical Connectomes}},
 journal={Worm},
-year={2015}
+year={2016}
 }
 @article{Roncal2015b,
 abstract={Reconstructing a map of neuronal connectivity is a critical challenge in contemporary neuroscience. Recent advances in high-throughput serial section electron microscopy (EM) have produced massive 3D image volumes of nanoscale brain tissue for the first time. The resolution of EM allows for individual neurons and their synaptic connections to be directly observed. Recovering neuronal networks by manually tracing each neuronal process at this scale is unmanageable, and therefore researchers are developing automated image processing modules. Thus far, state-of-the-art algorithms focus only on the solution to a particular task (e.g., neuron segmentation or synapse identification). 
