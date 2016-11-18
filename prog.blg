@@ -1,0 +1,52 @@
+This is BibTeX, Version 0.99d (TeX Live 2016/Debian)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: prog.aux
+The style file: unsrtinit.bst
+Database file #1: gkiar.bib
+I was expecting a `,' or a `}'---line 159 of file gkiar.bib
+ : 
+ : year = {number}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You've used 4 entries,
+            1791 wiz_defined-function locations,
+            460 strings with 4364 characters,
+and the built_in function-call counts, 797 in all, are:
+= -- 50
+> -- 74
+< -- 0
++ -- 26
+- -- 22
+* -- 51
+:= -- 161
+add.period$ -- 13
+call.type$ -- 4
+change.case$ -- 4
+chr.to.int$ -- 0
+cite$ -- 4
+duplicate$ -- 32
+empty$ -- 57
+format.name$ -- 22
+if$ -- 159
+int.to.chr$ -- 0
+int.to.str$ -- 4
+missing$ -- 4
+newline$ -- 24
+num.names$ -- 4
+pop$ -- 11
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 13
+stack$ -- 0
+substring$ -- 0
+swap$ -- 4
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 4
+width$ -- 5
+write$ -- 44
+(There was 1 error message)
