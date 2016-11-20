@@ -193,8 +193,19 @@
 \DeclareFieldFormat[misc]{title}{#1\par}
 \DeclareFieldFormat[report]{title}{#1\par}
 
+\defbibenvironment{bibliography}
+  {\enumerate
+     {}
+     {\setlength{\leftmargin}{\bibhang}%
+      \setlength{\itemindent}{-\leftmargin}%
+      \setlength{\itemsep}{\bibitemsep}%
+      \setlength{\parsep}{\bibparsep}}}
+  {\endenumerate}
+  {\item}
+
+
 \DeclareBibliographyDriver{article}{%
-  \printfield{title}%
+	\printfield{title}%
   \newblock%
   \printnames{author}%
   \par%
