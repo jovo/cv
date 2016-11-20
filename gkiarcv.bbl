@@ -106,6 +106,7 @@
       \field{isbn}{0896-6273}
       \field{journaltitle}{Neuron}
       \field{month}{11}
+      \field{note}{requested article}
       \field{number}{3}
       \field{title}{To the Cloud! A Grassroots Proposal to Accelerate Brain Science Discovery}
       \field{volume}{92}
@@ -319,6 +320,23 @@
       \field{title}{MR Graph with Rich attribUTEs DataBase (Mr. GruteDB)}
       \field{year}{2016}
     \endentry
+    \entry{kiar2016gremlin}{misc}{}
+      \name{labelname}{1}{}{%
+        {{hash=8d97d5c95e4c0fa5b6cabb4ab84bf53e}{Kiar}{K\bibinitperiod}{Gregory}{G\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=8d97d5c95e4c0fa5b6cabb4ab84bf53e}{Kiar}{K\bibinitperiod}{Gregory}{G\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{8d97d5c95e4c0fa5b6cabb4ab84bf53e}
+      \strng{fullhash}{8d97d5c95e4c0fa5b6cabb4ab84bf53e}
+      \field{sortinit}{2}
+      \field{labeltitle}{GREMLIN: Graph Estimation from MR Images Leading to Inference in Neuroscience}
+      \field{journaltitle}{Master's Thesis, Johns Hopkins University}
+      \field{month}{04}
+      \field{note}{Master's Thesis, Johns Hopkins University}
+      \field{title}{GREMLIN: Graph Estimation from MR Images Leading to Inference in Neuroscience}
+      \field{year}{2016}
+    \endentry
     \entry{grayroncal2016:wm}{report}{}
       \name{labelname}{6}{}{%
         {{hash=e80211a86e8d1b2aaa7820dcdda531c9}{Gray\bibnamedelima Roncal}{G\bibinitperiod\bibinitdelim R\bibinitperiod}{William\bibnamedelima R}{W\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
@@ -418,22 +436,6 @@
       \field{note}{*co-first author}
       \field{title}{m2g: A reference pipeline for reliable connectome estimation}
       \field{type}{techreport}
-      \field{year}{2016}
-    \endentry
-    \entry{kiar2016gremlin}{misc}{}
-      \name{labelname}{1}{}{%
-        {{hash=8d97d5c95e4c0fa5b6cabb4ab84bf53e}{Kiar}{K\bibinitperiod}{Gregory}{G\bibinitperiod}{}{}{}{}}%
-      }
-      \name{author}{1}{}{%
-        {{hash=8d97d5c95e4c0fa5b6cabb4ab84bf53e}{Kiar}{K\bibinitperiod}{Gregory}{G\bibinitperiod}{}{}{}{}}%
-      }
-      \strng{namehash}{8d97d5c95e4c0fa5b6cabb4ab84bf53e}
-      \strng{fullhash}{8d97d5c95e4c0fa5b6cabb4ab84bf53e}
-      \field{sortinit}{2}
-      \field{labeltitle}{GREMLIN: Graph Estimation from MR Images Leading to Inference in Neuroscience}
-      \field{journaltitle}{Master's Thesis, Johns Hopkins University}
-      \field{note}{Master's Thesis, Johns Hopkins University}
-      \field{title}{GREMLIN: Graph Estimation from MR Images Leading to Inference in Neuroscience}
       \field{year}{2016}
     \endentry
     \entry{Vogelstein2015sfn}{proceedings}{}
@@ -619,6 +621,7 @@
       \field{sortinit}{2}
       \field{labeltitle}{GREMLIN: Graph Estimation from MR Images Leading to Inference in Neuroscience}
       \field{journaltitle}{Master's Thesis, Johns Hopkins University}
+      \field{month}{04}
       \field{note}{Master's Thesis, Johns Hopkins University}
       \field{title}{GREMLIN: Graph Estimation from MR Images Leading to Inference in Neuroscience}
       \field{year}{2016}
@@ -847,6 +850,7 @@
       \field{isbn}{0896-6273}
       \field{journaltitle}{Neuron}
       \field{month}{11}
+      \field{note}{requested article}
       \field{number}{3}
       \field{title}{To the Cloud! A Grassroots Proposal to Accelerate Brain Science Discovery}
       \field{volume}{92}
@@ -1097,6 +1101,7 @@
       \field{isbn}{0896-6273}
       \field{journaltitle}{Neuron}
       \field{month}{11}
+      \field{note}{requested article}
       \field{number}{3}
       \field{title}{To the Cloud! A Grassroots Proposal to Accelerate Brain Science Discovery}
       \field{volume}{92}
@@ -1310,6 +1315,23 @@
       \field{title}{MR Graph with Rich attribUTEs DataBase (Mr. GruteDB)}
       \field{year}{2016}
     \endentry
+    \entry{kiar2016gremlin}{misc}{}
+      \name{labelname}{1}{}{%
+        {{hash=8d97d5c95e4c0fa5b6cabb4ab84bf53e}{Kiar}{K\bibinitperiod}{Gregory}{G\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=8d97d5c95e4c0fa5b6cabb4ab84bf53e}{Kiar}{K\bibinitperiod}{Gregory}{G\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{8d97d5c95e4c0fa5b6cabb4ab84bf53e}
+      \strng{fullhash}{8d97d5c95e4c0fa5b6cabb4ab84bf53e}
+      \field{sortinit}{2}
+      \field{labeltitle}{GREMLIN: Graph Estimation from MR Images Leading to Inference in Neuroscience}
+      \field{journaltitle}{Master's Thesis, Johns Hopkins University}
+      \field{month}{04}
+      \field{note}{Master's Thesis, Johns Hopkins University}
+      \field{title}{GREMLIN: Graph Estimation from MR Images Leading to Inference in Neuroscience}
+      \field{year}{2016}
+    \endentry
     \entry{grayroncal2016:wm}{report}{}
       \name{labelname}{6}{}{%
         {{hash=e80211a86e8d1b2aaa7820dcdda531c9}{Gray\bibnamedelima Roncal}{G\bibinitperiod\bibinitdelim R\bibinitperiod}{William\bibnamedelima R}{W\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
@@ -1409,22 +1431,6 @@
       \field{note}{*co-first author}
       \field{title}{m2g: A reference pipeline for reliable connectome estimation}
       \field{type}{techreport}
-      \field{year}{2016}
-    \endentry
-    \entry{kiar2016gremlin}{misc}{}
-      \name{labelname}{1}{}{%
-        {{hash=8d97d5c95e4c0fa5b6cabb4ab84bf53e}{Kiar}{K\bibinitperiod}{Gregory}{G\bibinitperiod}{}{}{}{}}%
-      }
-      \name{author}{1}{}{%
-        {{hash=8d97d5c95e4c0fa5b6cabb4ab84bf53e}{Kiar}{K\bibinitperiod}{Gregory}{G\bibinitperiod}{}{}{}{}}%
-      }
-      \strng{namehash}{8d97d5c95e4c0fa5b6cabb4ab84bf53e}
-      \strng{fullhash}{8d97d5c95e4c0fa5b6cabb4ab84bf53e}
-      \field{sortinit}{2}
-      \field{labeltitle}{GREMLIN: Graph Estimation from MR Images Leading to Inference in Neuroscience}
-      \field{journaltitle}{Master's Thesis, Johns Hopkins University}
-      \field{note}{Master's Thesis, Johns Hopkins University}
-      \field{title}{GREMLIN: Graph Estimation from MR Images Leading to Inference in Neuroscience}
       \field{year}{2016}
     \endentry
     \entry{Vogelstein2015sfn}{proceedings}{}
@@ -1610,6 +1616,7 @@
       \field{sortinit}{2}
       \field{labeltitle}{GREMLIN: Graph Estimation from MR Images Leading to Inference in Neuroscience}
       \field{journaltitle}{Master's Thesis, Johns Hopkins University}
+      \field{month}{04}
       \field{note}{Master's Thesis, Johns Hopkins University}
       \field{title}{GREMLIN: Graph Estimation from MR Images Leading to Inference in Neuroscience}
       \field{year}{2016}
@@ -1838,6 +1845,7 @@
       \field{isbn}{0896-6273}
       \field{journaltitle}{Neuron}
       \field{month}{11}
+      \field{note}{requested article}
       \field{number}{3}
       \field{title}{To the Cloud! A Grassroots Proposal to Accelerate Brain Science Discovery}
       \field{volume}{92}
@@ -2088,6 +2096,7 @@
       \field{isbn}{0896-6273}
       \field{journaltitle}{Neuron}
       \field{month}{11}
+      \field{note}{requested article}
       \field{number}{3}
       \field{title}{To the Cloud! A Grassroots Proposal to Accelerate Brain Science Discovery}
       \field{volume}{92}
@@ -2301,6 +2310,23 @@
       \field{title}{MR Graph with Rich attribUTEs DataBase (Mr. GruteDB)}
       \field{year}{2016}
     \endentry
+    \entry{kiar2016gremlin}{misc}{}
+      \name{labelname}{1}{}{%
+        {{hash=8d97d5c95e4c0fa5b6cabb4ab84bf53e}{Kiar}{K\bibinitperiod}{Gregory}{G\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=8d97d5c95e4c0fa5b6cabb4ab84bf53e}{Kiar}{K\bibinitperiod}{Gregory}{G\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{8d97d5c95e4c0fa5b6cabb4ab84bf53e}
+      \strng{fullhash}{8d97d5c95e4c0fa5b6cabb4ab84bf53e}
+      \field{sortinit}{2}
+      \field{labeltitle}{GREMLIN: Graph Estimation from MR Images Leading to Inference in Neuroscience}
+      \field{journaltitle}{Master's Thesis, Johns Hopkins University}
+      \field{month}{04}
+      \field{note}{Master's Thesis, Johns Hopkins University}
+      \field{title}{GREMLIN: Graph Estimation from MR Images Leading to Inference in Neuroscience}
+      \field{year}{2016}
+    \endentry
     \entry{grayroncal2016:wm}{report}{}
       \name{labelname}{6}{}{%
         {{hash=e80211a86e8d1b2aaa7820dcdda531c9}{Gray\bibnamedelima Roncal}{G\bibinitperiod\bibinitdelim R\bibinitperiod}{William\bibnamedelima R}{W\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
@@ -2400,22 +2426,6 @@
       \field{note}{*co-first author}
       \field{title}{m2g: A reference pipeline for reliable connectome estimation}
       \field{type}{techreport}
-      \field{year}{2016}
-    \endentry
-    \entry{kiar2016gremlin}{misc}{}
-      \name{labelname}{1}{}{%
-        {{hash=8d97d5c95e4c0fa5b6cabb4ab84bf53e}{Kiar}{K\bibinitperiod}{Gregory}{G\bibinitperiod}{}{}{}{}}%
-      }
-      \name{author}{1}{}{%
-        {{hash=8d97d5c95e4c0fa5b6cabb4ab84bf53e}{Kiar}{K\bibinitperiod}{Gregory}{G\bibinitperiod}{}{}{}{}}%
-      }
-      \strng{namehash}{8d97d5c95e4c0fa5b6cabb4ab84bf53e}
-      \strng{fullhash}{8d97d5c95e4c0fa5b6cabb4ab84bf53e}
-      \field{sortinit}{2}
-      \field{labeltitle}{GREMLIN: Graph Estimation from MR Images Leading to Inference in Neuroscience}
-      \field{journaltitle}{Master's Thesis, Johns Hopkins University}
-      \field{note}{Master's Thesis, Johns Hopkins University}
-      \field{title}{GREMLIN: Graph Estimation from MR Images Leading to Inference in Neuroscience}
       \field{year}{2016}
     \endentry
     \entry{Vogelstein2015sfn}{proceedings}{}
@@ -2601,6 +2611,7 @@
       \field{sortinit}{2}
       \field{labeltitle}{GREMLIN: Graph Estimation from MR Images Leading to Inference in Neuroscience}
       \field{journaltitle}{Master's Thesis, Johns Hopkins University}
+      \field{month}{04}
       \field{note}{Master's Thesis, Johns Hopkins University}
       \field{title}{GREMLIN: Graph Estimation from MR Images Leading to Inference in Neuroscience}
       \field{year}{2016}
@@ -2829,6 +2840,7 @@
       \field{isbn}{0896-6273}
       \field{journaltitle}{Neuron}
       \field{month}{11}
+      \field{note}{requested article}
       \field{number}{3}
       \field{title}{To the Cloud! A Grassroots Proposal to Accelerate Brain Science Discovery}
       \field{volume}{92}
@@ -3079,6 +3091,7 @@
       \field{isbn}{0896-6273}
       \field{journaltitle}{Neuron}
       \field{month}{11}
+      \field{note}{requested article}
       \field{number}{3}
       \field{title}{To the Cloud! A Grassroots Proposal to Accelerate Brain Science Discovery}
       \field{volume}{92}
@@ -3292,6 +3305,23 @@
       \field{title}{MR Graph with Rich attribUTEs DataBase (Mr. GruteDB)}
       \field{year}{2016}
     \endentry
+    \entry{kiar2016gremlin}{misc}{}
+      \name{labelname}{1}{}{%
+        {{hash=8d97d5c95e4c0fa5b6cabb4ab84bf53e}{Kiar}{K\bibinitperiod}{Gregory}{G\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=8d97d5c95e4c0fa5b6cabb4ab84bf53e}{Kiar}{K\bibinitperiod}{Gregory}{G\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{8d97d5c95e4c0fa5b6cabb4ab84bf53e}
+      \strng{fullhash}{8d97d5c95e4c0fa5b6cabb4ab84bf53e}
+      \field{sortinit}{2}
+      \field{labeltitle}{GREMLIN: Graph Estimation from MR Images Leading to Inference in Neuroscience}
+      \field{journaltitle}{Master's Thesis, Johns Hopkins University}
+      \field{month}{04}
+      \field{note}{Master's Thesis, Johns Hopkins University}
+      \field{title}{GREMLIN: Graph Estimation from MR Images Leading to Inference in Neuroscience}
+      \field{year}{2016}
+    \endentry
     \entry{grayroncal2016:wm}{report}{}
       \name{labelname}{6}{}{%
         {{hash=e80211a86e8d1b2aaa7820dcdda531c9}{Gray\bibnamedelima Roncal}{G\bibinitperiod\bibinitdelim R\bibinitperiod}{William\bibnamedelima R}{W\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
@@ -3391,22 +3421,6 @@
       \field{note}{*co-first author}
       \field{title}{m2g: A reference pipeline for reliable connectome estimation}
       \field{type}{techreport}
-      \field{year}{2016}
-    \endentry
-    \entry{kiar2016gremlin}{misc}{}
-      \name{labelname}{1}{}{%
-        {{hash=8d97d5c95e4c0fa5b6cabb4ab84bf53e}{Kiar}{K\bibinitperiod}{Gregory}{G\bibinitperiod}{}{}{}{}}%
-      }
-      \name{author}{1}{}{%
-        {{hash=8d97d5c95e4c0fa5b6cabb4ab84bf53e}{Kiar}{K\bibinitperiod}{Gregory}{G\bibinitperiod}{}{}{}{}}%
-      }
-      \strng{namehash}{8d97d5c95e4c0fa5b6cabb4ab84bf53e}
-      \strng{fullhash}{8d97d5c95e4c0fa5b6cabb4ab84bf53e}
-      \field{sortinit}{2}
-      \field{labeltitle}{GREMLIN: Graph Estimation from MR Images Leading to Inference in Neuroscience}
-      \field{journaltitle}{Master's Thesis, Johns Hopkins University}
-      \field{note}{Master's Thesis, Johns Hopkins University}
-      \field{title}{GREMLIN: Graph Estimation from MR Images Leading to Inference in Neuroscience}
       \field{year}{2016}
     \endentry
     \entry{Vogelstein2015sfn}{proceedings}{}
@@ -3592,6 +3606,7 @@
       \field{sortinit}{2}
       \field{labeltitle}{GREMLIN: Graph Estimation from MR Images Leading to Inference in Neuroscience}
       \field{journaltitle}{Master's Thesis, Johns Hopkins University}
+      \field{month}{04}
       \field{note}{Master's Thesis, Johns Hopkins University}
       \field{title}{GREMLIN: Graph Estimation from MR Images Leading to Inference in Neuroscience}
       \field{year}{2016}
@@ -3820,6 +3835,7 @@
       \field{isbn}{0896-6273}
       \field{journaltitle}{Neuron}
       \field{month}{11}
+      \field{note}{requested article}
       \field{number}{3}
       \field{title}{To the Cloud! A Grassroots Proposal to Accelerate Brain Science Discovery}
       \field{volume}{92}
@@ -4070,6 +4086,7 @@
       \field{isbn}{0896-6273}
       \field{journaltitle}{Neuron}
       \field{month}{11}
+      \field{note}{requested article}
       \field{number}{3}
       \field{title}{To the Cloud! A Grassroots Proposal to Accelerate Brain Science Discovery}
       \field{volume}{92}
@@ -4283,6 +4300,23 @@
       \field{title}{MR Graph with Rich attribUTEs DataBase (Mr. GruteDB)}
       \field{year}{2016}
     \endentry
+    \entry{kiar2016gremlin}{misc}{}
+      \name{labelname}{1}{}{%
+        {{hash=8d97d5c95e4c0fa5b6cabb4ab84bf53e}{Kiar}{K\bibinitperiod}{Gregory}{G\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=8d97d5c95e4c0fa5b6cabb4ab84bf53e}{Kiar}{K\bibinitperiod}{Gregory}{G\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{8d97d5c95e4c0fa5b6cabb4ab84bf53e}
+      \strng{fullhash}{8d97d5c95e4c0fa5b6cabb4ab84bf53e}
+      \field{sortinit}{2}
+      \field{labeltitle}{GREMLIN: Graph Estimation from MR Images Leading to Inference in Neuroscience}
+      \field{journaltitle}{Master's Thesis, Johns Hopkins University}
+      \field{month}{04}
+      \field{note}{Master's Thesis, Johns Hopkins University}
+      \field{title}{GREMLIN: Graph Estimation from MR Images Leading to Inference in Neuroscience}
+      \field{year}{2016}
+    \endentry
     \entry{grayroncal2016:wm}{report}{}
       \name{labelname}{6}{}{%
         {{hash=e80211a86e8d1b2aaa7820dcdda531c9}{Gray\bibnamedelima Roncal}{G\bibinitperiod\bibinitdelim R\bibinitperiod}{William\bibnamedelima R}{W\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
@@ -4382,22 +4416,6 @@
       \field{note}{*co-first author}
       \field{title}{m2g: A reference pipeline for reliable connectome estimation}
       \field{type}{techreport}
-      \field{year}{2016}
-    \endentry
-    \entry{kiar2016gremlin}{misc}{}
-      \name{labelname}{1}{}{%
-        {{hash=8d97d5c95e4c0fa5b6cabb4ab84bf53e}{Kiar}{K\bibinitperiod}{Gregory}{G\bibinitperiod}{}{}{}{}}%
-      }
-      \name{author}{1}{}{%
-        {{hash=8d97d5c95e4c0fa5b6cabb4ab84bf53e}{Kiar}{K\bibinitperiod}{Gregory}{G\bibinitperiod}{}{}{}{}}%
-      }
-      \strng{namehash}{8d97d5c95e4c0fa5b6cabb4ab84bf53e}
-      \strng{fullhash}{8d97d5c95e4c0fa5b6cabb4ab84bf53e}
-      \field{sortinit}{2}
-      \field{labeltitle}{GREMLIN: Graph Estimation from MR Images Leading to Inference in Neuroscience}
-      \field{journaltitle}{Master's Thesis, Johns Hopkins University}
-      \field{note}{Master's Thesis, Johns Hopkins University}
-      \field{title}{GREMLIN: Graph Estimation from MR Images Leading to Inference in Neuroscience}
       \field{year}{2016}
     \endentry
     \entry{Vogelstein2015sfn}{proceedings}{}
@@ -4583,6 +4601,7 @@
       \field{sortinit}{2}
       \field{labeltitle}{GREMLIN: Graph Estimation from MR Images Leading to Inference in Neuroscience}
       \field{journaltitle}{Master's Thesis, Johns Hopkins University}
+      \field{month}{04}
       \field{note}{Master's Thesis, Johns Hopkins University}
       \field{title}{GREMLIN: Graph Estimation from MR Images Leading to Inference in Neuroscience}
       \field{year}{2016}
@@ -4811,6 +4830,7 @@
       \field{isbn}{0896-6273}
       \field{journaltitle}{Neuron}
       \field{month}{11}
+      \field{note}{requested article}
       \field{number}{3}
       \field{title}{To the Cloud! A Grassroots Proposal to Accelerate Brain Science Discovery}
       \field{volume}{92}
@@ -5061,6 +5081,7 @@
       \field{isbn}{0896-6273}
       \field{journaltitle}{Neuron}
       \field{month}{11}
+      \field{note}{requested article}
       \field{number}{3}
       \field{title}{To the Cloud! A Grassroots Proposal to Accelerate Brain Science Discovery}
       \field{volume}{92}
@@ -5274,6 +5295,23 @@
       \field{title}{MR Graph with Rich attribUTEs DataBase (Mr. GruteDB)}
       \field{year}{2016}
     \endentry
+    \entry{kiar2016gremlin}{misc}{}
+      \name{labelname}{1}{}{%
+        {{hash=8d97d5c95e4c0fa5b6cabb4ab84bf53e}{Kiar}{K\bibinitperiod}{Gregory}{G\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=8d97d5c95e4c0fa5b6cabb4ab84bf53e}{Kiar}{K\bibinitperiod}{Gregory}{G\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{8d97d5c95e4c0fa5b6cabb4ab84bf53e}
+      \strng{fullhash}{8d97d5c95e4c0fa5b6cabb4ab84bf53e}
+      \field{sortinit}{2}
+      \field{labeltitle}{GREMLIN: Graph Estimation from MR Images Leading to Inference in Neuroscience}
+      \field{journaltitle}{Master's Thesis, Johns Hopkins University}
+      \field{month}{04}
+      \field{note}{Master's Thesis, Johns Hopkins University}
+      \field{title}{GREMLIN: Graph Estimation from MR Images Leading to Inference in Neuroscience}
+      \field{year}{2016}
+    \endentry
     \entry{grayroncal2016:wm}{report}{}
       \name{labelname}{6}{}{%
         {{hash=e80211a86e8d1b2aaa7820dcdda531c9}{Gray\bibnamedelima Roncal}{G\bibinitperiod\bibinitdelim R\bibinitperiod}{William\bibnamedelima R}{W\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
@@ -5373,22 +5411,6 @@
       \field{note}{*co-first author}
       \field{title}{m2g: A reference pipeline for reliable connectome estimation}
       \field{type}{techreport}
-      \field{year}{2016}
-    \endentry
-    \entry{kiar2016gremlin}{misc}{}
-      \name{labelname}{1}{}{%
-        {{hash=8d97d5c95e4c0fa5b6cabb4ab84bf53e}{Kiar}{K\bibinitperiod}{Gregory}{G\bibinitperiod}{}{}{}{}}%
-      }
-      \name{author}{1}{}{%
-        {{hash=8d97d5c95e4c0fa5b6cabb4ab84bf53e}{Kiar}{K\bibinitperiod}{Gregory}{G\bibinitperiod}{}{}{}{}}%
-      }
-      \strng{namehash}{8d97d5c95e4c0fa5b6cabb4ab84bf53e}
-      \strng{fullhash}{8d97d5c95e4c0fa5b6cabb4ab84bf53e}
-      \field{sortinit}{2}
-      \field{labeltitle}{GREMLIN: Graph Estimation from MR Images Leading to Inference in Neuroscience}
-      \field{journaltitle}{Master's Thesis, Johns Hopkins University}
-      \field{note}{Master's Thesis, Johns Hopkins University}
-      \field{title}{GREMLIN: Graph Estimation from MR Images Leading to Inference in Neuroscience}
       \field{year}{2016}
     \endentry
     \entry{Vogelstein2015sfn}{proceedings}{}
@@ -5574,6 +5596,7 @@
       \field{sortinit}{2}
       \field{labeltitle}{GREMLIN: Graph Estimation from MR Images Leading to Inference in Neuroscience}
       \field{journaltitle}{Master's Thesis, Johns Hopkins University}
+      \field{month}{04}
       \field{note}{Master's Thesis, Johns Hopkins University}
       \field{title}{GREMLIN: Graph Estimation from MR Images Leading to Inference in Neuroscience}
       \field{year}{2016}
@@ -5802,6 +5825,7 @@
       \field{isbn}{0896-6273}
       \field{journaltitle}{Neuron}
       \field{month}{11}
+      \field{note}{requested article}
       \field{number}{3}
       \field{title}{To the Cloud! A Grassroots Proposal to Accelerate Brain Science Discovery}
       \field{volume}{92}

@@ -218,8 +218,9 @@
     \newunit%
     \printlist{publisher}%
     \setunit*{\addcomma\space}%
-    \printfield{year}%
+    \printfield{note}%
     \newunit%
+		.
   }
   \par\vspace{0.3\baselineskip}
 }
@@ -239,6 +240,7 @@
     \printlist{publisher}%
     \setunit*{\addcomma\space}%
     \newunit%
+		.
   }
   \par\vspace{0.3\baselineskip}
 }
@@ -258,6 +260,7 @@
     \printlist{publisher}%
     \setunit*{\addcomma\space}%
     \newunit%
+		.
   }
   \par\vspace{0.3\baselineskip}
 }
@@ -278,6 +281,7 @@
     \setunit{\addcomma\space}%
     \printlist{location}%
     \newunit%
+		.
   }
   \par\vspace{0.3\baselineskip}
 }
@@ -297,6 +301,7 @@
     \printlist{publisher}%
     \setunit*{\addcomma\space}%
     \newunit%
+		.
   }
   \par\vspace{0.3\baselineskip}
 }
@@ -309,14 +314,14 @@
   \newblock%
   {%
     \footnotesize\addfontfeature{Color=lightgray}\itshape%
-    \printfield{booktitle}%
-    \setunit*{\addcomma\space}%
-    \printfield{note}%
-    \setunit*{\addcomma\space}%
-    \printfield{year}%
-    \setunit{\addcomma\space}%
-    \printlist{location}%
+    \usebibmacro{journal+issuetitle}%
+    \setunit{\space}%
+    \printfield{pages}%
     \newunit%
+    \printlist{publisher}%
+    \setunit*{\addcomma\space}%
+    \newunit%
+		.
   }
   \par\vspace{0.3\baselineskip}
 }
@@ -333,8 +338,8 @@
     \setunit{\space}%
     \printfield{number}%
     \setunit{\addcomma\space}%
-    \printfield{year}%
     \newunit%
+		.
   }
   \par\vspace{0.3\baselineskip}
 }
