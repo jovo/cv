@@ -1,0 +1,69 @@
+[0] Config.pm:318> INFO - This is Biber 1.8
+[0] Config.pm:321> INFO - Logfile is 'gkiarcv.blg'
+[70] biber-darwin:275> INFO - === Sun Nov 20, 2016, 00:21:10
+[77] Biber.pm:333> INFO - Reading 'gkiarcv.bcf'
+[138] Biber.pm:630> INFO - Found 0 citekeys in bib section 0
+[139] Biber.pm:607> INFO - Using all citekeys in bib section 1
+[139] Biber.pm:630> INFO - Found 0 citekeys in bib section 0
+[139] Biber.pm:607> INFO - Using all citekeys in bib section 2
+[139] Biber.pm:630> INFO - Found 0 citekeys in bib section 0
+[139] Biber.pm:607> INFO - Using all citekeys in bib section 3
+[140] Biber.pm:630> INFO - Found 0 citekeys in bib section 0
+[140] Biber.pm:607> INFO - Using all citekeys in bib section 4
+[140] Biber.pm:630> INFO - Found 0 citekeys in bib section 0
+[140] Biber.pm:607> INFO - Using all citekeys in bib section 5
+[140] Biber.pm:630> INFO - Found 0 citekeys in bib section 0
+[140] Biber.pm:607> INFO - Using all citekeys in bib section 6
+[140] Biber.pm:630> INFO - Found 0 citekeys in bib section 0
+[165] Biber.pm:3053> INFO - Processing section 1
+[183] Biber.pm:3190> INFO - Looking for bibtex format file 'gkiarcv.bib' for section 1
+[187] bibtex.pm:937> INFO - Decoding LaTeX character macros into UTF-8
+[191] bibtex.pm:812> INFO - Found BibTeX data source 'gkiarcv.bib'
+[290] Biber.pm:2939> INFO - Overriding locale 'en_US.UTF-8' default tailoring 'variable = shifted' with 'variable = non-ignorable'
+[290] Biber.pm:2945> INFO - Sorting 'entry' list 'chronological' keys
+[290] Biber.pm:2949> INFO - No sort tailoring available for locale 'en_US.UTF-8'
+[331] Biber.pm:2939> INFO - Overriding locale 'en_US.UTF-8' default tailoring 'variable = shifted' with 'variable = non-ignorable'
+[332] Biber.pm:2945> INFO - Sorting 'entry' list 'ydnt' keys
+[332] Biber.pm:2949> INFO - No sort tailoring available for locale 'en_US.UTF-8'
+[392] Biber.pm:3053> INFO - Processing section 2
+[392] Biber.pm:3190> INFO - Looking for bibtex format file 'gkiarcv.bib' for section 2
+[453] Biber.pm:2939> INFO - Overriding locale 'en_US.UTF-8' default tailoring 'variable = shifted' with 'variable = non-ignorable'
+[453] Biber.pm:2945> INFO - Sorting 'entry' list 'chronological' keys
+[454] Biber.pm:2949> INFO - No sort tailoring available for locale 'en_US.UTF-8'
+[492] Biber.pm:2939> INFO - Overriding locale 'en_US.UTF-8' default tailoring 'variable = shifted' with 'variable = non-ignorable'
+[493] Biber.pm:2945> INFO - Sorting 'entry' list 'ydnt' keys
+[493] Biber.pm:2949> INFO - No sort tailoring available for locale 'en_US.UTF-8'
+[564] Biber.pm:3053> INFO - Processing section 3
+[565] Biber.pm:3190> INFO - Looking for bibtex format file 'gkiarcv.bib' for section 3
+[635] Biber.pm:2939> INFO - Overriding locale 'en_US.UTF-8' default tailoring 'variable = shifted' with 'variable = non-ignorable'
+[635] Biber.pm:2945> INFO - Sorting 'entry' list 'chronological' keys
+[635] Biber.pm:2949> INFO - No sort tailoring available for locale 'en_US.UTF-8'
+[675] Biber.pm:2939> INFO - Overriding locale 'en_US.UTF-8' default tailoring 'variable = shifted' with 'variable = non-ignorable'
+[675] Biber.pm:2945> INFO - Sorting 'entry' list 'ydnt' keys
+[675] Biber.pm:2949> INFO - No sort tailoring available for locale 'en_US.UTF-8'
+[738] Biber.pm:3053> INFO - Processing section 4
+[738] Biber.pm:3190> INFO - Looking for bibtex format file 'gkiarcv.bib' for section 4
+[803] Biber.pm:2939> INFO - Overriding locale 'en_US.UTF-8' default tailoring 'variable = shifted' with 'variable = non-ignorable'
+[803] Biber.pm:2945> INFO - Sorting 'entry' list 'chronological' keys
+[804] Biber.pm:2949> INFO - No sort tailoring available for locale 'en_US.UTF-8'
+[838] Biber.pm:2939> INFO - Overriding locale 'en_US.UTF-8' default tailoring 'variable = shifted' with 'variable = non-ignorable'
+[838] Biber.pm:2945> INFO - Sorting 'entry' list 'ydnt' keys
+[839] Biber.pm:2949> INFO - No sort tailoring available for locale 'en_US.UTF-8'
+[900] Biber.pm:3053> INFO - Processing section 5
+[900] Biber.pm:3190> INFO - Looking for bibtex format file 'gkiarcv.bib' for section 5
+[966] Biber.pm:2939> INFO - Overriding locale 'en_US.UTF-8' default tailoring 'variable = shifted' with 'variable = non-ignorable'
+[966] Biber.pm:2945> INFO - Sorting 'entry' list 'chronological' keys
+[967] Biber.pm:2949> INFO - No sort tailoring available for locale 'en_US.UTF-8'
+[1006] Biber.pm:2939> INFO - Overriding locale 'en_US.UTF-8' default tailoring 'variable = shifted' with 'variable = non-ignorable'
+[1006] Biber.pm:2945> INFO - Sorting 'entry' list 'ydnt' keys
+[1007] Biber.pm:2949> INFO - No sort tailoring available for locale 'en_US.UTF-8'
+[1075] Biber.pm:3053> INFO - Processing section 6
+[1075] Biber.pm:3190> INFO - Looking for bibtex format file 'gkiarcv.bib' for section 6
+[1141] Biber.pm:2939> INFO - Overriding locale 'en_US.UTF-8' default tailoring 'variable = shifted' with 'variable = non-ignorable'
+[1141] Biber.pm:2945> INFO - Sorting 'entry' list 'chronological' keys
+[1141] Biber.pm:2949> INFO - No sort tailoring available for locale 'en_US.UTF-8'
+[1181] Biber.pm:2939> INFO - Overriding locale 'en_US.UTF-8' default tailoring 'variable = shifted' with 'variable = non-ignorable'
+[1181] Biber.pm:2945> INFO - Sorting 'entry' list 'ydnt' keys
+[1181] Biber.pm:2949> INFO - No sort tailoring available for locale 'en_US.UTF-8'
+[1244] bbl.pm:482> INFO - Writing 'gkiarcv.bbl' with encoding 'UTF-8'
+[1290] bbl.pm:555> INFO - Output to gkiarcv.bbl
