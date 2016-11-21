@@ -1,4 +1,4 @@
-This is LuaTeX, Version beta-0.79.1 (TeX Live 2014) (rev 4971)  (format=lualatex 2014.5.25)  20 NOV 2016 15:02
+This is LuaTeX, Version beta-0.79.1 (TeX Live 2014) (rev 4971)  (format=lualatex 2014.5.25)  21 NOV 2016 10:01
  restricted \write18 enabled.
 **gkiarcv.tex
 (./gkiarcv.tex
@@ -287,7 +287,7 @@ luaotfload:  then use the possibly updated libraries. The merged
 luaotfload:  version is not supported as it is a frozen instance.
 luaotfload:  Problems can be reported to the ConTeXt mailing list."
 luaotfload: pop namespace from font loader -- non-destructive
-luaotfload: fontloader loaded in 0.025 seconds
+luaotfload: fontloader loaded in 0.021 seconds
 luatexbase-mcb: inserting 'luaotfload.node_processor'
 at position 1 in 'pre_linebreak_filter'
 luatexbase-mcb: inserting 'luaotfload.node_processor'
@@ -640,8 +640,8 @@ luaotfload | load : auto-selecting default features for script: dflt(load luc: /
 usr/local/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/gentona-medium.l
 uc)
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 22 (Gentona-Medium) defines feature cpsp for script latn
-luaotfload: font no 22 (Gentona-Medium) defines feature cpsp for script latn
+luaotfload: font no 22 (Gentona-Medium) defines feature kern for script latn
+luaotfload: font no 22 (Gentona-Medium) defines feature kern for script latn
 \g_fontspec_family_[Gentona-Medium.ttf]_int=\count321
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload: font no 22 (Gentona-Medium) does not define feature smcp for script 
@@ -657,8 +657,8 @@ luaotfload | load : auto-selecting default features for script: dflt(load luc: /
 usr/local/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/gentona-light.lu
 c)
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 23 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 23 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 23 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 23 (Gentona-Light) defines feature kern for script latn
 \g_fontspec_family_[Gentona-Light.ttf]_int=\count322
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload: font no 23 (Gentona-Light) does not define feature smcp for script l
@@ -674,8 +674,8 @@ luaotfload | load : auto-selecting default features for script: dflt(load luc: /
 usr/local/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/gentona-bold.luc
 )
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 24 (Gentona-Bold) defines feature cpsp for script latn
-luaotfload: font no 24 (Gentona-Bold) defines feature cpsp for script latn
+luaotfload: font no 24 (Gentona-Bold) defines feature kern for script latn
+luaotfload: font no 24 (Gentona-Bold) defines feature kern for script latn
 \g_fontspec_family_[Gentona-Bold.ttf]_int=\count323
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload: font no 24 (Gentona-Bold) does not define feature smcp for script la
@@ -689,8 +689,8 @@ luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 23 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 23 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 23 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 23 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload: font no 23 (Gentona-Light) does not define feature smcp for script l
 atn with language dflt
@@ -1402,7 +1402,7 @@ onts/otf/latinmodern-math.luc)
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
 back to file:
-luaotfload: font no 26 (LatinModernMath-Regular) defines feature aalt for script
+luaotfload: font no 26 (LatinModernMath-Regular) defines feature ssty for script
  math
 \g_fontspec_family_latinmodern-math.otf_int=\count482
 luaotfload | load : auto-selecting default features for script: dflt
@@ -1433,7 +1433,7 @@ luaotfload | load : auto-selecting default features for script: math
 luaotfload | load : no defaults for script "math", falling back to "dflt"
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
 back to file:
-luaotfload: font no 28 (LatinModernMath-Regular) defines feature aalt for script
+luaotfload: font no 28 (LatinModernMath-Regular) defines feature ssty for script
  math
 LaTeX Font Info:    Encoding `OT1' has changed to `EU2' for symbol font
 (Font)              `operators' in the math version `normal' on input line 26.
@@ -1451,7 +1451,7 @@ back to file:
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
 back to file:
-luaotfload: font no 26 (LatinModernMath-Regular) defines feature aalt for script
+luaotfload: font no 26 (LatinModernMath-Regular) defines feature ssty for script
  math
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
@@ -1489,7 +1489,7 @@ back to file:
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
 back to file:
-luaotfload: font no 26 (LatinModernMath-Regular) defines feature aalt for script
+luaotfload: font no 26 (LatinModernMath-Regular) defines feature ssty for script
  math
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
@@ -1651,8 +1651,8 @@ luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload: font no 49 (Gentona-Light) does not define feature smcp for script l
 atn with language dflt
@@ -1667,16 +1667,16 @@ luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
 Underfull \hbox (badness 10000) in paragraph at lines 65--100
 
  []
@@ -1687,24 +1687,24 @@ luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
 Underfull \hbox (badness 10000) in paragraph at lines 111--126
 
  []
 
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
 Underfull \hbox (badness 10000) in paragraph at lines 129--145
 
  []
@@ -1714,40 +1714,40 @@ Underfull \hbox (badness 10000) in paragraph at lines 129--145
 {/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
 Underfull \hbox (badness 10000) in paragraph at lines 148--177
 
  []
 
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
 Overfull \hbox (0.62877pt too wide) in alignment at lines 180--208
 [] []
  []
@@ -1759,28 +1759,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 180--209
 
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
 Underfull \hbox (badness 10000) in paragraph at lines 212--249
 
  []
@@ -1788,32 +1788,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 212--249
 [2]
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
 Underfull \hbox (badness 10000) in paragraph at lines 256--299
 
  []
@@ -1826,14 +1826,14 @@ luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload: font no 54 (Gentona-Light) does not define feature smcp for script l
 atn with language dflt
@@ -1848,8 +1848,8 @@ luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload: font no 54 (Gentona-Light) does not define feature smcp for script l
 atn with language dflt
@@ -1864,8 +1864,8 @@ luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload: font no 54 (Gentona-Light) does not define feature smcp for script l
 atn with language dflt
@@ -1880,8 +1880,8 @@ luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload: font no 54 (Gentona-Light) does not define feature smcp for script l
 atn with language dflt
@@ -1896,8 +1896,8 @@ luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload: font no 54 (Gentona-Light) does not define feature smcp for script l
 atn with language dflt
@@ -1912,8 +1912,8 @@ luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload: font no 54 (Gentona-Light) does not define feature smcp for script l
 atn with language dflt
@@ -1928,8 +1928,8 @@ luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload: font no 54 (Gentona-Light) does not define feature smcp for script l
 atn with language dflt
@@ -1944,8 +1944,8 @@ luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload: font no 54 (Gentona-Light) does not define feature smcp for script l
 atn with language dflt
@@ -1960,8 +1960,8 @@ luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload: font no 54 (Gentona-Light) does not define feature smcp for script l
 atn with language dflt
@@ -1976,8 +1976,8 @@ luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload: font no 54 (Gentona-Light) does not define feature smcp for script l
 atn with language dflt
@@ -1992,8 +1992,8 @@ luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
 
 LaTeX Font Warning: Font shape `EU2/[Gentona-Light.ttf](2)/m/it' undefined
 (Font)              using `EU2/[Gentona-Light.ttf](2)/m/n' instead on input line
@@ -2001,68 +2001,52 @@ LaTeX Font Warning: Font shape `EU2/[Gentona-Light.ttf](2)/m/it' undefined
 
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) does not define feature smcp for script l
-atn with language dflt
-luaotfload: no font with id 54
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: latn
-luaotfload | load : no defaults for script "latn", falling back to "dflt"
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload: font no 54 (Gentona-Light) does not define feature smcp for script l
 atn with language dflt
@@ -2077,8 +2061,8 @@ luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload: font no 54 (Gentona-Light) does not define feature smcp for script l
 atn with language dflt
@@ -2093,8 +2077,8 @@ luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload: font no 54 (Gentona-Light) does not define feature smcp for script l
 atn with language dflt
@@ -2109,8 +2093,8 @@ luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload: font no 54 (Gentona-Light) does not define feature smcp for script l
 atn with language dflt
@@ -2125,8 +2109,8 @@ luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload: font no 54 (Gentona-Light) does not define feature smcp for script l
 atn with language dflt
@@ -2141,8 +2125,8 @@ luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload: font no 54 (Gentona-Light) does not define feature smcp for script l
 atn with language dflt
@@ -2157,8 +2141,8 @@ luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload: font no 54 (Gentona-Light) does not define feature smcp for script l
 atn with language dflt
@@ -2173,8 +2157,8 @@ luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload: font no 54 (Gentona-Light) does not define feature smcp for script l
 atn with language dflt
@@ -2189,8 +2173,8 @@ luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload: font no 54 (Gentona-Light) does not define feature smcp for script l
 atn with language dflt
@@ -2205,8 +2189,8 @@ luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload: font no 54 (Gentona-Light) does not define feature smcp for script l
 atn with language dflt
@@ -2221,8 +2205,8 @@ luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload: font no 54 (Gentona-Light) does not define feature smcp for script l
 atn with language dflt
@@ -2237,8 +2221,8 @@ luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload: font no 54 (Gentona-Light) does not define feature smcp for script l
 atn with language dflt
@@ -2253,8 +2237,8 @@ luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload: font no 54 (Gentona-Light) does not define feature smcp for script l
 atn with language dflt
@@ -2269,8 +2253,8 @@ luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload: font no 54 (Gentona-Light) does not define feature smcp for script l
 atn with language dflt
@@ -2285,8 +2269,8 @@ luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload: font no 54 (Gentona-Light) does not define feature smcp for script l
 atn with language dflt
@@ -2301,54 +2285,70 @@ luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 54 (Gentona-Light) does not define feature smcp for script l
+atn with language dflt
+luaotfload: no font with id 54
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
+luaotfload | load : auto-selecting default features for script: latn
+luaotfload | load : no defaults for script "latn", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 Overfull \hbox (4.41692pt too wide) in paragraph at lines 314--314
 [][][]\EU2/[Gentona-Light.ttf](28)/m/n/9 J[][]o[][]s[][]h[][]u[][]a[] []T[] []V
 [][]o[]-[]g[][]e[][]l[]-[]s[][]t[][]e[][]i[][]n[][],[] []K[][]a[]-[]t[][]r[][]i
@@ -2361,8 +2361,8 @@ Overfull \hbox (4.41692pt too wide) in paragraph at lines 314--314
 
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
 Package biblatex Info: Reference section=0 on input line 314.
 [3]
 \blx@maxsegment@2=\count486
@@ -2371,132 +2371,116 @@ Package biblatex Info: Reference section=2 on input line 317.
 Package biblatex Info: Setting label 'refsection:2' on input line 317.
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) does not define feature smcp for script l
-atn with language dflt
-luaotfload: no font with id 54
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: latn
-luaotfload | load : no defaults for script "latn", falling back to "dflt"
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload: font no 54 (Gentona-Light) does not define feature smcp for script l
 atn with language dflt
@@ -2511,8 +2495,8 @@ luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload: font no 54 (Gentona-Light) does not define feature smcp for script l
 atn with language dflt
@@ -2527,8 +2511,8 @@ luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload: font no 54 (Gentona-Light) does not define feature smcp for script l
 atn with language dflt
@@ -2543,8 +2527,8 @@ luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload: font no 54 (Gentona-Light) does not define feature smcp for script l
 atn with language dflt
@@ -2559,8 +2543,8 @@ luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload: font no 54 (Gentona-Light) does not define feature smcp for script l
 atn with language dflt
@@ -2575,8 +2559,8 @@ luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload: font no 54 (Gentona-Light) does not define feature smcp for script l
 atn with language dflt
@@ -2591,8 +2575,24 @@ luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 54 (Gentona-Light) does not define feature smcp for script l
+atn with language dflt
+luaotfload: no font with id 54
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: latn
+luaotfload | load : no defaults for script "latn", falling back to "dflt"
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload: font no 54 (Gentona-Light) does not define feature smcp for script l
 atn with language dflt
@@ -2617,8 +2617,8 @@ a[][]l[][]ı[][]̀[][],[] []P[][]e[]-[]d[][]r[][]o[] []A[][]n[]-[]t[][]o[]-[]n[
 
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
 Package biblatex Info: Reference section=0 on input line 317.
 \blx@maxsegment@3=\count488
 \blx@sectionciteorder@3=\count489
@@ -2626,28 +2626,28 @@ Package biblatex Info: Reference section=3 on input line 319.
 Package biblatex Info: Setting label 'refsection:3' on input line 319.
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
 Package biblatex Info: Reference section=0 on input line 319.
 \blx@maxsegment@4=\count490
 \blx@sectionciteorder@4=\count491
@@ -2655,92 +2655,92 @@ Package biblatex Info: Reference section=4 on input line 321.
 Package biblatex Info: Setting label 'refsection:4' on input line 321.
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
 Package biblatex Info: Reference section=0 on input line 321.
 \blx@maxsegment@5=\count492
 \blx@sectionciteorder@5=\count493
@@ -2748,40 +2748,40 @@ Package biblatex Info: Reference section=5 on input line 323.
 Package biblatex Info: Setting label 'refsection:5' on input line 323.
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
 Package biblatex Info: Reference section=0 on input line 323.
 \blx@maxsegment@6=\count494
 \blx@sectionciteorder@6=\count495
@@ -2789,111 +2789,111 @@ Package biblatex Info: Reference section=6 on input line 325.
 Package biblatex Info: Setting label 'refsection:6' on input line 325.
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn [4
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn [4
 Missing character: There is no ̀ (U+0300) in font "[Gentona-Light.ttf]:mode=nod
 e;script=latn;language=DFLT;+tlig;+trep;+tlig;+trep;color=888888FF ;"!
 ]
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 54 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 54 (Gentona-Light) defines feature kern for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
-luaotfload: font no 49 (Gentona-Light) defines feature cpsp for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
+luaotfload: font no 49 (Gentona-Light) defines feature kern for script latn
 Package biblatex Info: Reference section=0 on input line 325.
  [5]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 329.
@@ -2907,19 +2907,26 @@ Package rerunfilecheck Info: File `gkiarcv.out' has not changed.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package biblatex Warning: Please rerun LaTeX.
+(biblatex)                Page breaks have changed.
+
 Package logreq Info: Writing requests to 'gkiarcv.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 42148 strings out of 494695
+ 42134 strings out of 494695
  125171,1373583 words of node,token memory allocated
  342 words of node memory still in use:
    3 hlist, 1 vlist, 1 rule, 2 glue, 1 kern, 4 attribute, 42 glue_spec, 4 attrib
 ute_list, 1 write nodes
    avail lists: 1:50,2:10332,3:7764,4:1076,5:1717,6:2747,7:47,8:19,9:518,10:983,
 11:509,12:228
- 42255 multiletter control sequences out of 65536+600000
- 55 fonts using 11185991 bytes
+ 42241 multiletter control sequences out of 65536+600000
+ 55 fonts using 11186035 bytes
  73i,9n,67p,936b,943s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm-math/latinmodern-ma
 th.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/fontawesome/Fon
