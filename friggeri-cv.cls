@@ -56,6 +56,10 @@
 \newfontfamily\bodyfont[]{[Gentona-Medium.ttf]}
 \newfontfamily\thinfont[]{[Gentona-Light.ttf]}
 \newfontfamily\headingfont[]{[Gentona-Bold.ttf]}
+\newfontfamily\italicfont[]{[Gentona-LightItalic.ttf]}
+\newfontfamily\jobfont[]{[Gentona-BookItalic.ttf]}
+\DeclareTextFontCommand{\emph}{\color{textcolor}\selectfont\italicfont}
+\DeclareTextFontCommand{\job}{\color{textcolor}\selectfont\jobfont}
 
 \defaultfontfeatures{Mapping=tex-text}
 \setmainfont[Mapping=tex-text, Color=textcolor]{[Gentona-Light.ttf]}
