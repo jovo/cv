@@ -1,4 +1,4 @@
-This is LuaTeX, Version beta-0.79.1 (TeX Live 2014) (rev 4971)  (format=lualatex 2014.5.25)  3 DEC 2016 12:09
+This is LuaTeX, Version beta-0.79.1 (TeX Live 2014) (rev 4971)  (format=lualatex 2014.5.25)  29 JAN 2017 14:32
  restricted \write18 enabled.
 **gkiarcv.tex
 (./gkiarcv.tex
@@ -287,7 +287,7 @@ luaotfload:  then use the possibly updated libraries. The merged
 luaotfload:  version is not supported as it is a frozen instance.
 luaotfload:  Problems can be reported to the ConTeXt mailing list."
 luaotfload: pop namespace from font loader -- non-destructive
-luaotfload: fontloader loaded in 0.024 seconds
+luaotfload: fontloader loaded in 0.027 seconds
 luatexbase-mcb: inserting 'luaotfload.node_processor'
 at position 1 in 'pre_linebreak_filter'
 luatexbase-mcb: inserting 'luaotfload.node_processor'
@@ -640,8 +640,8 @@ luaotfload | load : auto-selecting default features for script: dflt(load luc: /
 usr/local/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/gentona-medium.l
 uc)
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 22 (Gentona-Medium) defines feature ss04 for script latn
-luaotfload: font no 22 (Gentona-Medium) defines feature ss04 for script latn
+luaotfload: font no 22 (Gentona-Medium) defines feature pnum for script latn
+luaotfload: font no 22 (Gentona-Medium) defines feature pnum for script latn
 \g_fontspec_family_[Gentona-Medium.ttf]_int=\count321
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload: font no 22 (Gentona-Medium) does not define feature smcp for script 
@@ -657,8 +657,8 @@ luaotfload | load : auto-selecting default features for script: dflt(load luc: /
 usr/local/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/gentona-light.lu
 c)
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 23 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 23 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 23 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 23 (Gentona-Light) defines feature pnum for script latn
 \g_fontspec_family_[Gentona-Light.ttf]_int=\count322
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload: font no 23 (Gentona-Light) does not define feature smcp for script l
@@ -674,8 +674,8 @@ luaotfload | load : auto-selecting default features for script: dflt(load luc: /
 usr/local/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/gentona-bold.luc
 )
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 24 (Gentona-Bold) defines feature ss04 for script latn
-luaotfload: font no 24 (Gentona-Bold) defines feature ss04 for script latn
+luaotfload: font no 24 (Gentona-Bold) defines feature pnum for script latn
+luaotfload: font no 24 (Gentona-Bold) defines feature pnum for script latn
 \g_fontspec_family_[Gentona-Bold.ttf]_int=\count323
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload: font no 24 (Gentona-Bold) does not define feature smcp for script la
@@ -691,9 +691,9 @@ luaotfload | load : auto-selecting default features for script: dflt(load luc: /
 usr/local/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/gentona-lightita
 lic.luc)
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 25 (Gentona-LightItalic) defines feature ss04 for script lat
+luaotfload: font no 25 (Gentona-LightItalic) defines feature pnum for script lat
 n
-luaotfload: font no 25 (Gentona-LightItalic) defines feature ss04 for script lat
+luaotfload: font no 25 (Gentona-LightItalic) defines feature pnum for script lat
 n
 \g_fontspec_family_[Gentona-LightItalic.ttf]_int=\count324
 luaotfload | load : auto-selecting default features for script: dflt
@@ -710,8 +710,8 @@ luaotfload | load : auto-selecting default features for script: dflt(load luc: /
 usr/local/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/gentona-bookital
 ic.luc)
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 26 (Gentona-BookItalic) defines feature ss04 for script latn
-luaotfload: font no 26 (Gentona-BookItalic) defines feature ss04 for script latn
+luaotfload: font no 26 (Gentona-BookItalic) defines feature pnum for script latn
+luaotfload: font no 26 (Gentona-BookItalic) defines feature pnum for script latn
 \g_fontspec_family_[Gentona-BookItalic.ttf]_int=\count325
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload: font no 26 (Gentona-BookItalic) does not define feature smcp for scr
@@ -726,8 +726,8 @@ luaotfload | load : auto-selecting default features for script: dflt
 LaTeX Info: Redefining \emph on input line 61.
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 23 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 23 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 23 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 23 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload: font no 23 (Gentona-Light) does not define feature smcp for script l
 atn with language dflt
@@ -1439,7 +1439,7 @@ onts/otf/latinmodern-math.luc)
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
 back to file:
-luaotfload: font no 28 (LatinModernMath-Regular) defines feature dtls for script
+luaotfload: font no 28 (LatinModernMath-Regular) defines feature aalt for script
  math
 \g_fontspec_family_latinmodern-math.otf_int=\count484
 luaotfload | load : auto-selecting default features for script: dflt
@@ -1470,7 +1470,7 @@ luaotfload | load : auto-selecting default features for script: math
 luaotfload | load : no defaults for script "math", falling back to "dflt"
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
 back to file:
-luaotfload: font no 30 (LatinModernMath-Regular) defines feature dtls for script
+luaotfload: font no 30 (LatinModernMath-Regular) defines feature aalt for script
  math
 LaTeX Font Info:    Encoding `OT1' has changed to `EU2' for symbol font
 (Font)              `operators' in the math version `normal' on input line 26.
@@ -1488,7 +1488,7 @@ back to file:
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
 back to file:
-luaotfload: font no 28 (LatinModernMath-Regular) defines feature dtls for script
+luaotfload: font no 28 (LatinModernMath-Regular) defines feature aalt for script
  math
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
@@ -1526,7 +1526,7 @@ back to file:
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
 back to file:
-luaotfload: font no 28 (LatinModernMath-Regular) defines feature dtls for script
+luaotfload: font no 28 (LatinModernMath-Regular) defines feature aalt for script
  math
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : path lookup of "latinmodern-math.otf" unsuccessful, falling 
@@ -1695,8 +1695,8 @@ luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload: font no 51 (Gentona-Light) does not define feature smcp for script l
 atn with language dflt
@@ -1711,17 +1711,17 @@ luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
-Underfull \hbox (badness 10000) in paragraph at lines 66--101
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
+Underfull \hbox (badness 10000) in paragraph at lines 66--104
 
  []
 
@@ -1731,27 +1731,27 @@ luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
-Underfull \hbox (badness 10000) in paragraph at lines 112--127
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
+Underfull \hbox (badness 10000) in paragraph at lines 115--136
 
  []
 
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
-Underfull \hbox (badness 10000) in paragraph at lines 130--146
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
+Underfull \hbox (badness 10000) in paragraph at lines 139--159
 
  []
 
@@ -1761,126 +1761,134 @@ Underfull \hbox (badness 10000) in paragraph at lines 130--146
 t.pdf>]
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
-Underfull \hbox (badness 10000) in paragraph at lines 149--178
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
+Underfull \hbox (badness 10000) in paragraph at lines 162--192
 
  []
 
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
-Overfull \hbox (0.62877pt too wide) in alignment at lines 181--209
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
+Overfull \hbox (0.62877pt too wide) in alignment at lines 195--223
 [] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 181--210
+Underfull \hbox (badness 10000) in paragraph at lines 195--224
 
  []
 
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
-Underfull \hbox (badness 10000) in paragraph at lines 213--250
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
+Underfull \hbox (badness 10000) in paragraph at lines 227--264
 
  []
 
 [2]
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
-Underfull \hbox (badness 10000) in paragraph at lines 257--300
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
+Underfull \hbox (badness 10000) in paragraph at lines 271--343
 
  []
 
 \blx@maxsegment@1=\count486
 \blx@sectionciteorder@1=\count487
-Package biblatex Info: Reference section=1 on input line 315.
-Package biblatex Info: Setting label 'refsection:1' on input line 315.
+Package biblatex Info: Reference section=1 on input line 360.
+Package biblatex Info: Setting label 'refsection:1' on input line 360.
 luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload: font no 57 (Gentona-Light) does not define feature smcp for script l
 atn with language dflt
@@ -1895,8 +1903,8 @@ luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload: font no 57 (Gentona-Light) does not define feature smcp for script l
 atn with language dflt
@@ -1911,8 +1919,8 @@ luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload: font no 57 (Gentona-Light) does not define feature smcp for script l
 atn with language dflt
@@ -1927,8 +1935,8 @@ luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload: font no 57 (Gentona-Light) does not define feature smcp for script l
 atn with language dflt
@@ -1943,8 +1951,8 @@ luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload: font no 57 (Gentona-Light) does not define feature smcp for script l
 atn with language dflt
@@ -1959,8 +1967,8 @@ luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload: font no 57 (Gentona-Light) does not define feature smcp for script l
 atn with language dflt
@@ -1975,8 +1983,8 @@ luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload: font no 57 (Gentona-Light) does not define feature smcp for script l
 atn with language dflt
@@ -1991,8 +1999,8 @@ luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload: font no 57 (Gentona-Light) does not define feature smcp for script l
 atn with language dflt
@@ -2007,8 +2015,8 @@ luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload: font no 57 (Gentona-Light) does not define feature smcp for script l
 atn with language dflt
@@ -2023,8 +2031,8 @@ luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload: font no 57 (Gentona-Light) does not define feature smcp for script l
 atn with language dflt
@@ -2039,12 +2047,12 @@ luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
 
 LaTeX Font Warning: Font shape `EU2/[Gentona-Light.ttf](2)/m/it' undefined
 (Font)              using `EU2/[Gentona-Light.ttf](2)/m/n' instead on input line
- 315.
+ 360.
 
 luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
@@ -2052,74 +2060,58 @@ luaotfload | load : no defaults for script "latn", falling back to "dflt"
 LaTeX Font Warning: Font shape `EU2/[Gentona-LightItalic.ttf](0)/m/it' undefined
 
 (Font)              using `EU2/[Gentona-LightItalic.ttf](0)/m/n' instead on inpu
-t line 315.
+t line 360.
 
 luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) does not define feature smcp for script l
-atn with language dflt
-luaotfload: no font with id 57
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: latn
-luaotfload | load : no defaults for script "latn", falling back to "dflt"
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload: font no 57 (Gentona-Light) does not define feature smcp for script l
 atn with language dflt
@@ -2134,8 +2126,8 @@ luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload: font no 57 (Gentona-Light) does not define feature smcp for script l
 atn with language dflt
@@ -2150,8 +2142,8 @@ luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload: font no 57 (Gentona-Light) does not define feature smcp for script l
 atn with language dflt
@@ -2166,8 +2158,8 @@ luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload: font no 57 (Gentona-Light) does not define feature smcp for script l
 atn with language dflt
@@ -2182,8 +2174,8 @@ luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload: font no 57 (Gentona-Light) does not define feature smcp for script l
 atn with language dflt
@@ -2198,8 +2190,8 @@ luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload: font no 57 (Gentona-Light) does not define feature smcp for script l
 atn with language dflt
@@ -2214,8 +2206,8 @@ luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload: font no 57 (Gentona-Light) does not define feature smcp for script l
 atn with language dflt
@@ -2230,8 +2222,8 @@ luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload: font no 57 (Gentona-Light) does not define feature smcp for script l
 atn with language dflt
@@ -2246,8 +2238,8 @@ luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload: font no 57 (Gentona-Light) does not define feature smcp for script l
 atn with language dflt
@@ -2262,8 +2254,8 @@ luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload: font no 57 (Gentona-Light) does not define feature smcp for script l
 atn with language dflt
@@ -2278,8 +2270,8 @@ luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload: font no 57 (Gentona-Light) does not define feature smcp for script l
 atn with language dflt
@@ -2294,8 +2286,8 @@ luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload: font no 57 (Gentona-Light) does not define feature smcp for script l
 atn with language dflt
@@ -2310,8 +2302,8 @@ luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload: font no 57 (Gentona-Light) does not define feature smcp for script l
 atn with language dflt
@@ -2326,8 +2318,8 @@ luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload: font no 57 (Gentona-Light) does not define feature smcp for script l
 atn with language dflt
@@ -2342,8 +2334,8 @@ luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload: font no 57 (Gentona-Light) does not define feature smcp for script l
 atn with language dflt
@@ -2358,186 +2350,143 @@ luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 57 (Gentona-Light) does not define feature smcp for script l
+atn with language dflt
+luaotfload: no font with id 57
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-Overfull \hbox (4.41692pt too wide) in paragraph at lines 315--315
-[][][]\EU2/[Gentona-Light.ttf](28)/m/n/9 J[][]o[][]s[][]h[][]u[][]a[] []T[] []V
-[][]o[]-[]g[][]e[][]l[]-[]s[][]t[][]e[][]i[][]n[][],[] []K[][]a[]-[]t[][]r[][]i
-[][]n[] []A[][]m[][]u[][]n[][]t[][]s[][],[] []A[][]n[]-[]d[][]r[][]e[][]a[][]s[
-] []A[][]n[]-[]d[][]r[][]e[][]o[][]u[][],[] []D[][]o[][]r[][]a[] []A[][]n[]-[]g
-[][]e[]-[]l[][]a[][]k[][]i[][],[] []G[][]i[][]o[][]r[]-[]g[][]i[][]o[] []A[][]s
-[]-[]c[][]o[][]l[][]i[][],[] []C[][]o[][]r[][]i[] []B[][]a[][]r[][]g[][]m[][]a[
-][]n[][]n[][],[]
- []
-
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
-Package biblatex Info: Reference section=0 on input line 315.
-[3]
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
+luaotfload | load : auto-selecting default features for script: latn
+luaotfload | load : no defaults for script "latn", falling back to "dflt"
+Package biblatex Info: Reference section=0 on input line 360.
 \blx@maxsegment@2=\count488
 \blx@sectionciteorder@2=\count489
-Package biblatex Info: Reference section=2 on input line 318.
-Package biblatex Info: Setting label 'refsection:2' on input line 318.
+Package biblatex Info: Reference section=2 on input line 362.
+Package biblatex Info: Setting label 'refsection:2' on input line 362.
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload: font no 57 (Gentona-Light) does not define feature smcp for script l
 atn with language dflt
@@ -2552,8 +2501,8 @@ luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload: font no 57 (Gentona-Light) does not define feature smcp for script l
 atn with language dflt
@@ -2568,8 +2517,8 @@ luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload: font no 57 (Gentona-Light) does not define feature smcp for script l
 atn with language dflt
@@ -2584,8 +2533,8 @@ luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload: font no 57 (Gentona-Light) does not define feature smcp for script l
 atn with language dflt
@@ -2600,8 +2549,8 @@ luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload: font no 57 (Gentona-Light) does not define feature smcp for script l
 atn with language dflt
@@ -2616,8 +2565,8 @@ luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload: font no 57 (Gentona-Light) does not define feature smcp for script l
 atn with language dflt
@@ -2632,8 +2581,8 @@ luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload: font no 57 (Gentona-Light) does not define feature smcp for script l
 atn with language dflt
@@ -2648,8 +2597,8 @@ luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload: font no 57 (Gentona-Light) does not define feature smcp for script l
 atn with language dflt
@@ -2662,7 +2611,7 @@ luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: latn
 luaotfload | load : no defaults for script "latn", falling back to "dflt"
-Overfull \hbox (1.34306pt too wide) in paragraph at lines 318--318
+Overfull \hbox (1.34306pt too wide) in paragraph at lines 362--362
 []\EU2/[Gentona-Light.ttf](36)/m/n/9 C[][]o[][]r[]-[]r[][]a[][]d[][]o[] []C[][]
 a[][]l[][]ı[][]̀[][],[] []P[][]e[]-[]d[][]r[][]o[] []A[][]n[]-[]t[][]o[]-[]n[
 ][]i[][]o[] []V[][]a[][]l[][]d[][]é[][]s[][]-[][]S[][]o[][]s[][]a[][],[] []P[]
@@ -2674,290 +2623,436 @@ a[][]l[][]ı[][]̀[][],[] []P[][]e[]-[]d[][]r[][]o[] []A[][]n[]-[]t[][]o[]-[]n[
 
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
-Package biblatex Info: Reference section=0 on input line 318.
-\blx@maxsegment@3=\count490
-\blx@sectionciteorder@3=\count491
-Package biblatex Info: Reference section=3 on input line 320.
-Package biblatex Info: Setting label 'refsection:3' on input line 320.
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
-Package biblatex Info: Reference section=0 on input line 320.
-\blx@maxsegment@4=\count492
-\blx@sectionciteorder@4=\count493
-Package biblatex Info: Reference section=4 on input line 322.
-Package biblatex Info: Setting label 'refsection:4' on input line 322.
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
-Package biblatex Info: Reference section=0 on input line 322.
-\blx@maxsegment@5=\count494
-\blx@sectionciteorder@5=\count495
-Package biblatex Info: Reference section=5 on input line 324.
-Package biblatex Info: Setting label 'refsection:5' on input line 324.
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
-Package biblatex Info: Reference section=0 on input line 324.
-\blx@maxsegment@6=\count496
-\blx@sectionciteorder@6=\count497
-Package biblatex Info: Reference section=6 on input line 326.
-Package biblatex Info: Setting label 'refsection:6' on input line 326.
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn [4
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn [3
 Missing character: There is no ̀ (U+0300) in font "[Gentona-Light.ttf]:mode=nod
 e;script=latn;language=DFLT;+tlig;+trep;+tlig;+trep;color=888888FF ;"!
 ]
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+Overfull \hbox (4.41692pt too wide) in paragraph at lines 362--362
+[][][]\EU2/[Gentona-Light.ttf](36)/m/n/9 J[][]o[][]s[][]h[][]u[][]a[] []T[] []V
+[][]o[]-[]g[][]e[][]l[]-[]s[][]t[][]e[][]i[][]n[][],[] []K[][]a[]-[]t[][]r[][]i
+[][]n[] []A[][]m[][]u[][]n[][]t[][]s[][],[] []A[][]n[]-[]d[][]r[][]e[][]a[][]s[
+] []A[][]n[]-[]d[][]r[][]e[][]o[][]u[][],[] []D[][]o[][]r[][]a[] []A[][]n[]-[]g
+[][]e[]-[]l[][]a[][]k[][]i[][],[] []G[][]i[][]o[][]r[]-[]g[][]i[][]o[] []A[][]s
+[]-[]c[][]o[][]l[][]i[][],[] []C[][]o[][]r[][]i[] []B[][]a[][]r[][]g[][]m[][]a[
+][]n[][]n[][],[]
+ []
+
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
+Package biblatex Info: Reference section=0 on input line 362.
+\blx@maxsegment@3=\count490
+\blx@sectionciteorder@3=\count491
+Package biblatex Info: Reference section=3 on input line 364.
+Package biblatex Info: Setting label 'refsection:3' on input line 364.
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 57 (Gentona-Light) defines feature ss04 for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
 luaotfload | load : auto-selecting default features for script: dflt
 luaotfload | load : auto-selecting default features for script: dflt
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
-luaotfload: font no 51 (Gentona-Light) defines feature ss04 for script latn
-Package biblatex Info: Reference section=0 on input line 326.
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
+Package biblatex Info: Reference section=0 on input line 364.
+\blx@maxsegment@4=\count492
+\blx@sectionciteorder@4=\count493
+Package biblatex Info: Reference section=4 on input line 366.
+Package biblatex Info: Setting label 'refsection:4' on input line 366.
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
+Package biblatex Info: Reference section=0 on input line 366.
+\blx@maxsegment@5=\count494
+\blx@sectionciteorder@5=\count495
+Package biblatex Info: Reference section=5 on input line 368.
+Package biblatex Info: Setting label 'refsection:5' on input line 368.
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
+Package biblatex Info: Reference section=0 on input line 368.
+\blx@maxsegment@6=\count496
+\blx@sectionciteorder@6=\count497
+Package biblatex Info: Reference section=6 on input line 370.
+Package biblatex Info: Setting label 'refsection:6' on input line 370.
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn [4]
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 57 (Gentona-Light) defines feature pnum for script latn
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload | load : auto-selecting default features for script: dflt
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
+luaotfload: font no 51 (Gentona-Light) defines feature pnum for script latn
+Package biblatex Info: Reference section=0 on input line 370.
  [5]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 330.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 330.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 374.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 374.
  (./gkiarcv.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 330.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 330.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 374.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 374.
 Package rerunfilecheck Info: File `gkiarcv.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
@@ -2975,24 +3070,24 @@ Package logreq Info: Writing requests to 'gkiarcv.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 42248 strings out of 494695
- 125171,1373583 words of node,token memory allocated
- 342 words of node memory still in use:
+ 42448 strings out of 494695
+ 125171,1648299 words of node,token memory allocated
+ 343 words of node memory still in use:
    3 hlist, 1 vlist, 1 rule, 2 glue, 1 kern, 4 attribute, 42 glue_spec, 4 attrib
 ute_list, 1 write nodes
-   avail lists: 1:50,2:10407,3:7432,4:1105,5:1715,6:2764,7:47,8:19,9:518,10:983,
+   avail lists: 1:50,2:10407,3:7433,4:1104,5:1715,6:2764,7:47,8:21,9:518,10:983,
 11:509,12:228
- 42281 multiletter control sequences out of 65536+600000
- 59 fonts using 11490283 bytes
- 73i,9n,67p,936b,943s stack positions out of 5000i,500n,10000p,200000b,100000s
+ 42287 multiletter control sequences out of 65536+600000
+ 59 fonts using 11504875 bytes
+ 73i,9n,67p,936b,891s stack positions out of 5000i,500n,10000p,200000b,100000s
 <./Gentona-LightItalic.ttf></usr/local/texlive/2014/texmf-dist/fonts/opentype/pu
 blic/lm-math/latinmodern-math.otf></usr/local/texlive/2014/texmf-dist/fonts/open
 type/public/fontawesome/FontAwesome.otf><./Gentona-BookItalic.ttf><./Gentona-Bol
 d.ttf><./Gentona-Medium.ttf><./Gentona-Light.ttf>
-Output written on gkiarcv.pdf (5 pages, 3526412 bytes).
+Output written on gkiarcv.pdf (5 pages, 3526757 bytes).
 
-PDF statistics: 126 PDF objects out of 1000 (max. 8388607)
- 95 compressed objects within 1 object stream
- 34 named destinations out of 1000 (max. 131072)
+PDF statistics: 128 PDF objects out of 1000 (max. 8388607)
+ 97 compressed objects within 1 object stream
+ 36 named destinations out of 1000 (max. 131072)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
