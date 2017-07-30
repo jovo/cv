@@ -13,13 +13,14 @@ title={Challenges and Opportunities in Big Data for Neuroscientists}
   Avanti AND Lyzinsky, Vince AND Vogelstein, Joshua T AND Qin, Yichen
     AND Cocanougher, Ben AND Eichler, Katharina AND Zlatic, Marta AND
     Cardona, Albert},
+    journal={arXiv},
   year = 2017,
 }
 
 @article{lee2017,
   title={\href{https://arxiv.org/pdf/1703.10136.pdf}{Network Dependence Testing via Diffusion Maps and Distance-Based Correlations}},
   author={Lee, Youjin and Shen, Cencheng and Vogelstein, Joshua T},
-  journal={JASA},
+  journal={arXiv},
   year={2017}
 }
 
@@ -65,8 +66,8 @@ keywords = "Time series analysis "
   author={Kutten, Kwame S. AND Charon, Nicolas AND Miller, Michael I.
     AND Ratnanather, Tilak AND Deisseroth, Karl AND Ye, Li AND
       Vogelstein, Joshua T.},
-  journal={arXiv:1612.00356},
-  year={2016}
+  journal={MICCAI},
+  year={2017}
 }
 
 @article{Simhal2017,
@@ -97,8 +98,8 @@ keywords = "Time series analysis "
 
 @article{Kiar2016,
 	author = {Kiar, Gregory and Gorgolewski, Krzysztof J.
-	and Kleissas, Dean and {Gray Roncal}, William 
-	and Litt, Brian and Wandell, Brian and Poldrack, Russel A. 
+	and Kleissas, Dean and {Gray Roncal}, William
+	and Litt, Brian and Wandell, Brian and Poldrack, Russel A.
 	and Wiener, Martin and Vogelstein, {R. Jacob}
 	and Burns, Randal and Vogelstein, Joshua T.},
 	title = {\href{https://doi.org/10.1093/gigascience/gix013}{Science In the Cloud (SIC): A use case in MRI Connectomics}},
@@ -138,6 +139,103 @@ eprint = {http://dx.doi.org/10.1080/01621459.2016.1219260}
   journal={Nature},
   year=2017,
 }
+
+
+@ARTICLE{Tang2017,
+  title         = "Robust Estimation from Multiple Graphs under Gross Error
+                   Contamination",
+  author        = "Tang, Runze and Tang, Minh and Vogelstein, Joshua T and
+                   Priebe, Carey E",
+  abstract      = "Estimation of graph parameters based on a collection of
+                   graphs is essential for a wide range of graph inference
+                   tasks. In practice, weighted graphs are generally observed
+                   with edge contamination. We consider a weighted latent
+                   position graph model contaminated via an edge weight gross
+                   error model and propose an estimation methodology based on
+                   robust Lq estimation followed by low-rank adjacency spectral
+                   decomposition. We demonstrate that, under appropriate
+                   conditions, our estimator both maintains Lq robustness and
+                   wins the bias-variance tradeoff by exploiting low-rank graph
+                   structure. We illustrate the improvement offered by our
+                   estimator via both simulations and a human connectome data
+                   experiment.",
+  month         =  "11~" # jul,
+  year          =  2017,
+  archivePrefix = "arXiv",
+  primaryClass  = "stat.ME",
+  eprint        = "1707.03487"
+}
+
+
+@ARTICLE{Wang2017,
+  title         = "Joint Embedding of Graphs",
+  author        = "Wang, Shangsi and Vogelstein, Joshua T and Priebe, Carey E",
+  abstract      = "Feature extraction and dimension reduction for networks is
+                   critical in a wide variety of domains. Efficiently and
+                   accurately learning features for multiple graphs has
+                   important applications in statistical inference on graphs.
+                   We propose a method to jointly embed multiple undirected
+                   graphs. Given a set of graphs, the joint embedding method
+                   identifies a linear subspace spanned by rank one symmetric
+                   matrices and projects adjacency matrices of graphs into this
+                   subspace. The projection coefficients can be treated as
+                   features of the graphs. We also propose a random graph model
+                   which generalizes classical random graph model and can be
+                   used to model multiple graphs. We show through theory and
+                   numerical experiments that under the model, the joint
+                   embedding method produces estimates of parameters with small
+                   errors. Via simulation experiments, we demonstrate that the
+                   joint embedding method produces features which lead to state
+                   of the art performance in classifying graphs. Applying the
+                   joint embedding method to human brain graphs, we find it
+                   extract interpretable features that can be used to predict
+                   individual composite creativity index.",
+  month         =  "10~" # mar,
+  year          =  2017,
+  archivePrefix = "arXiv",
+  primaryClass  = "stat.AP",
+  eprint        = "1703.03862"
+}
+
+
+@ARTICLE{Shen2016c,
+  title         = "Discovering Relationships Across Disparate Data Modalities",
+  author        = "Shen, Cencheng and Priebe, Carey E and Maggioni, Mauro and
+                   Vogelstein, Joshua T",
+  abstract      = "Discovering whether certain properties are associated with
+                   other properties is fundamental to all science. As the
+                   amount of data increases, it is becoming increasingly
+                   difficult and important to determine whether one property of
+                   the data (e.g., cloud density) is related to another (e.g.,
+                   grass wetness). Only If they are related does it make sense
+                   to further investigate the nature of the relationship.
+                   Unfortunately, reliably identifying relationships can be
+                   challenging, especially when the properties themselves are
+                   complex and the relationship is nonlinear and
+                   high-dimensional. Here, we describe a procedure, Multiscale
+                   Generalized Correlation (MGC), that addresses these
+                   challenges. Our key insight is that if two properties are
+                   related, comparisons between measurements of similar pairs
+                   of the first property (e.g., two clouds of similar density)
+                   should be correlated with the comparisons between
+                   corresponding measurements of the second property (grass
+                   wetness under those clouds). We demonstrate the statistical
+                   and computational efficiency of MGC in both simulations and
+                   theory. We then apply it to detect the presence and nature
+                   of the relationships between brain activity and personality,
+                   brain shape and disorder, and brain connectivity and
+                   creativity. Finally, we demonstrate that MGC does not suffer
+                   from the false positives that have plagued parametric
+                   methods. Our open source implementation of MGC is applicable
+                   to fundamental questions confronting science, government,
+                   finance, and many other disciplines.",
+  month         =  "16~" # sep,
+  year          =  2016,
+  archivePrefix = "arXiv",
+  primaryClass  = "stat.ML",
+  eprint        = "1609.05148"
+}
+
 
 @article{Shen201741,
   title = {\href{http://doi.org/10.1016/j.patrec.2017.04.005}{Manifold matching using shortest-path distance and joint
