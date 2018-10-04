@@ -202,6 +202,17 @@
     \ifx&#7&%
       \else{\newline{}\begin{minipage}[t]{\linewidth}\small#7\end{minipage}}\fi}}
 
+% What follows is a kind of hacky way of fixing a comma problem in the "Reviewer" section. Kinda unhappy with this, but it works -Alex
+\newcommand*{\cventryreviewer}[7][.25em]{%
+  \cvitem[#1]{#2}{%
+    {\bfseries#3}%
+    \ifthenelse{\equal{#4}{}}{}{ {\slshape#4}}%
+    \ifthenelse{\equal{#5}{}}{}{ #5}%
+    \ifthenelse{\equal{#6}{}}{}{ #6}%
+    .\strut%
+    \ifx&#7&%
+      \else{\newline{}\begin{minipage}[t]{\linewidth}\small#7\end{minipage}}\fi}}
+
 \newbox{\cvitemwithcommentmainbox}
 \newlength{\cvitemwithcommentmainlength}
 \newlength{\cvitemwithcommentcommentlength}
