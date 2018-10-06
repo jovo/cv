@@ -1,10 +1,8 @@
 @article{Vogelstein2018coding,
-  author = {Durante, Daniele and Dunson, David B. and Vogelstein, Joshua T.},
-  title = {\href{https://doi.org/10.1080/01621459.2017.1395643}{Rejoinder:
-What is Connectome Coding?}},
-  year  = {2018},
-  URL = {https://www.overleaf.com/14194234tmrqdwzfkjmr},
-
+  author = {Vogelstein, Joshua T.},
+  title = {What is Connectome Coding?},
+  journal = {Current Opinion in Neurobiology},
+  year  = {2019}
 }
 
 @article{Durante2018,
@@ -32,9 +30,9 @@ What is Connectome Coding?}},
 }
 
 @article{Burns2018,
-  author={Burns, Randal AND Perlman, Eric AND Baden, Alex AND Roncal, William Gray AND Falk, Ben AND Chandrashekhar, Vikram AND Collman, Forrest AND Sharmishtaa, Seshamani AND 
+  author={Burns, Randal AND Perlman, Eric AND Baden, Alex AND Roncal, William Gray AND Falk, Ben AND Chandrashekhar, Vikram AND Collman, Forrest AND Sharmishtaa, Seshamani AND
   Patsolic, Jesse AND Lillaney, Kunal AND Kazhdan, Michael AND Hider, Robert Jr. AND Pryor, Derek AND Matelsky, Jordan AND Gion, Timothy AND Manavalan, Priya AND Wester, Brock
-AND Chevillet, Mark AND Trautman, Eric T. AND Khairy, Khaled AND Bridgeford, Eric AND Kleissas, Dean M. AND Tward, Daniel J. AND Crow, Ailey K. AND Wright, Matthew AND Miller, Michael I. AND 
+AND Chevillet, Mark AND Trautman, Eric T. AND Khairy, Khaled AND Bridgeford, Eric AND Kleissas, Dean M. AND Tward, Daniel J. AND Crow, Ailey K. AND Wright, Matthew AND Miller, Michael I. AND
 Smith, Stephen J. AND Vogelstein, R. Jacob AND Deisseroth, Karl AND Vogelstein, Joshua T.},
   title={\href{https://arxiv.org/abs/1804.02835}{A Community-Developed Open-Source Computational Ecosystem for Big Neuro Data}},
   year = 2018,
@@ -396,7 +394,7 @@ eprint = {http://dx.doi.org/10.1080/01621459.2016.1219260}
 
 
 @ARTICLE{Shen2016c,
-  title         = {\href{https://arxiv.org/pdf/1609.05148v1.pdf}{Discovering Relationships Across Disparate Data Modalities}},
+  title         = {\href{https://arxiv.org/abs/1609.05148}{Discovering Relationships Across Disparate Data Modalities}},
   author        = "Shen, Cencheng and Tang, Minh and Bridgeford, Eric W and Priebe, Carey E and Maggioni, Mauro and
                    Vogelstein, Joshua T",
   abstract      = "Discovering whether certain properties are associated with
@@ -461,12 +459,20 @@ eprint = {http://dx.doi.org/10.1080/01621459.2016.1219260}
     journal={ACM},
 }
 
+@inproceedings{Lillaney18,
+    address={IEEE International Conference on eScience},
+    title={Building NDStore through Hierarchical Storage Management and Microservice Processing},
+    author={Lillaney, Kunal AND Burns, Randal AND Vogelstein, Joshua T.},
+    year={2018}
+}
+
+
 
 @ARTICLE{Zheng2018-wq,
   title     = {\href{https://dl.acm.org/citation.cfm?id=3178501}{{FlashR}: Parallelize and Scale {R} for Machine Learning Using {SSDs}}},
   author    = "Zheng, Da and Mhembere, Disa and Vogelstein, Joshua T and
                Priebe, Carey E and Burns, Randal",
-  journal   = "SIGPLAN Not.",
+  journal   = "Proceedings of the 23rd ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming (PPoPP '18)",
   publisher = "ACM",
   volume    =  53,
   number    =  1,
@@ -897,10 +903,10 @@ year = {2013}
 }
 @article{Zheng2016,
     author={Zheng, Da and Mhembere, Disa and Vogelstein, Joshua T. and Priebe, Carey E. and Burns, Randal},
-    title={\href{http://arxiv.org/abs/1604.06414v1}{FlashMatrix: Parallel, Scalable Data Analysis with Generalized Matrix Operations using Commodity SSDs}},
+    title={\href{http://arxiv.org/abs/1604.06414}{FlashMatrix: Parallel, Scalable Data Analysis with Generalized Matrix Operations using Commodity SSDs}},
     year={2016},
     journal = {arXiv:1604.06414},
-    url={http://arxiv.org/abs/1604.06414v1},
+    url={http://arxiv.org/abs/1604.06414},
     abstract={FlashMatrix is a matrix-oriented programming framework for general data analysis with high-level functional programming interface. It scales matrix operations beyond memory capacity by utilizing solid-state drives (SSDs) in non-uniform memory architecture (NUMA). It provides a small number of generalized matrix operations (GenOps) and reimplements a large number of matrix operations in the R framework with GenOps. As such, it executes R code in parallel and out of core automatically. FlashMatrix uses vectorized user-defined functions (VUDF) to reduce the overhead of function calls and fuses matrix operations to reduce data movement between CPU and SSDs. We implement multiple machine learning algorithms in R to benchmark the performance of FlashMatrix. On a large parallel machine, out-of-core execution of these R implementations in FlashMatrix has performance comparable to in-memory execution on a billion-scale dataset while significantly outperforming the in-memory implementations of Spark MLlib.}
     }
 @inproceedings{Zheng2015,
