@@ -344,7 +344,7 @@ eprint = {http://dx.doi.org/10.1080/01621459.2016.1219260}
 
 
 @ARTICLE{Tang2017,
-  title         = {\href{https://arxiv.org/pdf/1707.03487.pdf}{Robust Estimation from Multiple Graphs under Gross Error Contamination}},
+  title         = {\href{https://arxiv.org/abs/1707.03487}{Robust Estimation from Multiple Graphs under Gross Error Contamination}},
   author        = "Tang, Runze and Tang, Minh and Vogelstein, Joshua T and
                    Priebe, Carey E",
   abstract      = "Estimation of graph parameters based on a collection of
@@ -366,7 +366,7 @@ eprint = {http://dx.doi.org/10.1080/01621459.2016.1219260}
 
 
 @ARTICLE{Wang2017,
-  title         = {\href{https://arxiv.org/pdf/1703.03862.pdf}{Joint Embedding of Graphs}},
+  title         = {\href{https://arxiv.org/abs/1703.03862}{Joint Embedding of Graphs}},
   author        = "Wang, Shangsi and Vogelstein, Joshua T and Priebe, Carey E",
   abstract      = "Feature extraction and dimension reduction for networks is
                    critical in a wide variety of domains. Efficiently and
@@ -393,40 +393,6 @@ eprint = {http://dx.doi.org/10.1080/01621459.2016.1219260}
 }
 
 
-@ARTICLE{Shen2016c,
-  title         = {\href{https://arxiv.org/abs/1609.05148}{Discovering Relationships Across Disparate Data Modalities}},
-  author        = "Shen, Cencheng and Tang, Minh and Bridgeford, Eric W and Priebe, Carey E and Maggioni, Mauro and
-                   Vogelstein, Joshua T",
-  abstract      = "Discovering whether certain properties are associated with
-                   other properties is fundamental to all science. As the
-                   amount of data increases, it is becoming increasingly
-                   difficult and important to determine whether one property of
-                   the data (e.g., cloud density) is related to another (e.g.,
-                   grass wetness). Only If they are related does it make sense
-                   to further investigate the nature of the relationship.
-                   Unfortunately, reliably identifying relationships can be
-                   challenging, especially when the properties themselves are
-                   complex and the relationship is nonlinear and
-                   high-dimensional. Here, we describe a procedure, Multiscale
-                   Generalized Correlation (MGC), that addresses these
-                   challenges. Our key insight is that if two properties are
-                   related, comparisons between measurements of similar pairs
-                   of the first property (e.g., two clouds of similar density)
-                   should be correlated with the comparisons between
-                   corresponding measurements of the second property (grass
-                   wetness under those clouds). We demonstrate the statistical
-                   and computational efficiency of MGC in both simulations and
-                   theory. We then apply it to detect the presence and nature
-                   of the relationships between brain activity and personality,
-                   brain shape and disorder, and brain connectivity and
-                   creativity. Finally, we demonstrate that MGC does not suffer
-                   from the false positives that have plagued parametric
-                   methods. Our open source implementation of MGC is applicable
-                   to fundamental questions confronting science, government,
-                   finance, and many other disciplines.",
-  journal={arXiv:1609.05148},
-  year={2016}
-}
 
 
 @article{Shen201741,
@@ -538,8 +504,8 @@ eprint = {http://dx.doi.org/10.1080/01621459.2016.1219260}
 
 
 @ARTICLE{Zheng2016b,
-  title     = "{Semi-External} Memory Sparse Matrix Multiplication for
-               {Billion-Node} Graphs",
+  title     = {\href{https://dl.acm.org/citation.cfm?id=3083914}{{Semi-External} Memory Sparse Matrix Multiplication for
+               {Billion-Node} Graphs}},
   author    = "Zheng, D and Mhembere, D and Lyzinski, V and Vogelstein, J and
                Priebe, C E and Burns, R",
   abstract  = "Sparse matrix multiplication is traditionally performed in
@@ -901,6 +867,118 @@ booktitle = {Duke Workshop on Sensing and Analysis of HighDimensional Data},
 title = {{Nonparametric Two-Sample Testing on Graph-Valued Data.}},
 year = {2013}
 }
+
+
+@ARTICLE{Shen2016-fo,
+  title         = {\href{https://arxiv.org/abs/1609.05148}{Discovering and Deciphering Relationships Across Disparate
+                   Data Modalities}},
+  author        = "Shen, Cencheng and Wang, Qing and Bridgeford, Eric and
+                   Priebe, Carey E and Maggioni, Mauro and Vogelstein, Joshua T",
+  abstract      = "Understanding the relationships between different properties
+                   of data, such as whether a connectome or genome has
+                   information about disease status, is becoming increasingly
+                   important in modern biological datasets. While existing
+                   approaches can test whether two properties are related, they
+                   often require unfeasibly large sample sizes in real data
+                   scenarios, and do not provide any insight into how or why
+                   the procedure reached its decision. Our approach,
+                   ``Multiscale Graph Correlation'' (MGC), is a dependence test
+                   that juxtaposes previously disparate data science
+                   techniques, including k-nearest neighbors, kernel methods
+                   (such as support vector machines), and multiscale analysis
+                   (such as wavelets). Other methods typically require double
+                   or triple the number samples to achieve the same statistical
+                   power as MGC in a benchmark suite including high-dimensional
+                   and nonlinear relationships - spanning polynomial (linear,
+                   quadratic, cubic), trigonometric (sinusoidal, circular,
+                   ellipsoidal, spiral), geometric (square, diamond, W-shape),
+                   and other functions, with dimensionality ranging from 1 to
+                   1000. Moreover, MGC uniquely provides a simple and elegant
+                   characterization of the potentially complex latent geometry
+                   underlying the relationship, providing insight while
+                   maintaining computational efficiency. In several real data
+                   applications, including brain imaging and cancer genetics,
+                   MGC is the only method that can both detect the presence of
+                   a dependency and provide specific guidance for the next
+                   experiment and/or analysis to conduct.",
+  month         =  sep,
+  year          =  2016,
+  archivePrefix = "arXiv",
+  primaryClass  = "stat.ML",
+  eprint        = "1609.05148",
+  journal={arXiv:1609.05148}
+}
+
+@ARTICLE{Shen2018-st,
+  title         = {\href{https://arxiv.org/abs/1806.05514}{The Exact Equivalence of Distance and Kernel Methods for
+                   Hypothesis Testing}},
+  author        = "Shen, Cencheng and Vogelstein, Joshua T",
+  abstract      = "Distance-based methods, also called ``energy statistics'',
+                   are leading methods for two-sample and independence tests
+                   from the statistics community. Kernel methods, developed
+                   from ``kernel mean embeddings'', are leading methods for
+                   two-sample and independence tests from the machine learning
+                   community. Previous works demonstrated the equivalence of
+                   distance and kernel methods only at the population level,
+                   for each kind of test, requiring an embedding theory of
+                   kernels. We propose a simple, bijective transformation
+                   between semimetrics and nondegenerate kernels. We prove that
+                   for finite samples, two-sample tests are special cases of
+                   independence tests, and the distance-based statistic is
+                   equivalent to the kernel-based statistic, including the
+                   biased, unbiased, and normalized versions. In other words,
+                   upon setting the kernel or metric to be bijective of each
+                   other, running any of the four algorithms will yield the
+                   exact same answer up to numerical precision. This deepens
+                   and unifies our understanding of interpoint comparison based
+                   methods.",
+  month         =  jun,
+  year          =  2018,
+  archivePrefix = "arXiv",
+  primaryClass  = "stat.ML",
+  eprint        = "1806.05514",
+  journal={arXiv:1806.05514}
+}
+
+@ARTICLE{Shen2017-ed,
+  title         = {\href{https://arxiv.org/abs/1710.09768}{From Distance Correlation to Multiscale Generalized
+                   Correlation}},
+  author        = "Shen, Cencheng and Priebe, Carey E and Vogelstein, Joshua T",
+  abstract      = "Understanding and developing a correlation measure that can
+                   detect general dependencies is not only imperative to
+                   statistics and machine learning, but also crucial to general
+                   scientific discovery in the big data age. We proposed the
+                   Multiscale Generalized Correlation (MGC) in Shen et al. 2017
+                   as a novel correlation measure, which worked well
+                   empirically and helped a number of real data discoveries.
+                   But there is a wide gap with respect to the theoretical
+                   side, e.g., the population statistic, the convergence from
+                   sample to population, how well does the algorithmic Sample
+                   MGC perform, etc. To better understand its underlying
+                   mechanism, in this paper we formalize the population version
+                   of local distance correlations, MGC, and the optimal local
+                   scale between the underlying random variables, by utilizing
+                   the characteristic functions and incorporating the
+                   nearest-neighbor machinery. The population version enables a
+                   seamless connection with, and significant improvement to,
+                   the algorithmic Sample MGC, both theoretically and in
+                   practice, which further allows a number of desirable
+                   asymptotic and finite-sample properties to be proved and
+                   explored for MGC. The advantages of MGC are further
+                   illustrated via a comprehensive set of simulations with
+                   linear, nonlinear, univariate, multivariate, and noisy
+                   dependencies, where it loses almost no power against
+                   monotone dependencies while achieving superior performance
+                   against general dependencies.",
+  month         =  oct,
+  year          =  2017,
+  archivePrefix = "arXiv",
+  primaryClass  = "stat.ML",
+  eprint        = "1710.09768",
+  journal={arXiv:1710.09768}
+}
+
+
 @article{Zheng2016,
     author={Zheng, Da and Mhembere, Disa and Vogelstein, Joshua T. and Priebe, Carey E. and Burns, Randal},
     title={\href{http://arxiv.org/abs/1604.06414}{FlashMatrix: Parallel, Scalable Data Analysis with Generalized Matrix Operations using Commodity SSDs}},
@@ -909,6 +987,7 @@ year = {2013}
     url={http://arxiv.org/abs/1604.06414},
     abstract={FlashMatrix is a matrix-oriented programming framework for general data analysis with high-level functional programming interface. It scales matrix operations beyond memory capacity by utilizing solid-state drives (SSDs) in non-uniform memory architecture (NUMA). It provides a small number of generalized matrix operations (GenOps) and reimplements a large number of matrix operations in the R framework with GenOps. As such, it executes R code in parallel and out of core automatically. FlashMatrix uses vectorized user-defined functions (VUDF) to reduce the overhead of function calls and fuses matrix operations to reduce data movement between CPU and SSDs. We implement multiple machine learning algorithms in R to benchmark the performance of FlashMatrix. On a large parallel machine, out-of-core execution of these R implementations in FlashMatrix has performance comparable to in-memory execution on a billion-scale dataset while significantly outperforming the in-memory implementations of Spark MLlib.}
     }
+
 @inproceedings{Zheng2015,
 author = {Zheng, Da and Mhembere, Disa and Burns, Randal and Vogelstein, Joshua T and Priebe, Carey E and Szalay, Alexander S},
 booktitle = {USENIX Conference on File and Storage Technologies},
