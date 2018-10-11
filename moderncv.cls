@@ -159,7 +159,7 @@
 
 % reduced list spacing
 % package providing hooks into lists
-%   originally developped by Jakob Schiøtz (see http://dcwww.camd.dtu.dk/~schiotz/comp/LatexTips/tweaklist.sty)
+%   originally developped by Jakob Schiï¿½tz (see http://dcwww.camd.dtu.dk/~schiotz/comp/LatexTips/tweaklist.sty)
 %   modified and distributed with moderncv(not available otherwise on ctan)
 \RequirePackage{tweaklist}
 \renewcommand*{\itemhook}{%
