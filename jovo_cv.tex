@@ -1,5 +1,6 @@
 \documentclass[10pt,colorlinks=true,urlcolor=blue]{moderncv}
 \usepackage{utopia}
+\usepackage{breakurl}
 \moderncvtheme[blue]{classic}
 \usepackage[utf8]{inputenc}
 \usepackage[resetlabels]{multibib}
@@ -14,7 +15,8 @@
  ,
  ,
 }
-\renewcommand{\bibliographyitemlabel}{\@{\arabic{enumiv}}}
+
+
 
 \usepackage[scale=0.8]{geometry}
 \newcommand{\cvdoublecolumn}[2]{%
@@ -69,13 +71,31 @@ Our website, \href{https://neurodata.io}{neurodata.io},  has the most up to date
 	  \href{https://blog.neurodata.io/}{blog}.
 % \end{itemize}
 
-\section{Current  Experience}
+\section{Education}
+\cventry{2003 -- 2009}{Ph.D in Neuroscience}{\newline Johns Hopkins School of Medicine, Supervised by Eric Young}{\newline Dissertation: OOPSI: a family of optical spike inference algorithms for inferring neural connectivity from population calcium imaging
+}{}{}
+
+\cventry{2009 -- 2009}{M.S. in Applied Mathematics \& Statistics}{ Johns Hopkins University}{}{}{}
+
+\cventry{1998 -- 2002}{B.A. in Biomedical Engineering}{Washington University, St.~Louis}{}{}{}
+
+\cventry{06/08 -- 07/08}{Molecular Biology Summer Workshop}{Smith College, Mass, USA}{}{}{}
+
+\cventry{07/08 -- 07/08}{Advanced Techniques in Molecular Neuroscience}{Cold Spring Harbor, New York, USA}{}{}{}
+
+\cventry{06/05 -- 07/05}{Imaging Structure and Function of the Nervous System (audited)}{Cold Spring Harbor, New York, USA}{}{}{}
+
+\cventry{06/04 -- 07/04}{Advanced Course in Computational Neuroscience}{Obidos, Portugal}{}{}{}
+
+
+
+\section{Positions  Held}
 \subsection{Academic Positions}
 \cventry{08/14 -- now}{Assistant Professor}{Department of Biomedical Engineering}{Johns Hopkins University (JHU)}{}{}
 \cventry{08/14 -- now}{Core Faculty}
 {Institute for Computational Medicine  \&  Center for Imaging Science (CIS)}{}{}{}
 
-% \subsection{Academic Affiliations}
+\subsection{Academic Affiliations}
 
 \cventry{10/15 -- now}{Steering Committee Member \& Associate Member}{Kavli Neuroscience Discovery Institute}{}{}{}
 \cventry{08/15 -- now}{Joint Appointment}{Department of Applied Mathematics and Statistics}{}{}{}
@@ -83,6 +103,130 @@ Our website, \href{https://neurodata.io}{neurodata.io},  has the most up to date
 \cventry{08/14 -- now}{Joint Appointment}{Department of Computer Science}{}{}{}
 \cventry{08/14 -- now}{Assistant Research Faculty}{Human Language Technology Center of Excellence}{}{}{}
 \cventry{10/12 -- now}{Affiliated Faculty}{Institute for Data Intensive Engineering and Sciences}{}{}{}
+
+
+
+\section{Awards \& Honors}
+
+%\cventry{2017}{\href{http://www.hpdc.org/2017/awards/best-paper-award}{Best Presentation Award HPDC}}{Mhembere et al. (2017)}{}{}{}
+%\cventry{2017}{Nonparametric Statistics of the American Statistical Association Student Paper Award}{Lee et al. (2017)}{}{}{}
+\cventry{2014}{F1000 Prime Recommended}{Vogelstein et al. (2014)}{}{}{}
+\cventry{2013}{Spotlight}{Neural Information Processing Systems (NIPS)}{}{}{}
+\cventry{2011}{Trainee Abstract Award}{Organization for Human Brain Mapping}{}{}{}
+\cventry{2008}{Spotlight}{Computational and Systems Neuroscience (CoSyNe)}{}{}{}
+\cventry{2002}{Dean's List}{Washington University}{}{}{}
+
+
+\section{Publications}
+\vspace{-5pt}
+\subsection{Peer-Reviewed Journal Publications}
+
+% Not gonna try to do reverse order
+\renewcommand{\bibliographyitemlabel}{\@{P\arabic{enumiv}}}
+\vspace{-15pt}
+\nocitepeer{ connectalcoding, priebe2018two, klein2019, shen2016discovering, tang2016law, Shen2018, burns2018community, lee2017, Athreya2018, Cohen2018, Durante2017, Chen2017, Binkiewicz2014, Durante2016, hildebrand2017whole, Shen201741, simhal2017probabilistic, wang2017selected, Zheng2016b, Koutra2016, Lyzinski2014a, Raag2016, Chen2016b, dyer2017quantifying, Priebe2015, Chen2015, harris2015resource, kasthuri2015saturated, Lyzinski2015, Vogelstein2015, Vogelstein2015b, Roncal2015b, Carlson2014, Sweeney2014, vogelstein2014discovery, Weiler2014, Craddock2013, Dai2012, Priebe2013, Vogelstein2013, Gray2012, Fishkind2013, Roberts2012, Hofer2011, Mishchenko2011, Vogelstein2011b, Paninski2010, Vogelstein2010, Vogelstein2009, Vogelstein2007, Vogelstein2003, Greenspan1997 }
+\bibliographystylepeer{IEEEtran}
+\bibliographypeer{peer}
+
+
+
+\section{\href{https://neurodata.io/talks/}{Talks}}
+
+\subsection{Invited Talks}
+\vspace{-15pt}
+\renewcommand{\bibliographyitemlabel}{\@{T\arabic{enumiv}}}
+\nocitetalks{ j1cohbm2019, bootcamp2019, goldsachs2019, dipy19, sfn2018, princeton2018, bridgefordohbm2018, perlman3dem, big-data-talk2018, jovoyalemgc2018, discoveringstanford2017, sfnDC2017, JovoSOHOPa, dc-sfn2017, KeyStateBrain, JovoSOHOPb, kndi2016, paninski2015, TopChaBig, BigNeuSta, StaInf2, StaInf3, BeyLitNeu, BigNeu2, StaCon, WhaCanTra, ConClaSta, ConConCla, OncConWha, OncGetCon, InfSpiTraCI, InfSpiTraCI2, InfSpiTra, ModBasOpt }
+\bibliographystyletalks{plain}
+\bibliographytalks{talks}
+
+
+\vspace{6pt}
+\subsection{Other Talks}
+\nocitetalks{ l2f18mo, dscore2019, forestpacking2019, reg2019daniel, sloan2019, jhu-bmes19, kavli19, l2f1year, ndtools, jovodata2019, neuronex18, exactequivalence2019, jovodarpamgc2018, neuronex-stanford2018, kiarconnectomecoding2018, BSI-google2018, L2F2018, dibs2018, disa2017, kiarscienceinthecloud2017, leejsm2017, knor2017, sdm17, sfnDC2017, allen2017, china2017, feldman2017, neurostorm2017, multiscale2016, ODEN2018, brain2016, kndi2016, nd2016, post2016, sfn2016, src2016, open2016, localdistance2015, OpeChaBig, FroRagRic, LawLarGra, LowBarEnt, KavSpeSymp, CasC, JovoSimA, JovoSimB, opensource2015, bigtime2015, BigStaBra, BigNeuSta, StaModInf, OpeProNeu, DecTheApp, OpeConPro, ConsGraCla, AreMenPro, TowInfAna, SeqMonCar, OopFamOpt, TowInfNeu, NeuGraThe, InfSpiTim }
+\bibliographystyletalks{plain}
+\bibliographytalks{talks}
+
+\section{\href{https://neurodata.io/posters/}{Posters}}
+
+\vspace{-15pt}
+\renewcommand{\bibliographyitemlabel}{\@{A\arabic{enumiv}}}
+\nocitepres{ falk_open_data2019, browneposter2019, j12019, chun2019struct, pedigo2019, berlin_2017, perlman_kndi_2017, Sparse2015, Vogelstein2015a, Allen2015, XBrain2015, Allen2015synaptome, Vogelstein2015sfn, Design2015, sikka2014towards, Airan2013, Craddock2013a, Gray2013, koutra2013all, Mhembere2013a, Pnevmatikakis2013, Qin2013a, Sismanis2013, Sussman2013, _Nonparametric_2013, Vogelstein2013c, Gray2012b, Vogelstein2012a, Vogelstein2012, Gray2011, Vogelstein2011g, Vogelstein2011d, Vogelstein2011h, Vogelstein2011e, Vogelstein2011f, Gray2010, Vogelstein2010c, Vogelstein2010a, Vogelstein2010e, Vogelstein2010d, Vogelstein2010b, Vogelstein2009b, Vogelstein2009c, Vogelstein2008c, Vogelstein2008a, Vogelstein2008b, Vogelstein2007b, Vogelstein2007a, Vogelstein2004, Vogelstein2002, Vogelstein2002 }
+\bibliographystylepres{plain}
+\bibliographypres{posters}
+
+
+
+
+
+
+
+
+
+% %\vspace{-15pt}
+% \nocitepeer{Burns2018, Cohen2018, Durante2018, Dyer2017, Simhal2017, Shen201741, Kiar2016, Hildebrand2016, chen2016,Binkiewicz2014, Durante2016, Chen2016b,Raag2016,Durante2016,Chen2015,Harris2015,Koutra2016,Chen2015a,Roncal2015b,Narayanan2015,Vogelstein2015,Vogelstein2015b,Lyzinski2015,Lyzinski2014a,Weiler2014,Priebe2014a,Sweeney2014,Vogelstein2014a,Carlson2013b,Vogelstein2013,Craddock2013,Priebe2013,Dai2012,Fishkind2013,Roberts2012,Gray2012,Vogelstein2011b,Hofer2011,Mishchenko2011,Vogelstein2010,Paninski2010,Vogelstein2009,Vogelstein2007,Vogelstein2003,Greenspan1997}
+% \bibliographystylepeer{unsrtinit}
+% \bibliographypeer{jovo}
+
+
+
+% \vspace{-15pt}
+% \noindent \nocitepre{Tomita2018, Priebe2018, Vogelstein2018equivalence, Browne2018, kiar2018, kiar2018storm, Vogelstein2018coding, Wang2018, Shen2018-st, Shen2017-ed, Wang2017, vogelstein2017linear, Shen2016-fo, Tang2017, lee2017, Tang2016,Lyzinski2014}
+% \bibliographystylepre{unsrtinit}
+% \bibliographypre{jovo}
+
+
+% %\vspace{-15pt}
+% \nocitepeer{Burns2018, Cohen2018, Durante2018, Dyer2017, Simhal2017, Shen201741, Kiar2016, Hildebrand2016, chen2016,Binkiewicz2014, Durante2016, Chen2016b,Raag2016,Durante2016,Chen2015,Harris2015,Koutra2016,Chen2015a,Roncal2015b,Narayanan2015,Vogelstein2015,Vogelstein2015b,Lyzinski2015,Lyzinski2014a,Weiler2014,Priebe2014a,Sweeney2014,Vogelstein2014a,Carlson2013b,Vogelstein2013,Craddock2013,Priebe2013,Dai2012,Fishkind2013,Roberts2012,Gray2012,Vogelstein2011b,Hofer2011,Mishchenko2011,Vogelstein2010,Paninski2010,Vogelstein2009,Vogelstein2007,Vogelstein2003,Greenspan1997}
+% \bibliographystylepeer{unsrtinit}
+% \bibliographypeer{jovo}
+
+
+%\section{\href{https://neurodata.io/publications/}{Publications}}
+
+%
+%\subsection{Pre-Prints}
+%
+%\vspace{-15pt}
+%\noindent \nocitepre{Vogelstein2018coding, Wang2018,  Shen2018-st,Shen2017-ed, Wang2017, vogelstein2017linear, Shen2016-fo,Tang2017,lee2017, Tang2016,
+%Tomita2016,Lyzinski2014}
+%\bibliographystylepre{unsrtinit}
+%\bibliographypre{jovo}
+%
+%
+%\vspace{15pt}
+%\subsection{Peer-Reviewed Conference Proceedings}
+%
+%%\vspace{-15pt}
+%\nociteconf{
+%Lillaney18, Zheng2018-wq, Zheng2016b,Kutten2016b,
+%Mhembere17, tomita2017,Kutten2016,GrayRoncal2015a,Zheng2015,Petralia2013,Carlson2013a,Fiori2013,Koutra2013,Roncal2013,Mhembere2013,Kulkarni2013,Burns2013,Cornelis2013,Huys2009}
+%\bibliographystyleconf{unsrtinit}
+%\bibliographyconf{jovo}
+%
+%
+%
+%\vspace{15pt}
+%\subsection{Other Publications}
+%
+%%\vspace{-15pt}
+%\nociteother{neuro2016, GlobalBrain, BrainWorkshop,Burns2014,Yuste2011,Vogelstein2011c,Vogelstein1999}
+%\bibliographystyleother{unsrtinit}
+%\bibliographyother{jovo}
+%
+%
+%
+%\vspace{15pt}
+%\subsection{Unpublished Work -- Pre-prints Available upon Request}
+%
+%\nociteunp{Priebe2017, Zheng2016c,Banerjee2013, Kazhdan2013, DunsCurr, GoldCurr, MarcCurr, GreeCurr, SismCurr, ConnUnp, YounUnp, MoraUnp}
+%\bibliographystyleunp{unsrtinit}
+%\bibliographyunp{jovo}
+%
+
+
+
+
+
 
 
 \subsection{Academic Activities}
@@ -129,38 +273,6 @@ Our website, \href{https://neurodata.io}{neurodata.io},  has the most up to date
 
 
 
-\section{Education}
-\cventry{2003 -- 2009}{Ph.D in Neuroscience}{\newline Johns Hopkins School of Medicine, Supervised by Eric Young}{\newline Dissertation: OOPSI: a family of optical spike inference algorithms for inferring neural connectivity from population calcium imaging
-}{}{}
-
-\cventry{2009 -- 2009}{M.S. in Applied Mathematics \& Statistics}{ Johns Hopkins University}{}{}{}
-
-\cventry{1998 -- 2002}{B.A. in Biomedical Engineering}{Washington University, St.~Louis}{}{}{}
-
-\cventry{06/08 -- 07/08}{Molecular Biology Summer Workshop}{Smith College, Mass, USA}{}{}{}
-
-\cventry{07/08 -- 07/08}{Advanced Techniques in Molecular Neuroscience}{Cold Spring Harbor, New York, USA}{}{}{}
-
-\cventry{06/05 -- 07/05}{Imaging Structure and Function of the Nervous System (audited)}{Cold Spring Harbor, New York, USA}{}{}{}
-
-\cventry{06/04 -- 07/04}{Advanced Course in Computational Neuroscience}{Obidos, Portugal}{}{}{}
-
-
-
-
-
-
-
-% \section{Awards \& Honors}
-
-% \cventry{2017}{\href{http://www.hpdc.org/2017/awards/best-paper-award}{Best Presentation Award HPDC}}{Mhembere et al. (2017)}{}{}{}
-% \cventry{2017}{Nonparametric Statistics of the American Statistical
-%   Association Student Paper Award}{Lee et al. (2017)}{}{}{}
-% \cventry{2014}{F1000 Prime Recommended}{Vogelstein et al. (2014)}{}{}{}
-% \cventry{2013}{Spotlight}{Neural Information Processing Systems (NIPS)}{}{}{}
-% \cventry{2011}{Trainee Abstract Award}{Organization for Human Brain Mapping}{}{}{}
-% \cventry{2008}{Spotlight}{Computational and Systems Neuroscience (CoSyNe)}{}{}{}
-% \cventry{2002}{Dean's List}{Washington University}{}{}{}
 
 
 
@@ -169,72 +281,6 @@ Our website, \href{https://neurodata.io}{neurodata.io},  has the most up to date
 
 
 
-
-% \section{Publications}
-% \subsection{Pre-Prints}
-
-% \vspace{-15pt}
-% \noindent \nocitepre{Tomita2018, Priebe2018, Vogelstein2018equivalence, Browne2018, kiar2018, kiar2018storm, Vogelstein2018coding, Wang2018, Shen2018-st, Shen2017-ed, Wang2017, vogelstein2017linear, Shen2016-fo, Tang2017, lee2017, Tang2016,Lyzinski2014}
-% \bibliographystylepre{unsrtinit}
-% \bibliographypre{jovo}
-
-
-% %\vspace{-15pt}
-% \nocitepeer{Burns2018, Cohen2018, Durante2018, Dyer2017, Simhal2017, Shen201741, Kiar2016, Hildebrand2016, chen2016,Binkiewicz2014, Durante2016, Chen2016b,Raag2016,Durante2016,Chen2015,Harris2015,Koutra2016,Chen2015a,Roncal2015b,Narayanan2015,Vogelstein2015,Vogelstein2015b,Lyzinski2015,Lyzinski2014a,Weiler2014,Priebe2014a,Sweeney2014,Vogelstein2014a,Carlson2013b,Vogelstein2013,Craddock2013,Priebe2013,Dai2012,Fishkind2013,Roberts2012,Gray2012,Vogelstein2011b,Hofer2011,Mishchenko2011,Vogelstein2010,Paninski2010,Vogelstein2009,Vogelstein2007,Vogelstein2003,Greenspan1997}
-% \bibliographystylepeer{unsrtinit}
-% \bibliographypeer{jovo}
-
-
-%\section{\href{https://neurodata.io/publications/}{Publications}}
-
-%
-%\subsection{Pre-Prints}
-%
-%\vspace{-15pt}
-%\noindent \nocitepre{Vogelstein2018coding, Wang2018,  Shen2018-st,Shen2017-ed, Wang2017, vogelstein2017linear, Shen2016-fo,Tang2017,lee2017, Tang2016,
-%Tomita2016,Lyzinski2014}
-%\bibliographystylepre{unsrtinit}
-%\bibliographypre{jovo}
-%
-%
-%\vspace{15pt}
-%\subsection{Peer-Reviewed Journal Publications}
-%
-%%\vspace{-15pt}
-%\nocitepeer{Cohen2018, Durante2018, Dyer2017, Simhal2017, Shen201741, Kiar2016, Hildebrand2016, chen2016,Binkiewicz2014, Durante2016, Chen2016b,Raag2016,Durante2016,Chen2015,Harris2015,Koutra2016,Chen2015a,Roncal2015b,Narayanan2015,Vogelstein2015,Vogelstein2015b,Lyzinski2015,Lyzinski2014a,Weiler2014,Priebe2014a,Sweeney2014,Vogelstein2014a,Carlson2013b,Vogelstein2013,Craddock2013,Priebe2013,Dai2012,Fishkind2013,Roberts2012,Gray2012,Vogelstein2011b,Hofer2011,Mishchenko2011,Vogelstein2010,Paninski2010,Vogelstein2009,Vogelstein2007,Vogelstein2003,Greenspan1997}
-%\bibliographystylepeer{unsrtinit}
-%\bibliographypeer{jovo}
-%
-%
-%\vspace{15pt}
-%\subsection{Peer-Reviewed Conference Proceedings}
-%
-%%\vspace{-15pt}
-%\nociteconf{
-%Lillaney18, Zheng2018-wq, Zheng2016b,Kutten2016b,
-%Mhembere17, tomita2017,Kutten2016,GrayRoncal2015a,Zheng2015,Petralia2013,Carlson2013a,Fiori2013,Koutra2013,Roncal2013,Mhembere2013,Kulkarni2013,Burns2013,Cornelis2013,Huys2009}
-%\bibliographystyleconf{unsrtinit}
-%\bibliographyconf{jovo}
-%
-%
-%
-%\vspace{15pt}
-%\subsection{Other Publications}
-%
-%%\vspace{-15pt}
-%\nociteother{neuro2016, GlobalBrain, BrainWorkshop,Burns2014,Yuste2011,Vogelstein2011c,Vogelstein1999}
-%\bibliographystyleother{unsrtinit}
-%\bibliographyother{jovo}
-%
-%
-%
-%\vspace{15pt}
-%\subsection{Unpublished Work -- Pre-prints Available upon Request}
-%
-%\nociteunp{Priebe2017, Zheng2016c,Banerjee2013, Kazhdan2013, DunsCurr, GoldCurr, MarcCurr, GreeCurr, SismCurr, ConnUnp, YounUnp, MoraUnp}
-%\bibliographystyleunp{unsrtinit}
-%\bibliographyunp{jovo}
-%
 
 %\section{\href{https://neurodata.io/talks/}{Talks}}
 
