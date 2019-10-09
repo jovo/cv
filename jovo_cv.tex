@@ -3,7 +3,31 @@
 \usepackage{breakurl}
 \moderncvtheme[blue]{classic}
 \usepackage[utf8]{inputenc}
-\usepackage[resetlabels]{multibib}
+%JLP\usepackage[resetlabels]{multibib}
+\usepackage[backend=biber,defernumbers=true,refsection=section,sorting=ydnt,maxbibnames=999]{biblatex}
+%\addbibresource{peer.bib}
+%\addbibresource{pre.bib}
+%\addbibresource{talks.bib}
+%\addbibresource{other_talks.bib}
+%\addbibresource{posters.bib}
+
+%%
+\addbibresource{pubs_peer_reviewed.bib}
+\addbibresource{pubs_pre_prints.bib}
+\addbibresource{pubs_conf.bib}
+\addbibresource{pubs_other.bib}
+\addbibresource{pubs_tech_reports.bib}
+\addbibresource{pubs_excluded_entries.bib}
+\addbibresource{talks_invited.bib}
+\addbibresource{talks_other.bib}
+\addbibresource{talks_excluded_entries.bib}
+
+\DeclareRefcontext{J}{labelprefix=J} %% Peer
+\DeclareRefcontext{P}{labelprefix=P} %% Pre-prints
+\DeclareRefcontext{I}{labelprefix=I} %% Invited Talks
+\DeclareRefcontext{T}{labelprefix=T} %% Other Talks
+\DeclareRefcontext{A}{labelprefix=A} %% Abstacts and Posters
+
 \usepackage{pdfpages}
 
 \usepackage{fancyhdr}
@@ -11,19 +35,6 @@
 \pagenumbering{roman}
 \chead{\textbf{Joshua T. Vogelstein Ph.D.}, Assistant Professor, JHU -- Curriculum Vitae}
 \rhead{\thepage}
-
-\newcites{pre,peer,conf,pres,talks,other,prog,unp,press}{%
- , % Pre-prints
- , % Peer Reviewed Articles
- , % Conference Proceedings
- , % Posters
- , % Talks
- % Other Publications
- , % Press
- ,
- ,
-}
-
 
 
 \usepackage[scale=0.8]{geometry}
@@ -60,6 +71,7 @@
   %   21218}
   \email{jovo@jhu.edu}
   \homepage{jovo.me}
+
 \begin{document}
 \maketitle
 
@@ -187,55 +199,65 @@ Our website, \href{https://neurodata.io}{neurodata.io},  has the most up to date
 
 
 %\section{Publications}
-\section{\href{https://neurodata.io/publications/\#peer_reviewed}{Peer-Reviewed Journal Publications}}
-% \vspace{-10pt}
-\hspace{.95in}\textbf{(52 articles published/accepted; top 10 cited 2,944 times; H-index 29)}
-
-
-% Not gonna try to do reverse order
-\renewcommand{\bibliographyitemlabel}{\@{J\arabic{enumiv}}}
-\vspace{-15pt}
-\nocitepeer{ connectalcoding, priebe2018two, klein2019, shen2016discovering, tang2016law, Shen2018, burns2018community, lee2017, Athreya2018, Cohen2018, Durante2017, Kiar2017, Chen2017, Binkiewicz2014, Durante2016, hildebrand2017whole, Shen201741, simhal2017probabilistic, wang2017selected, Zheng2016b, Koutra2016, Lyzinski2014a, Raag2016, Chen2016b, dyer2017quantifying, Priebe2015, Chen2015, harris2015resource, kasthuri2015saturated, Lyzinski2015, Vogelstein2015, Vogelstein2015b, Roncal2015b, Carlson2014, Sweeney2014, vogelstein2014discovery, Weiler2014, Craddock2013, Dai2012, Priebe2013, Vogelstein2013, Gray2012, Fishkind2013, Roberts2012, Hofer2011, Mishchenko2011, Vogelstein2011b, Paninski2010, Vogelstein2010, Vogelstein2009, Vogelstein2007, Vogelstein2003, Greenspan1997 }
-\bibliographystylepeer{IEEEtran}
-\bibliographypeer{peer}
-
-
-\section{\href{https://neurodata.io/publications/\#pre_prints}{Pre-Prints}}
-\vspace{-15pt}
-
-% Not gonna try to do reverse order
-\renewcommand{\bibliographyitemlabel}{\@{P\arabic{enumiv}}}
-%\vspace{-15pt}
-\nocitepre{deeplearning2019, estimatingforests2019, neurosubtypes2019, geodesic2019, graphyti2019, bagging2019, mgcpy2019, heritability2019, alignment2019, networkinference2019, vertex2019, graphindependence2019, graspy2019, mhembere2019, Branch639674, ShenDecision2018, Greenberg479055, vogelstein2018geometric, Tomita2018, wang2018statistical, Vogelstein2018equivalence, Kiar2018, Wang2018, kiar2017comprehensive, francca2017kernel, Tang2017,Wang2017, Lyzinski2014 }
-\bibliographystylepre{IEEEtran}
-\bibliographypre{peer}
+%\begin{refsection}[peer.bib]
+\begin{refsection}[pubs_peer_reviewed.bib] 
+\newrefcontext{J}
+\nocite{*}
+\defbibnote{a1}{\textbf{(52 articles published/accepted; top 10 cited 2,944 times; H-index 29)}}
+\printbibliography[%
+    title=\href{https://neurodata.io/publications/\#peer_reviewed}{Peer-Reviewed Journal Publications},%
+    prenote=a1,% 
+    heading=bibliography%
+    ]
+\end{refsection}
 
 
 
-\section{\href{https://neurodata.io/talks/}{Talks}}
+%\section{\href{https://neurodata.io/publications/\#pre_prints}{Pre-Prints}}
+\begin{refsection}[pubs_pre_prints.bib, pubs_excluded_entries.bib]
+\newrefcontext{P}
+\nocite{*}
+\printbibliography[%
+    title=\href{https://neurodata.io/publications/\#pre_prints}{Pre-Prints},%
+    heading=bibliography%
+    ]
+\end{refsection}
 
-\subsection{Invited Talks}
-\vspace{-15pt}
-\renewcommand{\bibliographyitemlabel}{\@{I\arabic{enumiv}}}
-\nocitetalks{j1cohbm2019, bootcamp2019, goldsachs2019, dipy19, sfn2018, princeton2018, bridgefordohbm2018, perlman3dem, big-data-talk2018, jovoyalemgc2018, neuronex18, discoveringstanford2017, sfnDC2017, JovoSOHOPa, dc-sfn2017, KeyStateBrain, JovoSOHOPb, kndi2016, paninski2015, TopChaBig, BigNeuSta, StaInf2, StaInf3, BeyLitNeu, BigNeu2, FroRagRic, LawLarGra, LowBarEnt, KavSpeSymp, StaCon, WhaCanTra, ConClaSta, ConConCla, OncConWha, OncGetCon, InfSpiTraCI, InfSpiTraCI2, InfSpiTra, ModBasOpt}
-\bibliographystyletalks{unsrtinit}
-\bibliographytalks{talks}
 
 
-\subsection{Other Talks}
-\vspace{-15pt}
-\renewcommand{\bibliographyitemlabel}{\@{T\arabic{enumiv}}}
-\nociteother{dscore2019, forestpacking2019, reg2019daniel, sloan2019, jhu-bmes19, kavli19, l2f1year, ndtools, jovodata2019, exactequivalence2019, l2f18mo, jovodarpamgc2018, neuronex-stanford2018, kiarconnectomecoding2018, BSI-google2018, ODEN2018, L2F2018, dibs2018, disa2017, kiarscienceinthecloud2017, leejsm2017, knor2017, sdm17, sfnDC2017, allen2017, china2017, feldman2017, neurostorm2017, multiscale2016,  brain2016, kndi2016, nd2016, post2016, sfn2016, src2016, open2016, localdistance2015, OpeChaBig,  CasC, JovoSimA, JovoSimB, opensource2015, bigtime2015, BigStaBra, BigNeuSta, StaModInf, OpeProNeu, DecTheApp, OpeConPro, ConsGraCla, AreMenPro, TowInfAna, SeqMonCar, OopFamOpt, TowInfNeu, NeuGraThe, InfSpiTim}
-\bibliographystyleother{plain}
-\bibliographyother{talks}
+%\section{\href{https://neurodata.io/talks/}{Invited Talks}}
+\begin{refsection}[talks_invited.bib]
+\newrefcontext{I}
+\nocite{*}
+\printbibliography[%
+    title=\href{https://neurodata.io/talks/}{Talks},%
+    heading=bibliography%
+    ]
+\end{refsection}
 
-\section{\href{https://neurodata.io/posters/}{Abstracts \& Posters}}
-\vspace{-15pt}
-\renewcommand{\bibliographyitemlabel}{\@{A\arabic{enumiv}}}
-\nocitepres{ falk_open_data2019, browneposter2019, j12019, chun2019struct, pedigo2019, berlin_2017, perlman_kndi_2017, Sparse2015, Vogelstein2015a, Allen2015, XBrain2015, Allen2015synaptome, Vogelstein2015sfn, Design2015, sikka2014towards, Airan2013, Craddock2013a, Gray2013, koutra2013all, Mhembere2013a, Pnevmatikakis2013, Qin2013a, Sismanis2013, Sussman2013, _Nonparametric_2013, Vogelstein2013c, Gray2012b, Vogelstein2012a, Vogelstein2012, Gray2011, Vogelstein2011g, Vogelstein2011d, Vogelstein2011h, Vogelstein2011e, Vogelstein2011f, Gray2010, Vogelstein2010c, Vogelstein2010a, Vogelstein2010e, Vogelstein2010d, Vogelstein2010b, Vogelstein2009b, Vogelstein2009c, Vogelstein2008c, Vogelstein2008a, Vogelstein2008b, Vogelstein2007b, Vogelstein2007a, Vogelstein2004, Vogelstein2002, Vogelstein2002 }
-\bibliographystylepres{unsrtinit}
-\bibliographypres{posters}
 
+
+%\section{\href{https://neurodata.io/talks/}{Other Talks}}
+\begin{refsection}[talks_other.bib, talks_excluded_entries.bib]
+\newrefcontext{T}
+\nocite{*}
+\printbibliography[%
+    title=\href{https://neurodata.io/talks/}{Other Talks},%
+    heading=bibliography%
+    ]
+\end{refsection}
+
+
+
+%\section{\href{https://neurodata.io/posters/}{Abstracts \& Posters}}
+\begin{refsection}[pubs_conf.bib]
+\newrefcontext{A}
+\nocite{*}
+\printbibliography[%
+    title=\href{https://neurodata.io/posters/}{Abstracts \& Posters},%
+    heading=bibliography,%
+    ]
+\end{refsection}
 
 
 
@@ -436,7 +458,7 @@ Our website, \href{https://neurodata.io}{neurodata.io},  has the most up to date
 \cventry{02/19 -- now}{Hayden Helm}{Assistant Research Faculty}{BME}{JHU}{Leading research efforts developing theory and methods for lifelong learning.}
 \cventry{10/18 -- now}{Alex Loftus}{Research Assistant}{BME}{JHU}{Current lead developer of NDMG, transitioning from a stand-alone package to be integrated with DiPy.}
 \cventry{06/18 -- now}{Benjamin Falk}{Research Engineer}{BME}{JHU}{Lead software engineer, overseas all development projects, solely responsible for all cloud infrastructure.}
-\cventry{06/17 -- now}{Jesse Patsolic}{Assistant Research Faculty}{BME}{JHU}{Lead developer converting our extensions to decision forests to be merged into sklearn.}
+\cventry{03/16 -- now}{Jesse Patsolic}{Assistant Research Faculty}{BME}{JHU}{Lead developer converting our extensions to decision forests to be merged into sklearn.}
 
 
 \subsection{Summer Interns}
