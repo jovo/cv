@@ -9,20 +9,13 @@ default: $(TEX).tex
 	open -g $(TEX).pdf &
 
 download:
-	wget -N https://neurodata.io/bib_files/pubs_pre_prints.bib
-	wget -N https://neurodata.io/bib_files/pubs_peer_reviewed.bib
-	wget -N https://neurodata.io/bib_files/pubs_conf.bib
-	wget -N https://neurodata.io/bib_files/pubs_tech_reports.bib
-	wget -N https://neurodata.io/bib_files/pubs_other.bib
-	wget -N https://neurodata.io/bib_files/pubs_excluded_entries.bib
-	wget -N https://neurodata.io/bib_files/pubs_pre_prints.bib
-	wget -N https://neurodata.io/bib_files/pubs_peer_reviewed.bib
-	wget -N https://neurodata.io/bib_files/pubs_conf.bib
-	wget -N https://neurodata.io/bib_files/pubs_tech_reports.bib
-	wget -N https://neurodata.io/bib_files/pubs_other.bib
-	wget -N https://neurodata.io/bib_files/talks_excluded_entries.bib
-	wget -N https://neurodata.io/bib_files/talks_invited.bib
-	wget -N https://neurodata.io/bib_files/talks_other.bib
+	wget --backups=1 https://neurodata.io/bib_files/pubs_pre_prints.bib
+	wget --backups=1 https://neurodata.io/bib_files/pubs_peer_reviewed.bib
+	wget --backups=1 https://neurodata.io/bib_files/pubs_conf.bib
+	wget --backups=1 https://neurodata.io/bib_files/pubs_tech_reports.bib
+	wget --backups=1 https://neurodata.io/bib_files/pubs_other.bib
+	wget --backups=1 https://neurodata.io/bib_files/talks_invited.bib
+	wget --backups=1 https://neurodata.io/bib_files/talks_other.bib
 
 view: $(TEX).tex 
 	$(LATEX) $(TEX); $(BIBTEX) $(TEX); $(LATEX) $(TEX); $(LATEX) $(TEX)
