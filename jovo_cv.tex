@@ -4,7 +4,7 @@
 \moderncvtheme[blue]{classic}
 \usepackage[utf8]{inputenc}
 %JLP\usepackage[resetlabels]{multibib}
-\usepackage[backend=biber,defernumbers=true,refsection=section,sorting=ydnt,maxbibnames=999]{biblatex}
+\usepackage[backend=biber,defernumbers=true,refsection=section,sorting=ydmdt,maxbibnames=999]{biblatex}
 %\addbibresource{peer.bib}
 %\addbibresource{pre.bib}
 %\addbibresource{talks.bib}
@@ -36,6 +36,33 @@
 \chead{\textbf{Joshua T. Vogelstein Ph.D.}, Assistant Professor, JHU -- Curriculum Vitae}
 \rhead{\thepage}
 
+\DeclareSortingTemplate{ydmdt}{
+  \sort{
+    \field{presort}
+  }
+  \sort[final]{
+    \field{sortkey}
+  }
+  \sort[direction=descending]{
+    \field{sortyear}
+    \field{year}
+  }
+  \sort[direction=descending]{
+    \field[padside=left,padwidth=2,padchar=0]{month}
+    \literal{00}
+  }
+  \sort[direction=descending]{
+    \field[padside=left,padwidth=2,padchar=0]{day}
+    \literal{00}
+  }
+  \sort{
+    \field[padside=left,padwidth=4,padchar=0]{volume}
+    \literal{0000}
+  }
+  \sort{
+    \field{sorttitle}
+  }
+}
 
 \usepackage[scale=0.8]{geometry}
 \newcommand{\cvdoublecolumn}[2]{%
@@ -819,10 +846,10 @@ education materials and public data sets%
 
 
 
-\includepdf[pages=-]{foopsi.pdf}
-\includepdf[pages=-]{predictive.pdf}
-\includepdf[pages=-]{musl.pdf}
-\includepdf[pages=-]{ToTheCloud.pdf}
+% \includepdf[pages=-]{foopsi.pdf}
+% \includepdf[pages=-]{predictive.pdf}
+% \includepdf[pages=-]{musl.pdf}
+% \includepdf[pages=-]{ToTheCloud.pdf}
 
 
 \end{document}
