@@ -4,7 +4,8 @@
 \moderncvtheme[blue]{classic}
 \usepackage[utf8]{inputenc}
 %JLP\usepackage[resetlabels]{multibib}
-\usepackage[backend=biber,defernumbers=true,refsection=section,sorting=ydmdt,maxbibnames=999]{biblatex}
+\usepackage[backend=biber,defernumbers=true,refsection=section,maxbibnames=999]{biblatex}
+% \usepackage[backend=biber,defernumbers=true,refsection=section,sorting=ydmdt,maxbibnames=999]{biblatex}
 %\addbibresource{peer.bib}
 %\addbibresource{pre.bib}
 %\addbibresource{talks.bib}
@@ -36,33 +37,33 @@
 \chead{\textbf{Joshua T. Vogelstein Ph.D.}, Assistant Professor, JHU -- Curriculum Vitae}
 \rhead{\thepage}
 
-\DeclareSortingTemplate{ydmdt}{
-  \sort{
-    \field{presort}
-  }
-  \sort[final]{
-    \field{sortkey}
-  }
-  \sort[direction=descending]{
-    \field{sortyear}
-    \field{year}
-  }
-  \sort[direction=descending]{
-    \field[padside=left,padwidth=2,padchar=0]{month}
-    \literal{00}
-  }
-  \sort[direction=descending]{
-    \field[padside=left,padwidth=2,padchar=0]{day}
-    \literal{00}
-  }
-  \sort{
-    \field[padside=left,padwidth=4,padchar=0]{volume}
-    \literal{0000}
-  }
-  \sort{
-    \field{sorttitle}
-  }
-}
+% \DeclareSortingTemplate{ydmdt}{
+%   \sort{
+%     \field{presort}
+%   }
+%   \sort[final]{
+%     \field{sortkey}
+%   }
+%   \sort[direction=descending]{
+%     \field{sortyear}
+%     \field{year}
+%   }
+%   \sort[direction=descending]{
+%     \field[padside=left,padwidth=2,padchar=0]{month}
+%     \literal{00}
+%   }
+%   \sort[direction=descending]{
+%     \field[padside=left,padwidth=2,padchar=0]{day}
+%     \literal{00}
+%   }
+%   \sort{
+%     \field[padside=left,padwidth=4,padchar=0]{volume}
+%     \literal{0000}
+%   }
+%   \sort{
+%     \field{sorttitle}
+%   }
+% }
 
 \usepackage[scale=0.8]{geometry}
 \newcommand{\cvdoublecolumn}[2]{%
@@ -323,7 +324,7 @@ FY19:	\$1,366,308, a steady increase each year of over 30\%. Details for funding
     {DARPA GARD}%
     {\$X}
     {Arora (PI)}
-    {\emph{Understanding and improving robust learning against adversarial attacks}}
+    {\emph{Understanding and improving robust learning against adversarial attacks}.}
     {JTV is responsible for theory, methods, and algorithms using decision forests.}
     {}
 
@@ -331,7 +332,7 @@ FY19:	\$1,366,308, a steady increase each year of over 30\%. Details for funding
     {NIH}%
     {\$205,998}
     {Badea (PI)}
-    {\emph{Brain Networks in Mouse Models of Aging} 
+    {\emph{Brain Networks in Mouse Models of Aging.} 
     The  goal of this grant it to generate connectomes and RNA-seq transcriptomes to characterize and differentiate APOE mice as a model of aging.}
     {JTV is responsible for all statistical analyses, particularly associated with connectomics.}
     {}
@@ -341,7 +342,7 @@ FY19:	\$1,366,308, a steady increase each year of over 30\%. Details for funding
     {NIH 1R01MH120482-01}%
     {\$73,570} 
     {Satterthwaite (PI)}
-    {\emph{Reproducible imaging-based brain growth charts for psychiatry} 
+    {\emph{Reproducible imaging-based brain growth charts for psychiatry.} 
     This  goal of this proposal will have provide a new data resource, yield reproducible growth charts of brain development, and delineate novel mechanisms regarding the developmental basis of psychopathology in youth.}
     {JTV is responsible for all statistical analyses, particularly associated with connectomics.}
     {}
@@ -363,7 +364,7 @@ FY19:	\$1,366,308, a steady increase each year of over 30\%. Details for funding
     {\$747,143} 
     {Ratnanather (PI)}
     {\href{http://grantome.com/grant/NIH/R01-DC016784-02}%
-    {CRCNS US-German Res Prop: functional computational anatomy of the auditory cortex} 
+    {CRCNS US-German Res Prop: functional computational anatomy of the auditory cortex.} 
     The goal of this project is to create a robust computational framework for analyzing the cortical ribbon in a specific region: the auditory cortex}
     {JTV is responsible for the big data aspects of this grant, including data sharing and open access properties.}
     {}
@@ -383,7 +384,7 @@ FY19:	\$1,366,308, a steady increase each year of over 30\%. Details for funding
     {\$210,000}%
     {Engert (PI)}
     {\href{http://grantome.com/grant/NIH/U19-NS104653-02}%
-    {Sensorimotor processing, decision-making, and internal states: towards a realistic multiscale circuit model of the larval zebrafish brain} 
+    {Sensorimotor processing, decision-making, and internal states: towards a realistic multiscale circuit model of the larval zebrafish brain.} 
     The general goal of the proposal is to generate a realistic multiscale circuit model of the larval zebrafish’s brain – the multiscale virtual fish (MSVF). The model will span spatial ranges from the nanoscale at the synaptic level, to local microcircuits to inter-area connectivity - and its ultimate purpose is to explain and simulate the quantitative and qualitative nature of behavioral output across various timescales}%
     {JTV is the PI of the Data Core, and therefore responsible for all aspects of data, including, storage, analysis, modeling, and disseminating.}
     {The above grant is the flagship NIH BRAIN Initiative granting mechanism.  In addition to being the PI of the Data Core, I am the co-chair of the consortium of U19 Data Science Cores.}
@@ -393,7 +394,7 @@ FY19:	\$1,366,308, a steady increase each year of over 30\%. Details for funding
     {Schmidt Sciences}%
     {\$125,000}%
     {Vogelstein (PI)}
-    {\emph{Connectome Coding at the Synaptic Scale} 
+    {\emph{Connectome Coding at the Synaptic Scale.} 
     This project will study learning and plasticity at an unprecedented scale, revealing the dynamics of large populations of synapses comprising an entire local cortical circuit. No previously conducted experiment could answer the questions about the dynamics of large populations of synapses, which is crucial to understanding the learning process}%
     {}
     {}
@@ -402,7 +403,7 @@ FY19:	\$1,366,308, a steady increase each year of over 30\%. Details for funding
     {DARPA L2M}%
     {\$2,000,000}%
     {Vogelstein (PI)}
-    {\emph{Lifelong Learning Forests}
+    {\emph{Lifelong Learning Forests.}
     Our Lifelong Learning Forests (L2Fs) will learn continuously, selectively adapting to new environments and circumstances utilizing top-down feedback to impact low-level processing, with provable statistical guarantees, while maintaining computational tractability at scale.  }%
     {}
     {}
@@ -411,9 +412,9 @@ FY19:	\$1,366,308, a steady increase each year of over 30\%. Details for funding
     {DARPA L2M}%
     {\$19,940}%
     {Tolias (PI)}    
-    {\emph{Continual Learning Across Synapses, Circuits, and Brain Areas}
+    {\emph{Continual Learning Across Synapses, Circuits, and Brain Areas.}
     Our  goal is to develop the pre-processing analysis pipeline for the imaging data collected in this project}%
-    {}
+    {JTV is responsible for all informatics associated with data management, visualization, processing, and analysis starting in Phase II of the program.}
     {}
 
 \cventry{7/18 -- 6/21}
@@ -421,27 +422,27 @@ FY19:	\$1,366,308, a steady increase each year of over 30\%. Details for funding
     {\$599,757}%
     {Shulman (PI)}
     {\href{http://grantome.com/grant/NSF/MCB-1807546}%
-    {SemiSynBio: Collaborative Research: YeastOns: Neural Networks Implemented in Communication Yeast Cells}
+    {SemiSynBio: Collaborative Research: YeastOns: Neural Networks Implemented in Communication Yeast Cells.}
     Our goal is to provide neuroscience and machine learning expertise to guide the design of the computational learning capabilities of the system}%
     {JTV is responsible for providing insight into both biological and artificial neural network architecture and function.}
     {}
 
-\cventry{7/17 -- 6/20}{
-    \href{https://www.nsf.gov/awardsearch/showAward?AWD_ID=1707298}%
-    {NeuroNex Innovation Award: Towards Automatic Analysis of Multi-Terabyte Cleared Brains}}%
-    {NSF, 16-569 Neural System Cluster}%
-    {Three complimentary changes are revolutionizing the way neuroscientists study the brain. First, experimental advances allow neurobiologists to ``clear'' brains so that they become transparent, with the exception of a set of neurons that can be selected on the basis of their location, response properties, and genetic make-up. Second, technological advances have resulted in microscopes that can simultaneously image an entire ``sheet'' of this brain, thereby enabling rapid acquisition of whole brain volumes. Third, researchers are taking steps to educate neuroscientists to acquire these data. Together, this will result in a massive upswing in adoption of this experimental modality. However, acquiring the data is one step in the upward spiral of science that will yield transformative scientific results. The subsequent steps are computational. This project will develop cyberinfrastructure resources and software that enable storage and access of large CLARITY brain imaging datasets, alignment and registration to reference anatomical atlas and visualization of the datasets. Additional capabilities for automatic identification and localization of cell bodies and statistical analysis will be provided. The PIs will run annual hackathons for college students and sponsor a summer internship program for undergraduates to broaden the educational efforts in software development for neuroscience. Finally, mobile compliant digital education content will be created to complement existing online courses to target STEM students, and educate global citizens.
-%
-This project will build a prototype pipeline that operates on raw CLARITY brains and outputs the statistics of locations of cells in each region in the Allen Reference Atlas, as well as estimates of connectivity and similarity across regions and conditioned on different contexts. To do so, the PIs will leverage modern mathematical statistics (such as Large Deformation Diffeomorphic Metric Mapping for registration, Deep Learning and Random Forests for segmentation, and Statistical Graph Theory for analysis of the resulting conenctomes), as well as modern computational tools, including Docker containers to facilitate full reproducability, and semi-external memory algorithms and cloud computing to enable scalable analytics. To reach out to the broader community and educate them in the use of these tools, this project will provide tutorials deployed in the cloud. Together, this will facilitate the large community of users to both collect and analyze their data with ease. Many of the tools developed as part of this project will be easily extensible to other experimental modalities and neuroscience communities
-    }
-    {\$800,000}{Vogelstein (PI) 1707298}{}
+\cventry{7/17 -- 6/20}
+    {NSF, NeuroNex 16-569 Neural System Cluster 1707298}%
+    {\$400,000}
+    {Vogelstein (PI)}
+    {\href{https://www.nsf.gov/awardsearch/showAward?AWD_ID=1707298}%
+    {NeuroNex Innovation Award: Towards Automatic Analysis of Multi-Terabyte Cleared Brains.}%
+    The goal of this project is to develop an end-to-end pipeline for the analysis of big brain volume data in the cloud. }
+    {}
+    {The above grant is the flagship NSF BRAIN Initiative granting mechanism.}
 
 \subsection{Past Funding}
 % \subsection{Link to \href{https://github.com/jovo/cv/raw/master/CP_Vogelstein.pdf}{Current \& Pending}}
 % \subsection{Past Funding}
 
-\cventry{10/17 -- 9/18}{
-    Brain Ark}
+\cventry{10/17 -- 9/18}
+    {Brain Ark}
     {Dog Star Technologies}
     {}
     {Vogelstein (PI), 90074647}
