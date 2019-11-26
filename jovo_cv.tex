@@ -22,9 +22,10 @@
 \addbibresource{pubs_excluded_entries.bib}
 \addbibresource{talks_invited.bib}
 \addbibresource{talks_other.bib}
-%\addbibresource{talks_excluded_entries.bib}
+\addbibresource{talks_excluded_entries.bib}
+\addbibresource{posters.bib}
 
-\DeclareRefcontext{J}{} %% Peer
+\DeclareRefcontext{J}{labelprefix=J} %% Peer
 \DeclareRefcontext{P}{labelprefix=P} %% Pre-prints
 \DeclareRefcontext{I}{labelprefix=I} %% Invited Talks
 \DeclareRefcontext{T}{labelprefix=T} %% Other Talks
@@ -67,7 +68,7 @@
 \pagestyle{fancy}
 \pagenumbering{roman}
 %\chead{\textbf{Joshua T. Vogelstein Ph.D.}, Assistant Professor, JHU -- Curriculum Vitae}
-\rhead{\today}
+\rhead{\textbf{\today}}
 
 \DeclareSortingTemplate{ydmdt}{
   \sort{
@@ -140,12 +141,12 @@
 
 \cventry{09/19 -- now}{Joint Appointment}{Department of Biostatistics}{Johns Hopkins University (JHU)}{}{}
 
-\cventry{10/18 -- now}{Advisory Board}{\href{https://mind-x.io/}{Mind-X}}{}{}{}
+%\cventry{10/18 -- now}{Advisory Board}{\href{https://mind-x.io/}{Mind-X}}{}{}{}
 
 \cventry{08/18 -- now}{\href{https://www.bme.jhu.edu/graduate/mse/degree-requirements/biomedical-data-science/}{Director of Biomedical Data Science Focus Area}}{}{}{}{}
 
 
-\cventry{01/17 -- now}{Advisory Board}{\href{https://www.pivotalpath.com/}{PivotalPath}}{}{}{}
+%\cventry{01/17 -- now}{Advisory Board}{\href{https://www.pivotalpath.com/}{PivotalPath}}{}{}{}
 \cventry{01/17 -- now}{Co-Founder}{\href{http://gigantum.io}{gigantum}}{}{}{}
 
 %\cventry{2017}{Consultant}{\href{https://www.greenspringassociates.com}{Greenspring Associates}}{}{}{}
@@ -231,10 +232,8 @@
 \begin{refsection}[pubs_peer_reviewed.bib] 
 %\newrefcontext{J}
 \nocite{*}
-\defbibnote{a1}{{Note: CV author in bold; Trainees are italicized,
-        \textsuperscript{*} indicates co-first, \textsection\, indicates
-        co-corresponding.\\
-        \textbf{(52 papers; top 10 cited 2,944 times; H-index 29)}}}
+\defbibnote{a1}{{Note: CV author in bold; Trainees in italics, \\
+        \textbf{(55 papers; top 10 cited 2,944 times; H-index 30)}}}
 \printbibliography[%
     title=\href{https://neurodata.io/publications/\#peer_reviewed}{Published Peer-Reviewed Research Articles},%
     prenote=a1,% 
@@ -243,7 +242,15 @@
 \end{refsection}
 
 
-\section{Conference Papers}
+%\section{Conference Papers}
+\begin{refsection}[pubs_conf.bib]
+%\newrefcontext{A}
+\nocite{*}
+\printbibliography[%
+    title={\href{https://neurodata.io/publications/\#conf}{Conference Papers}},%
+    heading=bibliography,%
+    ]
+\end{refsection}
 
 \section{Book Chapters}
 
@@ -289,16 +296,14 @@
 
 
 %\section{Abstracts / Poster Presentations}
-%\section{\href{https://neurodata.io/posters/}{Abstracts \& Posters}}
-\begin{refsection}[pubs_conf.bib]
-%\newrefcontext{A}
-\nocite{*}
-\printbibliography[%
-    title=\href{https://neurodata.io/posters/}{Abstracts and Poster Presentations},%
-    heading=bibliography,%
-    ]
-\end{refsection}
-
+%\begin{refsection}[posters.bib]
+%%\newrefcontext{T}
+%\nocite{*}
+%\printbibliography[%
+%    title=Stuff,%\href{https://neurodata.io/posters/}{Abstracts / Poster Presentations},%
+%    heading=bibliography%
+%    ]
+%\end{refsection}
 
 
 
@@ -677,7 +682,6 @@ FY15:	\$113,761 (\$168,924),
 
 
 \section{Service}
-{\large{\textcolor{red}{Jovo: JLP sorted these, not sure if correct.}}}
 
 \subsection{Department Service}
 \cventry{Winter '19}{Organizer}{Decision Forest Hackathon}{}{}{}
