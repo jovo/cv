@@ -23,7 +23,7 @@
 \addbibresource{talks_invited.bib}
 \addbibresource{talks_other.bib}
 \addbibresource{talks_excluded_entries.bib}
-\addbibresource{posters.bib}
+\addbibresource[label=posters]{posters.bib}
 
 \DeclareRefcontext{J}{labelprefix=J} %% Peer
 \DeclareRefcontext{P}{labelprefix=P} %% Pre-prints
@@ -292,18 +292,19 @@
     heading=bibliography%
     ]
 \end{refsection}
-\subsection{Interviews}
+
+%\subsection{Interviews}
 
 
 %\section{Abstracts / Poster Presentations}
-%\begin{refsection}[posters.bib]
-%%\newrefcontext{T}
-%\nocite{*}
-%\printbibliography[%
-%    title=Stuff,%\href{https://neurodata.io/posters/}{Abstracts / Poster Presentations},%
-%    heading=bibliography%
-%    ]
-%\end{refsection}
+\begin{refsection}[posters]
+%\newrefcontext{T}
+\nocite{*}
+\printbibliography[%
+    title=\href{https://neurodata.io/posters/}{Abstracts / Poster Presentations},%
+    heading=bibliography%
+    ]
+\end{refsection}
 
 
 
