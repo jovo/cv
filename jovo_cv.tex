@@ -5,7 +5,13 @@
 \moderncvtheme[blue]{classic}
 \usepackage[utf8]{inputenc}
 %JLP\usepackage[resetlabels]{multibib}
-\usepackage[backend=biber,defernumbers=true,refsection=section,sorting=ydmdt,maxbibnames=999]{biblatex}
+\usepackage[%
+    backend=biber,
+    defernumbers=true,
+    refsection=section,
+    sorting=ydmdt,
+    firstinits=false,
+    maxbibnames=999]{biblatex}
 %\usepackage{etoolbox}
 %\addbibresource{peer.bib}
 %\addbibresource{pre.bib}
@@ -17,7 +23,7 @@
 \addbibresource{pubs_peer_reviewed.bib}
 \addbibresource{pubs_pre_prints.bib}
 \addbibresource{pubs_conf.bib}
-\addbibresource{pubs_other.bib}
+%\addbibresource{pubs_other.bib}
 \addbibresource{pubs_tech_reports.bib}
 \addbibresource{pubs_excluded_entries.bib}
 \addbibresource{talks_invited.bib}
@@ -46,7 +52,7 @@
   \ifitemannotation{highlight}
     {\textbf{#1}}
     {
-        \ifitemannotation{student}
+        \ifitemannotation{trainee}
             {\textit{#1}}
             {#1}
     }
@@ -56,7 +62,7 @@
   \ifitemannotation{highlight}
     {\textbf{#1}}
     {
-        \ifitemannotation{student}
+        \ifitemannotation{trainee}
             {\textit{#1}}
             {#1}
     }
