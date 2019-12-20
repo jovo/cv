@@ -1,6 +1,6 @@
 LATEX = pdflatex
 SPELL = aspell
-TEX = jovo_cv
+TEX = jovo_cv_SOM
 BIBTEX = biber
 
 default: $(TEX).tex 

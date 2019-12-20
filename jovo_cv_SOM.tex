@@ -1,0 +1,1208 @@
+\documentclass[10pt,colorlinks=true,urlcolor=blue]{moderncv}
+\usepackage{ulem}
+\usepackage{utopia}
+\usepackage{breakurl}
+\usepackage[yyyymmdd]{datetime}
+\moderncvtheme[blue]{classic}
+\usepackage[utf8]{inputenc}
+%JLP\usepackage[resetlabels]{multibib}
+\usepackage[%
+    backend=biber,
+    defernumbers=true,
+    refsection=section,
+    sorting=ydmdt,
+    firstinits=false,
+    maxbibnames=999]{biblatex}
+%\usepackage{etoolbox}
+%\addbibresource{peer.bib}
+%\addbibresource{pre.bib}
+%\addbibresource{talks.bib}
+%\addbibresource{other_talks.bib}
+%\addbibresource{posters.bib}
+\appto{\bibsetup}{\raggedright}
+%%
+\addbibresource{pubs_peer_reviewed.bib}
+\addbibresource{pubs_pre_prints.bib}
+\addbibresource{pubs_conf.bib}
+%\addbibresource{pubs_other.bib}
+\addbibresource{pubs_tech_reports.bib}
+\addbibresource{pubs_excluded_entries.bib}
+\addbibresource{talks_invited.bib}
+\addbibresource{talks_other.bib}
+\addbibresource{talks_excluded_entries.bib}
+\addbibresource[label=posters]{posters.bib}
+\newcommand*{\subsubsectionfont}{\uline{\large\mdseries\itshape}}% New subsubsection font
+\newcommand*{\subsubsectionstyle}[1]{{\subsubsectionfont\textcolor{color1}{#1}}}
+\makeatletter
+\NewDocumentCommand{\subsubsection}{sm}{%
+  \par\addvspace{1ex}%
+  \phantomsection{}% reset the anchor for hyperrefs
+  \addcontentsline{toc}{subsubsection}{#2}%
+  \begin{tabular}{@{}p{\hintscolumnwidth}@{\hspace{\separatorcolumnwidth}}p{\maincolumnwidth}@{}}%
+    \raggedleft\hintstyle{} &{\strut\subsubsectionstyle{#2}}%
+  \end{tabular}%
+  \par\nobreak\addvspace{0.5ex}\@afterheading}% to avoid a pagebreak after the heading
+\makeatother
+\DeclareRefcontext{J}{labelprefix=J} %% Peer
+\DeclareRefcontext{P}{labelprefix=P} %% Pre-prints
+\DeclareRefcontext{I}{labelprefix=I} %% Invited Talks
+\DeclareRefcontext{T}{labelprefix=T} %% Other Talks
+\DeclareRefcontext{A}{labelprefix=A} %% Abstacts and Posters
+
+% Count total number of entries in each refsection
+\AtDataInput{%
+  \csnumgdef{entrycount:\therefsection}{%
+    \csuse{entrycount:\therefsection}+1}}
+
+% Print the labelnumber as the total number of entries in the
+% current refsection, minus the actual labelnumber, plus one
+\DeclareFieldFormat{labelnumber}{\mkbibdesc{#1}}    
+\newrobustcmd*{\mkbibdesc}[1]{%
+  \number\numexpr\csuse{entrycount:\therefsection}+1-#1\relax}
+
+\renewcommand*{\mkbibnamegiven}[1]{%
+  \ifitemannotation{highlight}
+    {\textbf{#1}}
+    {
+        \ifitemannotation{trainee}
+            {\textit{#1}}
+            {#1}
+    }
+}
+
+\renewcommand*{\mkbibnamefamily}[1]{%
+  \ifitemannotation{highlight}
+    {\textbf{#1}}
+    {
+        \ifitemannotation{trainee}
+            {\textit{#1}}
+            {#1}
+    }
+}
+
+\usepackage{pdfpages}
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\pagenumbering{roman}
+\chead{\textbf{Joshua T. Vogelstein, Ph.D.}, Assistant Professor, JHU -- Curriculum Vitae}
+\rhead{\textbf{\today}}
+
+\fancyfoot[C]{Page \thepage\ of \pageref*{LastPage}}
+
+\DeclareSortingTemplate{ydmdt}{
+  \sort{
+    \field{presort}
+  }
+  \sort[final]{
+    \field{sortkey}
+  }
+  \sort[direction=descending]{
+    \field{sortyear}
+    \field{year}
+  }
+  \sort[direction=descending]{
+    \field[padside=left,padwidth=2,padchar=0]{month}
+    \literal{00}
+  }
+  \sort[direction=descending]{
+    \field[padside=left,padwidth=2,padchar=0]{day}
+    \literal{00}
+  }
+  \sort{
+    \field[padside=left,padwidth=4,padchar=0]{volume}
+    \literal{0000}
+  }
+  \sort{
+    \field{sorttitle}
+  }
+}
+
+\usepackage[scale=0.8]{geometry}
+\newcommand{\cvdoublecolumn}[2]{%
+  \cvline{}{}{%
+    \begin{minipage}[t]{\listdoubleitemmaincolumnwidth}#1\end{minipage}%
+    \hfill%
+    \begin{minipage}[t]{\listdoubleitemmaincolumnwidth}#2\end{minipage}%
+    }%
+}
+%
+% usage: \cvreference{name}{address line 1}{address line 2}{address line 3}{address line 4}{e-mail address}{phone number}
+% Everything but the name is optxional
+% If \addresssymbol, \emailsymbol or \phonesymbol are specified, they will be used.
+% (Per default, \addresssymbol isn't specified, the other two are specified.)
+% If you don't like the symbols, remove them from the following code, including the tilde ~ (space).
+
+\newcommand{\cvreference}[7]{%
+    \textbf{#1}\newline% Name
+    \ifthenelse{\equal{#2}{}}{}{\addresssymbol~#2\newline}%
+    \ifthenelse{\equal{#3}{}}{}{#3\newline}%
+    \ifthenelse{\equal{#4}{}}{}{#4\newline}%
+    \ifthenelse{\equal{#5}{}}{}{#5\newline}%
+    \ifthenelse{\equal{#6}{}}{}{\texttt{#6}\newline}%
+    \ifthenelse{\equal{#7}{}}{}{\phonesymbol~#7}}
+
+  \AtBeginDocument{\recomputelengths}
+  \firstname{Joshua T.~}
+  \familyname{Vogelstein}
+  \address{Assistant Professor, \\
+   Institute for Computational Medicine \\
+   Johns Hopkins University \\
+   }{}
+  \email{jovo@jhu.edu}
+  \homepage{jovo.me}
+
+
+\begin{document}
+\maketitle
+
+
+\section{Demographic \& Personal Information}
+
+\subsection{Current Appointments}
+
+    \cventry{09/19 -- now}{Joint Appointment}{Department of Biostatistics}{Johns Hopkins University (JHU)}{}{}
+    
+    \cventry{08/15 -- now}{Joint Appointment}{Department of Applied Mathematics and Statistics}{}{}{}
+    
+    \cventry{08/14 -- now}{Assistant Professor}{Department of Biomedical Engineering}{Johns Hopkins University (JHU)}{}{}
+    \cventry{08/14 -- now}{Core Faculty} {Institute for Computational Medicine  (ICM)}{}{}{}
+    \cventry{08/14 -- now}{Core Faculty} {Center for Imaging Science (CIS)}{}{}{}
+    \cventry{08/14 -- now}{Joint Appointment}{Department of Neuroscience}{}{}{}
+    \cventry{08/14 -- now}{Joint Appointment}{Department of Computer Science}{}{}{}
+    \cventry{08/14 -- now}{Assistant Research Faculty}{Human Language Technology Center of Excellence}{}{}{}
+    \cventry{10/12 -- now}{Affiliated Faculty}{Institute for Data Intensive Engineering and Sciences}{}{}{}
+
+
+\subsection{Education \& Training}
+    \cventry{2009}{Ph.D in Neuroscience}{Johns Hopkins School of Medicine}{\newline Advisor: Eric Young}{\newline \textbf{Thesis:} OOPSI: a family of optical spike inference algorithms for inferring neural connectivity from population calcium imaging }{}{}
+
+    \cventry{2009}{M.S. in Applied Mathematics \& Statistics}{ Johns Hopkins University}{}{}{}
+
+    \cventry{2002}{B.A. in Biomedical Engineering}{Washington University, St.~Louis}{}{}{}
+
+
+    
+\subsection{Academic Experience}
+    \cventry{08/18 -- now}{\href{https://www.bme.jhu.edu/graduate/mse/degree-requirements/biomedical-data-science/}{Director of Biomedical Data Science Focus Area}}{}{}{}{}
+    \cventry{05/16 -- now}{Visiting Scientist} {Howard Hughes Medical Institute}{Janelia Research Campus}{}{}
+    \cventry{10/12 -- 08/14}{Endeavor Scientist}{Child Mind Institute}{}{}{}
+    \cventry{08/12 -- 08/14}{Affiliated Faculty}{Kenan Institute for Ethics}{}{}{Duke University}
+    \cventry{08/12 -- 08/14}{Adjunct Faculty}{Department of Computer Science}{}{}{}
+    \cventry{12/09 -- 01/11}{Post-Doctoral Fellow}{Department of Applied Mathematics and Statistics}{Supervised by Carey E.~Priebe}{Johns Hopkins University}{\textbf{Research} Statistics of populations of networks.}
+    
+    \cventry{06/01 -- 09/01}{Research Assistant}{Prof. Randy O'Reilly, Dept.~of Psychology}{}{}{University of Colorado}
+    \cventry{06/00 -- 09/00}{Clinical Engineer}{Johns Hopkins Hospital}{}{}{}
+    \cventry{06/99 -- 08/99}{Research Assistant under Dr. Jeffrey Williams}{Dept. of Neurosurgery, Johns Hopkins Hospital}{}{}{}
+    \cventry{06/98 -- 08/98}{Research Assistant under Professor Kathy Cho}{Dept. of Pathology, Johns Hopkins School of Medicine}{}{}{}
+
+
+\section{Publications}
+%\subsection{Peer Reviewed Articles (accepted, in press, or published)}
+%\section{Published Peer-Review Research Articles}
+\begin{refsection}[pubs_peer_reviewed.bib] 
+%\newrefcontext{J}
+\nocite{*}
+\defbibnote{a1}{{Note: CV author in bold; Trainees in italics, \\
+        \textbf{(55 papers; top 10 cited 3,128 times; H-index 30)} as of \today}}
+\printbibliography[%
+    title=\href{https://neurodata.io/publications/\#peer_reviewed}{Published Peer-Reviewed Research Articles},%
+    prenote=a1,% 
+    heading=subbibliography%
+    ]
+\end{refsection}
+
+%\subsection{Pre-Prints}
+\begin{refsection}[pubs_pre_prints.bib] %, pubs_excluded_entries.bib]
+%\newrefcontext{P}
+\nocite{*}
+\printbibliography[%
+    title=\href{https://neurodata.io/publications/\#pre_prints}{Manuscripts in Preparation for Submission},%
+    heading=subbibliography%
+    ]
+\end{refsection}
+
+
+\section{Talks}
+\begin{refsection}[talks_invited.bib]
+%\newrefcontext{I}
+\nocite{*}
+\printbibliography[%
+    title=\href{https://neurodata.io/talks/}{Institutional},% 
+    %NB: Institutional means invited talks.  (No idea why)
+    heading=subbibliography%
+    ]
+\end{refsection}
+
+
+\begin{refsection}[talks_other.bib, talks_excluded_entries.bib]
+%\newrefcontext{T}
+\nocite{*}
+\printbibliography[%
+    title=\href{https://neurodata.io/talks/}{International Talks},%
+    %NB: International means non-invited talks.  (Again, no idea why)
+    heading=subbibliography%
+    ]
+\end{refsection}
+
+
+\begin{refsection}[posters]
+%\newrefcontext{T}
+\nocite{*}
+\printbibliography[%
+    title=\href{https://neurodata.io/posters/}{Submitted Abstracts / Posters},%
+    heading=bibliography%
+    ]
+\end{refsection}
+
+
+
+
+
+
+%\section{Funding}
+%\subsection{Extramural Funding}
+%\subsubsection{Current}
+%\subsubsection{Pending}
+%\subsubsection{Pending}
+%\subsection{Extramural Funding}
+
+
+
+%\section{Educational Activities}
+\section{Teaching}
+
+
+\subsection{Ongoing Courses}
+
+\cventry{Fall '19}{\href{https://github.com/NeuroDataDesign/Syllabus}{NeuroData Design I}}{EN.580.237/437/637}{Course Director}{enrollment 46}{}
+
+\cventry{Spring '19}{\href{https://github.com/NeuroDataDesign/Syllabus}{NeuroData Design II}}{EN.580.438/638}{Course Director}{enrollment 18}{}
+
+\cventry{Fall '18}{\href{https://github.com/NeuroDataDesign/Syllabus}{NeuroData Design I}}{EN.580.237/437/637}{Course Director}{enrollment 22}{}
+
+\cventry{Spring '17}{\href{https://github.com/NeuroDataDesign/Syllabus}{NeuroData Design II}}{EN.580.238/438/638}{Course Director}{enrollment 14}{}
+
+\cventry{Winter '17}{BME Research Intersession}{EN.580.574}{Course Director}{enrollment 6}{}
+
+
+\cventry{Fall '17}{\href{https://github.com/NeuroDataDesign/Syllabus}{NeuroData Design I}}{EN.580.247/437/637}{Course Director}{enrollment 15}{}
+
+\cventry{Spring '16}{\href{https://github.com/Upward-Spiral-Science/Syllabus}{The Art of Data Science}}{EN.580.468}{Course Director}{enrollment 24}{}
+
+\cventry{Fall '16}{\href{https://github.com/NeuroDataDesign/Syllabus}{NeuroData Design I}}{EN.580.437}{Course Director}{enrollment 16}{}
+
+\cventry{Fall '15}{Introduction to Computational Medicine}{}{Co-Teaching}{Course Co-Director}{}
+
+\cventry{Spring '15}{\href{https://github.com/openconnectome/Statistical-Connectomics-Class}{Statistical Connectomics}}{EN.580.694}{Course Director}{enrollment 26}{}
+
+% \cventry{Winter 2015}{Statistical Connectomics}{}{Neuroimaging Specialization}{Coursera}{}
+
+\subsection{One-Time Courses}
+\cventry{Spring '19}{Systems Bioengineering II}{EN.580.422}{}{2 Lectures}{}
+\cventry{Spring '19}{Computational Neuroscience}{AS.080.321}{}{2 Lectures}{}
+\cventry{Spring '18}{Systems Bioengineering II}{EN.580.422}{}{2 Lectures}{}
+\cventry{Spring '18}{Computational Neuroscience}{AS.080.321}{}{2 Lectures}{}
+\cventry{Spring '17}{Systems Bioengineering II}{EN.580.422}{}{2 Lectures}{}
+\cventry{Spring '16}{Systems Bioengineering II}{EN.580.422}{}{2 Lectures}{}
+\cventry{Winter '16}{Introduction to Connectomics}{EN.600.221}{}{1 Lecture}{}
+\cventry{Fall '16}{BME Modeling and Design}{EN.580.111}{}{1 Lecture}{}{}
+
+\subsection{Educational Workshops}
+
+\cventry{Summer '19}{\href{https://workshop.dipy.org}{DiPy Workshop}}{}{Bloomington, Indiana}{1 day  lecture on statistical connectomics}{}
+\cventry{Fall '18}{\href{https://www.sfn.org/meetings/neuroscience-2018/sessions-and-events/neuroscience-2018-program}{Society for Neuroscience Annual Meeting}}{Educational Workshop}{San Diego, CA}{1 day  lecture on statistical connectomics}{}
+\cventry{Fall '17}{\href{https://www.sfn.org/meetings/neuroscience-2017}{Society for Neuroscience Annual Meeting}}{Educational Workshop}{San Diego, CA}{1 day  lecture on statistical connectomics}{}
+\cventry{Summer '16}{\href{http://crcns.org/previous-courses/2016_course}{CRCNS Course on Mining and Modeling of Neuroscience Data}}{Redwood Center for Theoretical Neuroscience}{University of California, Berkeley}{2 day  lecture on statistical connectomics}{}
+
+
+
+\section{Mentorship}
+
+\subsection{Research Track Faculty Mentorship}
+    \cventry{02/19 -- now}{Hayden Helm, MSE}{Assistant Research Faculty}{BME}{JHU}{Leading research efforts developing theory and methods for lifelong learning.}
+    \cventry{08/16 -- 8/18}{Eric Perlman, PhD}{Assistant Research Scientist}{BME}{JHU}{Lead Scientist developing storage, transfer, and visualization solutions for large data in our cloud infrastructure.}
+    \cventry{03/16 -- now}{Jesse Patsolic, MA}{Assistant Research Faculty}{BME}{JHU}{Lead developer converting our extensions to decision forests to be merged into sklearn.}
+
+\subsection{Postdoctoral Fellows and Staff Research Scientists}
+    \cventry{10/18 -- now}{Alex Loftus}{Research Assistant}{BME}{JHU}{Current lead developer of NDMG, transitioning from a stand-alone package to be integrated with DiPy.}
+    \cventry{09/19 -- now}{Ross Lawrence, BS}{Research Assistant}{BME}{JHU}{Responsible for documenting and bug fixing NDMG.}
+    \cventry{07/19 -- now}{Ronak Mehta, MSE}{Research Assistant}{BME}{JHU}{Finalizing three manuscripts on (1) uncertainty forests, (2) time-series dependence quantification, and (3) lifelong learning forests.}
+    \cventry{07/19 -- now}{Celine Drieu, PhD}{Post-doctoral Fellow}{Kavli NDI}{JHU}{Co-Advised by Assitant Prof. Kuchibhotla, Department of Psychological and Brain Sciences. Working on understanding learning and memory using two-photon calcium imaging.}
+    \cventry{07/19 -- now}{Austin Grave, PhD}{Post-doctoral Fellow}{Kavli NDI}{JHU}{Co-Advised by  Prof. Richard Huganir, Department of Neuroscience. Working on understanding whole brain synaptic plasticity using genetic engineering and light microscopy imaging.}
+    \cventry{06/19 -- now}{Devin Crowley}{Research Assistant}{BME}{JHU}{Lead developer of our scalable Python implementaiton of LDDMM.}
+    \cventry{08/18 -- now}{Jes\'us Arroyo, PhD}{Post-doctoral Fellow}{CIS}{JHU}{Working on graph matching and joint graph embedding.}
+    \cventry{06/18 -- now}{Benjamin Falk, PhD}{Research Engineer}{BME}{JHU}{Lead software engineer, oversees all development projects, solely responsible for all cloud infrastructure.}
+    \cventry{07/18 -- now}{Audrey Branch, PhD}{Post-doctoral Fellow}{Kavli NDI}{JHU}{Co-Advised by Prof Michela Gallagher, extending brain clearing experimental technology from mice to rats. Currently with a manuscript on biorxiv.}
+    
+    \cventry{09/16 -- 08/18}{Cencheng Shen, PhD}{Post-Doctoral Fellow}{CIS}{JHU}{Developed Multiscale Graph Correlation, which is currently the premiere hypothesis testing framework, and about to be integrated into SciPy, by far the world's leading scientific computing package. Currently an Assistent Professor in Department of Statistics at University of Delaware, and still an actice collaborator and grantee.}
+    \cventry{05/16 -- 06/17}{Leo Duan, PhD}{Post-doctoral Fellow}{CIS}{JHU}{Went on to do a second postdoc with Leo Dunson (who I did my second postdoc with). Currently an Assistant Professor at University of Florida.}
+    \cventry{06/16 -- 07/17}{Guilherme Franca, PhD}{Post-doctoral Fellow}{CIS}{JHU}{Worked on non-parametric clustering, with an article about to be accepted in PAMI, the leading machine learning journal.  Currently a postdoc for Rene Vidal.}
+\subsection{Doctoral Student Supervision}
+    \cventry{08/19 -- now}{Michael Powell, MSE}{PhD advisee}{BME}{JHU}{Dissertation will focus on explainable artificial intelligence, spearheads collaboration with Andreas Muller, Co-Director of scikit-learn, the world's leading machine learning package.}
+    \cventry{06/19 -- now}{Jaewon Chung, MSE}{PhD advisee}{BME}{JHU}{Dissertation will focus on statistics of populations of human networks. Already co-first author and middle author on multiple manuscripts.}
+    \cventry{08/19 -- now}{Tommy Athey, BSE}{PhD advisee}{BME}{JHU}{Dissertation will focus on MouseLight project, spearheads collaborations with Prof. Jeremias Sulam and Michael I.~Miller.}
+    \cventry{08/19 -- now}{Eric Bridgeford, BSE}{PhD advisee}{Department of Biostatistics}{JHU}{Dissertation will focus on statistics of human connectomes and mitigating batch effects.  Already first author on several manuscripts under review, and spearheads collaboration with Prof Brian Caffo at Biostatistics.}
+    \cventry{08/18 -- now}{Benjamin Pedigo, BSE}{PhD advisee}{BME}{JHU}{Dissertation will focus on analysis and modeling of the world's first whole animal connectome, in collaboration with Marta Zlatic and Albert Cardona (formerly of Janelia Research Campus).  Already co-first author and middle author on multiple manuscripts.}
+    %\cventry{??03/19 -- 09/19}{Derek Pisner}{PhD advisee}{}{JHU/ UT Austin}{}
+    \cventry{08/18 -- now}{Meghana Madyastha, BSE}{PhD Co-advisee}{CS}{JHU}{Dissertation will focus on computational aspects of accelerationg learning and inference using decision forests.}
+    \cventry{08/16 -- now}{Vikram Chandrashekhar, BSE}{PhD advisee}{BME}{JHU}{Dissertation has focused on extending LDDMM to whole cleared brain datasets, spearheads collaboration with Prof. Karl Deisseroth's lab at Stanford, one of the world's leading neuroscientists.}
+    \cventry{08/14 -- 01/18}{Tyler Tomita, PhD}{}{BME}{JHU}{Developed Sparse Projection Oblique Randomer Forest in his dissertation, currently the best performing machine learning algorithm on a standard suite of over 100 benchmark problems. Currenly a postdoc with Assistant Prof. Chris Honey of Psychology and Brain Sciences.}
+
+\subsection{Master's Student Supervision}
+    \cventry{06/19 -- now}{Bijan Varjavand}{MS advisee}{BME}{JHU}{Submitted manuscript to PAMI on advancing statistics on populations of networks.}
+    \cventry{06/19 -- now}{Sambit Panda}{MS advisee}{BME}{JHU}{Led development of Python implementation of MGC, to be integrated into SciPy.}
+    \cventry{06/19 -- now}{Varun Kotharkar}{MS advisee}{AMS}{JHU}{Investigating theoretical advantages of oblique, as compared to axis-aligned, decision trees.}
+    \cventry{06/18 -- now}{Drishti Mannan}{MS advisee}{BME}{JHU}{Preparing manuscript introducing novel specification for large attributed networks.}
+    \cventry{06/18 -- 05/19}{Jaewon Chung}{MSE advisee}{BME}{JHU}{Co-first author of manuscript and co-lead developer of Python package for statistical analysis of networks. Currently a BME PhD student in my lab.}
+    \cventry{08/14 -- 06/17}{Greg Kiar, MSE}{}{BME}{JHU}{Lead deveoper of NDMG, the only existing ``soup to nuts'' pipeline for both functional and diffusion pipelines; co-first author of manuscript under review. Currently a PhD student at McGill University.}
+
+\subsection{Undergraduate Student Supervision}
+    \cventry{06/19 -- now}{Vivek Gopalakrishnan}{BSE}{BME}{JHU}{Winner of Pistritto Fellowship.}
+    \cventry{06/19 -- now}{Richard Guo}{BSE}{BME}{JHU}{}
+    \cventry{06/19 -- now}{Ronan Perry}{BSE}{BME}{JHU}{}
+    \cventry{08/14 -- 08/18}{Eric Bridgeford, BSE}{}{BME}{JHU}{Currently a PhD student in Biostatistics at JHSPH in my lab.}
+    \cventry{08/15 -- 08/16}{Albert Lee,BSE}{}{BME}{JHU}{}
+    \cventry{06/15 -- 12/15}{Ron Boger, BSE}{}{BME}{JHU}{Currenly working at a computational medicine start-up in Silicon Valley.}
+    \cventry{05/15 -- 05/16}{Jordan Matelsky, BSE}{}{CS and Neuroscience}{JHU}{Currently a data scientist at APL.}
+    \cventry{02/15 -- 05/16}{Ivan Kuznetsov, BSE}{}{BME}{JHU}{Currently an MD/PhD Candidate at the UPenn, winner of \href{https://beblog.seas.upenn.edu/tag/ivan-kuznetsov/}{Soros Fellowship}.}
+
+%\subsection{High School Students}
+\subsection{Summer Interns}
+    \cventry{Summer '19}{Kareef Ullah}{Summer Intern}{BME}{JHU}{}
+    \cventry{Summer '19}{Shunan Wu}{Summer Intern}{BME}{JHU}{}
+    \cventry{Summer '19}{Shiyu Sun}{Summer Intern}{BME}{JHU}{}
+    \cventry{Summer '19}{Sander Shulhoff}{Summer Intern}{BME}{JHU}{}
+    \cventry{Summer '19}{Kiki Zhang}{Summer Intern}{BME}{JHU}{}
+    \cventry{Summer '18}{Papa Kobina Van Dyck}{Summer Intern}{BME}{JHU}{}
+
+\subsection{Examining Committees}% (BME unless otherwise noted)}
+    \cventry{2019}{Browne, James}{Computer Science}{JHU Ph.D. Student}{Graduated 2019}{}
+    \cventry{2019}{Mhembere, Disa}{Computer Science}{JHU Ph.D. Student}{Graduated 2019}{}
+    \cventry{2018}{Kutten, Kwame}{JHU Ph.D. Student}{Graduated 2018}{}{}{}
+    \cventry{2018}{Wang, Shangsi}{Applied Mathematics and Statistics}{JHU Ph.D. Student}{Graduated 2018}{}
+    \cventry{2018}{Tang, Runze}{Applied Mathematics and Statistics}{JHU Ph.D. Student}{Graduated 2018}{}
+    \cventry{2018}{Lee, Youjin}{Biostatistics}{JHU Ph.D. Student}{Graduated 2018}{}
+    \cventry{2017}{Zheng, D}{Computer Science}{JHU Ph.D. Student}{Graduated 2017}{}
+    \cventry{2017}{Binkiewicz, Norbert}{Statistics}{University of Wisconsin Ph.D. Student}{Graduated 2017}{}
+    \cventry{2016}{Gray-Roncal, Will}{Computer Science}{JHU Ph.D. Student}{Graduated 2016}{}
+
+
+
+
+\section{\href{https://neurodata.io/about/awards/}{Awards and Recognition}}
+\subsection{Individual}
+    \cventry{2002}{Dean's List}{Washington University}{}{}{}
+
+\subsection{Shared}
+    \cventry{2019}{\href{https://kavlijhu.org/funding/awards}{Kavli NDI Distinguished Postdoctoral Fellow}}{Celine Drieu, PhD}{}{}{}{}
+    \cventry{2019}{\href{https://kavlijhu.org/funding/awards}{Kavli NDI Distinguished Postdoctoral Fellow}}{Austin Graves, PhD}{}{}{}{}
+    \cventry{2017}{\href{https://kavlijhu.org/funding/awards}{Kavli NDI Distinguished Postdoctoral Fellow}}{Audrey Branch, PhD}{}{}{}{} 
+
+    \cventry{2017}{\href{http://www.hpdc.org/2017/awards/best-paper-award}{Best Presentation Award HPDC}}{Mhembere et al. (2017)}{}{}{}
+    \cventry{2017}{Nonparametric Statistics of the American Statistical Association Student Paper Award}{Lee et al. (2017)}{}{}{}
+    \cventry{2014}{F1000 Prime Recommended}{Vogelstein et al. (2014)}{}{}{}
+    \cventry{2013}{Spotlight}{Neural Information Processing Systems (NIPS)}{}{}{}
+    \cventry{2011}{Trainee Abstract Award}{Organization for Human Brain Mapping}{}{}{}
+    \cventry{2008}{Spotlight}{Computational and Systems Neuroscience (CoSyNe)}{}{}{}
+
+
+\section{Service}
+
+\subsection{University Service}
+    \cventry{2019}{Member}{Search Committee}{BME}{Neuroengineering, 2019}{}
+    \cventry{2019}{Member}{Search Committee}{BME}{Data Science, 2019}{}
+    \cventry{2018}{Member}{Search Committee}{BME}{Neuroengineering, 2018}{}
+    
+    \cventry{Winter '17}{Faculty Superviser}{MedHacks}{\url{http://medhacks.org/}}{}{}
+    \cventry{Winter '16}{Faculty Superviser}{MedHacks}{\url{http://medhacks.org/}}{}{}
+    
+    \cventry{Spring '16}{Organizer}{Global Brain Workshop}{\url{http://brainx.io}}{First ever international Brain Initiative workshop, bringing together leaders from around the world, covered by Nature and Science ($\sim$ 75 participants)}{}
+    
+    \cventry{Winter '15}{Faculty Superviser}{MedHacks}{\url{http://medhacks.org/}}{}{}
+
+
+\subsection{Department Service}
+    \cventry{Winter '19}{Organizer}{Decision Forest Hackathon}{}{}{}
+    \cventry{Summer '19}{Organizer}{NeuroData Workshop}{\url{https://neurodata.devpost.com}}{Hackashop to train brain scientists in machine learning for big data ($\sim$ 50) participants from around the country.}{}
+    \cventry{March '19}{Organizer}{Neuro Reproducibility Hackashop}{\url{https://brainx3.io/}}{Hackashop to train brain scientists in best practices in reproducible science, co-organized with two startups: Vathes, LLC and Gigantum ($\sim$ 50 participants)}{}
+    
+    \cventry{Spring '18}{Organizer}{NeuroData Hackathon}{}{}{}
+    
+    \cventry{Fall '17}{Organizer}{NeuroData Mini-Hackathon}{}{}{}
+    
+    \cventry{Summer '17}{Organizer}{NeuroStorm}{\url{https://brainx2.io}}{Workshop bring together thought leaders from academia, national labs, industry, and non-profits around the world to take next steps towards accelerating brain science discovery in the cloud ($\sim$ 50 participants and 5 observers from funding institutions)}{}
+    
+    \cventry{Winter '15}{Organizer}{Hack@NeuroData}{\url{http://hack.neurodata.io/}}{}{}
+
+    \cventry{08/15 -- now}{Steering Committee}{Kavli Neuroscience Discovery Institute (KNDI)}{}{}{}
+    \cventry{08/15 -- 07/18}{Co-Developer}{\href{http://icm.jhu.edu/academics/undergraduate-minor/}{Computational Medicine Minor}}{}{}{}
+    \cventry{05/15 -- 07/17}{Co-Founder and Faculty Advisor}{\href{http://medhacks.org}{MedHacks}}{}{}{}
+    \cventry{08/14 -- 08/18}{\href{http://icm.jhu.edu/academics/undergraduate-minor/}{Director of Undergraduate Studies}}{Institute for Computational Medicine}{}{}{}
+
+
+\subsection{Journal Service}
+
+\subsubsection{Editorial Board}
+    \cventry{}{Guest Associate Editor}{PLoS Computational Biology}{}{}{}
+    \cventry{}{Editor}{Neurons, Behavior, Data analysis, and Theory}{}{}{}
+    \cventry{}{Associate Editor}{Journal of the American Statistical Association}{}{}{}
+
+\subsubsection{Conference and Journal Reviewer}
+    \cventryreviewer{}{Annals of Applied Statistics (AOAS)}{}{}{}{}
+    \cventryreviewer{}{Bioinformatics}{}{}{}{}
+    \cventry {} {International Conference on Learning Representations (ICLR)} {}{}{}{}
+    \cventry {} {Network Science} {}{}{}{}
+    \cventry {} {Current Opinion in Neurobiology} {}{}{}{}
+    \cventry {} {Biophysical Journal} {}{}{}{}
+    \cventry {} {IEEE International Conference on eScience} {}{}{}{}
+    \cventry {} {IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP)}{}{}{}{}
+    \cventry{}{IEEE Global Conference on Signal and Information Processing (GlobalSIP)}{}{}{}{}
+    \cventry {} {IEEE Signal Processing Letters} {} {} {} {}
+    \cventry {} {IEEE Transactions on Signal Processing} {}{}{}{}
+    \cventry {} {Frontiers in Brain Imaging Methods} {}{}{}{}
+    \cventry {} {Journal of Machine Learning Research (JMLR)} {}{}{}{}
+    \cventry {} {Journal of Neurophysiology} {}{}{}{}
+    \cventry {} {Journal of the Royal Statistical Society B (JRSSB)} {}{}{}{}
+    \cventry {} {Nature Communications} {}{}{}{}
+    \cventry {} {Nature Methods} {}{}{}{}
+    \cventry {} {Nature Reviews Neuroscience} {}{}{}{}
+    \cventry {} {Neural Computation} {}{}{}{}
+    \cventry {} {Neural Information Processing Systems (Neurips)} {}{}{}{}
+    \cventry {} {NeuroImage} {}{}{}{}
+    \cventry {} {Neuroinformatics} {}{}{}{}
+    \cventry {} {PLoS One} {}{}{}{}
+    \cventry {} {PLoS Computational Biology} {}{}{}{}
+
+
+\subsection{Professional Service}
+    \cventry{Fall '16}{Co-Organizer}{Brains and Bits: Neuroscience Meets Machine Learning, NIPS Workshop}{\url{http://www.stat.ucla.edu/~akfletcher/brainsbits_overview.html}}{}{}
+    
+    \cventry{Fall '15}{Co-Organizer}{BigNeuro2015: Making Sense of Big Neural Data, NIPS Workshop}{\url{http://neurodata.io/bigneuro2015}}{}{}
+    
+    \cventry{Fall '12}{Co-Organizer}{\href{https://openwiki.janelia.org/wiki/download/attachments/8687459/final+agenda+EM+Connectomics+100512.pdf}{Scaling up EM Connectomics Conference}}{}{The world's first connectomics workshop, now run annually alternating between Janelia Research and Max Plank locations ($\sim$ 80 participants)}{}
+
+
+
+
+\section{Translation / Technology Transfer Activities}
+\subsection{Open Datasets}
+
+\begin{enumerate}
+    \item \href{https://neurodata.io/data/allen_atlas}{Allen Atlas}
+        These anatomical reference atlases illustrate the adult mouse brain in coronal and sagittal planes of section. They are the spatial framework for datasets such as in situ hybridization, cell projection maps, and in vitro cell characterization. More information at \href{http://atlas.brain-map.org/}{atlas.brain-map.org} 
+    
+    \item \href{https://neurodata.io/data/bigbrain}{Amunts et al. (2015)} 
+        Enabling an unprecedented look into the human brain, BigBrain spans micro- and macro-scopic scales. While previously available reference brains have been restricted to a single scale, such as whole-brain magnetic resonance imaging in humans or electron microscopy of small sections from small animals, BigBrain is an ultrahigh-resolution three-dimensional model of a full human brain at 20 micrometer resolution, coming closer to touching both camps than any previous dataset%
+
+    \item \href{https://neurodata.io/data/bhatla15}{Bhatla et al. (2015)} 
+        Using high-pressure freezing, serial section transmission electron microscopy (ssTEM) imaging, digital alignment and manual tracing, Nikhil Bhatla and Rita Droste in Bob Horvitz's Lab reconstructed the anterior half of the C. elegans feeding organ, the pharynx. Volumes are available for three adult hermaphrodite worms and include volumetric tracing of all neurons and selected cell types, as well as synapses identified from the I2 neurons. Sections were approximately 50 nm thick with an image resolution of 2 nm per pixel. The largest volume comprises 1199 slices. These data were published in a paper entitled "Distinct neural circuits control rhythm inhibition and spitting by the myogenic pharynx of C. elegans" (Current Biology, 2015)%
+
+    \item \href{https://neurodata.io/data/bloss2016}{Bloss et al. (2016)} 
+        Neuronal circuit function is governed by precise patterns of connectivity between specialized groups of neurons. The diversity of GABAergic interneurons is a hallmark of cortical circuits, yet little is known about their targeting to individual postsynaptic dendrites. We examined synaptic connectivity between molecularly defined inhibitory interneurons and CA1 pyramidal cell dendrites using correlative light-electron microscopy and large-volume array tomography. We show that interneurons can be highly selective in their connectivity to specific dendritic branch types and, furthermore, exhibit precisely targeted connectivity to the origin or end of individual branches. Computational simulations indicate that the observed subcellular targeting enables control over the nonlinear integration of synaptic input or the initiation and backpropagation of action potentials in a branchselective manner. Our results demonstrate that connectivity between interneurons and pyramidal cell dendrites is more precise and spatially segregated than previously appreciated, which may be a critical determinant of how inhibition shapes dendritic computation%
+
+    \item \href{https://neurodata.io/data/bloss2018}{Bloss et al. (2018)} 
+        ---%
+
+    \item \href{https://neurodata.io/data/bock11}{Bock et al.  (2011)} 
+        Layer 2/3 - Davi Bock, Ph.D. and Wei-Chung Allen Lee, Ph.D., in the laboratory of Clay Reid, M.D., Ph.D. acquired a beautiful volume of mouse primary visual cortical data, spanning layers 1, 2/3, and upper layer 4. In addition to the electron microscope (EM) data, they used two-photon microscopy to determine the functional properties of about 14 of the cells in the same volume. Images were collected at approximately 4x4x45 cubic nanometers with a total volume of approximately 450x350x50 cubic microns%
+
+    \item \href{https://neurodata.io/data/branch18}{Branch (2018)}
+        Adult generated neurons in aging M. musculus (iDisco)%
+
+    \item \href{https://neurodata.io/data/bumbarger13}{Bumbarger et al. (2013)}
+        These serial thin section data were generated by Dan Bumbarger in Ralf Sommer's lab in order to compare the pharyngeal connectomes of the pharyngeal nervous system between Caenorhabditis elegans and Pristionchus pacificus. (Cell 2013, 152:109–119). In P. pacificus they found clearly homologous neurons for all of the 20 pharyngeal neurons in C. elegans, but were surprised to uncover a massive rewiring of synaptic connectivity between the two species. These changes seem to correlate with known behavioral difference, most interestingly with the novel predatory feeding behaviors found in Diplogastrid nematodes such as P. pacificus%
+
+    \item \href{https://neurodata.io/data/collman15}{Collman et al. (2015)} 
+        Synapses of the mammalian CNS are diverse in size, structure, molecular composition, and function. Synapses in their myriad variations are fundamental to neural circuit development, homeostasis, plasticity, and memory storage. Unfortunately, quantitative analysis and mapping of the brain's heterogeneous synapse populations has been limited by the lack of adequate single-synapse measurement methods. Electron microscopy (EM) is the definitive means to recognize and measure individual synaptic contacts, but EM has only limited abilities to measure the molecular composition of synapses. This report describes conjugate array tomography (AT), a volumetric imaging method that integrates immunofluorescence and EM imaging modalities in voxel-conjugate fashion. We illustrate the use of conjugate AT to advance the proteometric measurement of EM-validated single-synapse analysis in a study of mouse cortex%
+
+
+    \item \href{https://neurodata.io/data/tomer15}{Deisseroth et al. (2015)}
+        Twelve CLARITY mouse brains (5 wild type controls and 7 behaviorally challenged) were prepared by Li Ye, and imaged using CLARITY-Optimized Light-sheet Microscopy (COLM) (whole brain COLM imaging and data stitching performed by R. Tomer, in preparation)%
+
+    \item \href{https://neurodata.io/data/xbrain}{Dyer et al.  (2016)}
+        Methods for resolving the 3D microstructure of the brain typically start by thinly slicing and staining the brain, and then imaging each individual section with visible light photons or electrons. In contrast, X-rays can be used to image thick samples, providing a rapid approach for producing large 3D brain maps without sectioning. Here we demonstrate the use of synchrotron X-ray microtomography (microCT) for producing mesoscale (1 cubic micron resolution) brain maps from millimeter-scale volumes of mouse brain. We introduce a pipeline for mircoCT-based brain mapping that combines methods for sample preparation, imaging, automated segmentation of image volumes into cells and blood vessels, and statistical analysis of the resulting brain structures. Our results demonstrate that X-ray tomography promises rapid quantification of large brain volumes, complementing other brain mapping and connectomics efforts%
+
+    \item \href{https://neurodata.io/data/kharris15}{Harris et al.  (2015)}
+        From the laboratory of Kristen M Harris, PhD, three volumes of hippocampal CA1 neuropil in adult rat were imaged at an XY resolution of ~2 nm on serial sections of ~50-60 nm thickness. All axons, dendrites, glia, and synapses were reconstructed in a cube surrounding a large dendritic spine, a cylinder surrounding an oblique dendritic segment, and a parallelepiped surrounding an apical dendritic segment%
+
+    \item \href{https://neurodata.io/data/hildebrand17}{Hildebrand et al. (2017)} 
+        Hildebrand and colleagues acquired a multi-resolution serial-section electron microscopy data set containing the anterior quarter of a 5.5 days post fertilization larval zebrafish, including its complete brain.  A draft projectome consisting of central and peripheral myelinated neurons was then reconstructed.  Electron micrographs and reconstructions are available for view in CATMAID.  A manuscript describing the data and methods used to generate it has been published in Nature%
+
+    \item \href{https://neurodata.io/data/kasthuri15}{Kasthuri et al. (2015)}
+        We describe automated technologies to probe the structure of neural tissue at nanometer resolution and use them to generate a saturated reconstruction of a sub-volume of mouse neocortex in which all cellular objects (axons, dendrites, and glia) and many sub-cellular components (synapses, synaptic vesicles, spines, spine apparati, postsynaptic densities, and mitochondria) are rendered and itemized in a database. We explore these data to study physical properties of brain tissue. For example, by tracing the trajectories of all excitatory axons and noting their juxtapositions, both synaptic and non-synaptic, with every dendritic spine we refute the idea that physical proximity is sufficient to predict synaptic connectivity (the so-called Peters’ rule). This online minable database provides general access to the intrinsic complexity of the neocortex and enables further data-driven inquiries%
+
+    \item \href{https://neurodata.io/data/lee16}{Lee et al. (2016)}
+        Electron Microscopy data used in a study of an excitatory network in Mouse V1%
+
+    \item \href{https://neurodata.io/data/kristina15}{Micheva et al. (2015)}
+        Multi-channel array tomography data which is barrel cortex from an adult mouse (C57BL/6J)%
+
+    \item \href{https://neurodata.io/data/acardona_0111_8}{Ohyama et al. (2015)} 
+        Understanding brain function and development would be facilitated enormously by being able to perform all experiments on the basis of known circuitry. Over 20 laboratories world wide have contributed towards the reconstruction of neurons in the central nervous system of Drosophila larva, led by the Cardona lab at HHMI Janelia. Here, we see a side view of the approximately 7,000 neurons reconstructed so far, either in full or partially, of the approximately 12,000 neurons of this animal. The 0111-8 data set was originally sectioned and imaged by Richard D. Fetter and his two tech assistants, and funded by the HHMI Janelia Fly EM Project Team. There are now many more papers now using the 0111-8 data (see publications below)%
+
+    \item \href{https://neurodata.io/data/takemura13}{Takemura et al. (2013)} 
+        The right part of the brain of a wild-type Oregon R female fly was serially sectioned into 40-nm slices. A total of 1,769 sections, traversing the medulla and downstream neuropils, were imaged at a magnification of 35,000X%
+
+    \item \href{https://neurodata.io/data/templier2019}{Templier et al.  (2019)} 
+        The non-destructive collection of ultrathin sections onto silicon wafers for post-embedding staining and volumetric correlative light and electron microscopy traditionally requires exquisite manual skills and is tedious and unreliable. In MagC introduced here, sample blocks are augmented with a magnetic resin enabling remote actuation and collection of hundreds of sections on wafer. MagC allowed the correlative visualization of neuroanatomical tracers within their ultrastructural volumetric electron microscopy context%
+
+    \item \href{https://neurodata.io/data/tobin17}{Tobin et al. (2017)}
+	Wiring variations that enable and constrain neural computation in a sensory microcircuit%
+
+    \item \href{https://neurodata.io/data/wanner16}{Wanner et al. (2016}
+        Large-scale reconstructions of neuronal populations are critical for structural analyses of neuronal cell types and circuits.  Dense reconstructions of neurons from image data require ultrastructural resolution throughout large volumes, which can be achieved by automated volumetric electron microscopy (EM) techniques. We used serial block face scanning EM (SBEM) and conductive sample embedding to acquire an image stack from an olfactory bulb (OB) of a zebrafish larva at a voxel resolution of $9.25 \times 9.25 \times 25$ nm3 (Wanner et al., 2016).  Skeletons of 1,022 neurons, $\sim98\%$ of all neurons in the OB, were reconstructed by manual tracing and efficient error correction procedures%
+
+    \item \href{https://neurodata.io/data/weiler14}{Weiler (2014)}
+        The lab of Stephen J Smith has been developing array tomography technology for nearly a decade (Micheva et al., 2007). This technology is unique in its ability to measure many proteins (20 or more) in biological tissue samples with superresolution precision. In this dataset, we are using array tomography to uncover molecular signatures synaptic diversity (O'Rourke et al., 2012), which is fundamental to neural circuit design and function. Images generously donated by Nick Weiler%
+
+    \item \href{https://neurodata.io/data/zbrain_atlas}{Randlett et al. (2015)}
+        Light microscopy data%
+\end{enumerate}
+
+\subsection{Open-source Software: Active}
+
+\begin{enumerate}
+    \item \href{https://neurodata.io/graspy/}{GraSPy (Graph Statistics)} Utilities and algorithms designed for processing and analysis of graphs with specialized graph statistical algorithms
+    \item \href{https://neurodata.io/mgc/}{MGC (Non-parametric hypothesis testing)} Multiscale Graph Correlation (MGC) is a framework for universally consistent testing high-dimensional and non-Euclidean data.
+    \item \href{https://neurodata.io/nd_cloud/}{ndcloud (NeuroData Cloud)} The deployment of tools which support the Open Connectome Project
+    \item \href{https://neurodata.io/sporf/}{Sparse Projection Oblique Randomer Forests (Classification and regression)} SPORF is an improved random forest algorithm that achieves better accuracy and scaling than previous implementations on a standard suite of >100 benchmark problems.
+    \item \href{https://neurodata.io/lol/}{LOL (Supervised dimensionality reduction)} Linear Optimal Low-rank (LOL) projection for improved classification performance in high-dimensional classification tasks
+    \item \href{https://neurodata.io/m2g/}{m2g (MR graph analysis)} m2g uses diffusion MRI data from individuals to estimate connectomes reliably and scalably.
+    \item \href{https://neurodata.io/reg/}{reg (Image registration)} Performs non-linear affine and deformable image registration.
+
+    \item \href{https://github.com/neurodata/uncertainty-forest}{Uncertainty-Forest} A Python package containing estimation procedures for posterior distributions, conditional entropy, and mutual information between random variables X and Y
+
+    \item \href{https://github.com/neurodata/open-data-registry}{Open-Data-Registry} This bucket contains multiple neuroimaging datasets (as Neuroglancer Precomputed Volumes) across multiple modalities and scales, ranging from nanoscale (electron microscopy), to microscale (cleared lightsheet microscopy and array tomography), and mesoscale (structural and functional magnetic resonance imaging). Additionally, many of the datasets include segmentations and meshes.
+    \item \href{https://neurodata.io/ocp/}{OCP} The Open Connectome Project
+    \item \href{https://github.com/neurodata/neuroparc}{neuroparc} This repository contains a number of useful parcellations, templates, masks, and transforms to (and from) MNI152NLin6 space. The files are named according to the BIDs specification.
+    \item \href{https://github.com/neurodata/ndex}{ndex} Python 3 command-line program to exchange (download/upload) image data with NeuroData's cloud deployment of APL's BOSS spatial database
+    \item \href{https://github.com/neurodata/ndwebtools}{ndwebtools} ndwebtools (ndweb) is a Django application to provide a user-friendly interface for interacting with NeuroData resources and data. 
+    \item \href{https://github.com/neurodata/non-parametric-clustering}{Non-Parametric-Clustering}
+
+\end{enumerate}
+
+
+
+\subsection{Open-source Software: Contributed}
+
+\begin{enumerate} 
+    \item \href{https://github.com/neurodata/scipy}{scipy}
+    \item \href{https://github.com/neurodata/render}{render}
+    \item \href{https://github.com/neurodata/neuroglancer}{neuroglancer}
+    \item \href{https://github.com/neurodata/boss}{boss}
+    \item \href{https://github.com/neurodata/cloud-volume}{cloud-volume}
+    \item \href{https://igraph.org}{igraph}
+    \item \href{https://github.com/FCP-INDI/C-PAC}{C-PAC}
+\end{enumerate}
+    
+
+
+
+
+\subsection{Open-source Software: Archived}
+\begin{enumerate}
+    \item \href{https://github.com/flashxio/FlashX}{FlashGraph (Scalable Analytics)}
+    \item \href{https://github.com/flashxio/FlashX}{FlashX (Scalable machine learning)}
+    \item \href{https://github.com/flashxio/knorPy}{knor (Clustering)}
+    \item \href{https://github.com/neurodata/pymeda}{MEDA (Matrix Exploratory Data Analysis)}
+    \item \href{https://github.com/jovo/oopsi}{oopsi (Calcium Spike Sorting)}
+    \item \href{https://github.com/aksimhal/SynapseAnalysis}{SynapseAnalysis (Synapse Detection)}
+    \item \href{https://github.com/neurodata/vesicle}{VESICLE (EM Synapse Detection)}
+
+    \item \href{https://github.com/neurodata/ndviz}{ndviz}
+    \item \href{https://github.com/neurodata/ndstore}{ndstore}
+    \item \href{https://github.com/neurodata/CAJAL}{CAJAL}
+    \item \href{https://github.com/neurodata/DMG}{DMG}
+    \item \href{https://github.com/neurodata/vesicle}{vesicle}
+
+\end{enumerate}
+
+
+
+\subsection{Consultancy}
+    \cventry{2017}{Consultant}{\href{https://www.greenspringassociates.com}{Greenspring Associates}}{}{}{}
+    \cventry{2016}{Consultant}{Scanadu}{}{}{}
+
+\subsection{Advisory Board Appointments}
+    \cventry{10/18 -- now}{Advisory Board}{\href{https://mind-x.io/}{Mind-X}}{}{}{}
+    \cventry{01/17 -- now}{Advisory Board}{\href{https://www.pivotalpath.com/}{PivotalPath}}{}{}{}
+
+\subsection{Startups}
+    \cventry{01/17 -- now}{Co-Founder}{\href{http://gigantum.io}{gigantum}}{}{}{}
+    \cventry{01/16 -- now}{Co-Founder}{\href{http://www.d8alab.com}{d8alab}}{}{}{}
+    \cventry{01/11 -- now}{Co-Founder \& Co-Director}{\href{http://neurodata.io}{NeuroData} (formerly Open Connectome Project)}{}{}{}
+
+
+%%\newpage
+%%\section{OLD MATERIAL BELOW }
+%%\newpage
+%%%%%%%%%%%
+%%
+%%
+%%\section{Professional Experience}
+%%
+%%
+%%%\cventry{10/18 -- now}{Advisory Board}{\href{https://mind-x.io/}{Mind-X}}{}{}{}
+%%
+%%
+%%
+%%%\cventry{01/17 -- now}{Advisory Board}{\href{https://www.pivotalpath.com/}{PivotalPath}}{}{}{}
+%%\cventry{01/17 -- now}{Co-Founder}{\href{http://gigantum.io}{gigantum}}{}{}{}
+%%
+%%%\cventry{2017}{Consultant}{\href{https://www.greenspringassociates.com}{Greenspring Associates}}{}{}{}
+%%
+%%
+%%\cventry{01/16 -- now}{Co-Founder}{\href{http://www.d8alab.com}{d8alab}}{}{}{}
+%%
+%%%\cventry{2016}{Consultant}{Scanadu}{}{}{}
+%%
+%%
+%%\cventry{08/15 -- now}{Steering Committee}{Kavli Neuroscience Discovery Institute (KNDI)}{}{}{}
+%%
+%%\cventry{08/15 -- 07/18}{Co-Developer}{\href{http://icm.jhu.edu/academics/undergraduate-minor/}{Computational Medicine Minor}}{}{}{}
+%%
+%%\cventry{05/15 -- 07/17}{Co-Founder and Faculty Advisor}{\href{http://medhacks.org}{MedHacks}}{}{}{}
+%%
+%%\cventry{08/14 -- 08/18}{\href{http://icm.jhu.edu/academics/undergraduate-minor/}{Director of Undergraduate Studies}}{Institute for Computational Medicine}{}{}{}
+%%
+%%\cventry{01/11 -- now}{Co-Founder \& Co-Director}{\href{http://neurodata.io}{NeuroData} (formerly Open Connectome Project)}{}{}{}
+%%
+%%
+%%
+%%\cventry{07/04 -- 07/12}{Chief Data Scientist}{Global Domain Partners, LLC}{}{}{}
+%%\cventry{06/01 -- 09/01}{Research Assistant}{Prof. Randy O'Reilly, Dept.~of Psychology}{}{}{University of Colorado}
+%%\cventry{06/00 -- 09/00}{Clinical Engineer}{Johns Hopkins Hospital}{}{}{}
+%%\cventry{06/99 -- 08/99}{Research Assistant under Dr. Jeffrey Williams}{Dept. of Neurosurgery, Johns Hopkins Hospital}{}{}{}
+%%\cventry{06/98 -- 08/98}{Research Assistant under Professor Kathy Cho}{Dept. of Pathology, Johns Hopkins School of Medicine}{}{}{}
+%%
+%%
+%%\section{\href{https://neurodata.io/about/awards/}{Awards and Recognition}}
+%%\subsection{Individual}
+%%    \cventry{2002}{Dean's List}{Washington University}{}{}{}
+%%
+%%\subsection{Shared}
+%%    \cventry{2017}{\href{http://www.hpdc.org/2017/awards/best-paper-award}{Best Presentation Award HPDC}}{Mhembere et al. (2017)}{}{}{}
+%%    \cventry{2017}{Nonparametric Statistics of the American Statistical Association Student Paper Award}{Lee et al. (2017)}{}{}{}
+%%    \cventry{2014}{F1000 Prime Recommended}{Vogelstein et al. (2014)}{}{}{}
+%%    \cventry{2013}{Spotlight}{Neural Information Processing Systems (NIPS)}{}{}{}
+%%    \cventry{2011}{Trainee Abstract Award}{Organization for Human Brain Mapping}{}{}{}
+%%    \cventry{2008}{Spotlight}{Computational and Systems Neuroscience (CoSyNe)}{}{}{}
+%%
+%%\section{Professional Memberships}
+%%
+%%\cventry{SfN}{Society for Neuroscience}{}{}{}{}
+%%
+%%
+%%
+%%%\section{Published Peer-Review Research Articles}
+%%\begin{refsection}[pubs_peer_reviewed.bib] 
+%%%\newrefcontext{J}
+%%\nocite{*}
+%%\defbibnote{a1}{{Note: CV author in bold; Trainees in italics, \\
+%%        \textbf{(55 papers; top 10 cited 2,944 times; H-index 30)}}}
+%%\printbibliography[%
+%%    title=\href{https://neurodata.io/publications/\#peer_reviewed}{Published Peer-Reviewed Research Articles},%
+%%    prenote=a1,% 
+%%    heading=bibliography%
+%%    ]
+%%\end{refsection}
+%%
+%%
+%%
+%%
+%%
+%%
+%%
+%%%\section{Conference Papers}
+%%\begin{refsection}[pubs_conf.bib]
+%%%\newrefcontext{A}
+%%\nocite{*}
+%%\printbibliography[%
+%%    title={\href{https://neurodata.io/publications/\#conf}{Conference Papers}},%
+%%    heading=bibliography,%
+%%    ]
+%%\end{refsection}
+%%
+%%%\section{Book Chapters}
+%%
+%%%\section{Manuscripts in Revision}
+%%
+%%%\section{Manuscripts in First Review}
+%%
+%%%\section{Manuscripts in Preparation for Submission}
+%%%\section{\href{https://neurodata.io/publications/\#pre_prints}{Pre-Prints}}
+%%\begin{refsection}[pubs_pre_prints.bib] %, pubs_excluded_entries.bib]
+%%%\newrefcontext{P}
+%%\nocite{*}
+%%\printbibliography[%
+%%    title=\href{https://neurodata.io/publications/\#pre_prints}{Manuscripts in Preparation for Submission},%
+%%    heading=bibliography%
+%%    ]
+%%\end{refsection}
+%%
+%%
+%%
+%%%\section{Invited Talks}
+%%%\section{\href{https://neurodata.io/talks/}{Invited Talks}}
+%%\begin{refsection}[talks_invited.bib]
+%%%\newrefcontext{I}
+%%\nocite{*}
+%%\printbibliography[%
+%%    title=\href{https://neurodata.io/talks/}{Invited Talks},%
+%%    heading=bibliography%
+%%    ]
+%%\end{refsection}
+%%
+%%%\subsection{Other Talks}
+%%%\section{\href{https://neurodata.io/talks/}{Other Talks}}
+%%\begin{refsection}[talks_other.bib, talks_excluded_entries.bib]
+%%%\newrefcontext{T}
+%%\nocite{*}
+%%\printbibliography[%
+%%    title=\href{https://neurodata.io/talks/}{Other Talks},%
+%%    heading=bibliography%
+%%    ]
+%%\end{refsection}
+%%
+%%%\subsection{Interviews}
+%%
+%%
+%%%\section{Abstracts / Poster Presentations}
+%%\begin{refsection}[posters]
+%%%\newrefcontext{T}
+%%\nocite{*}
+%%\printbibliography[%
+%%    title=\href{https://neurodata.io/posters/}{Abstracts / Poster Presentations},%
+%%    heading=bibliography%
+%%    ]
+%%\end{refsection}
+%%
+%%
+%%
+%%\section{Teaching Experience -- Ongoing Courses}
+%%
+%%\cventry{Fall '19}{\href{https://github.com/NeuroDataDesign/Syllabus}{NeuroData Design I}}{EN.580.237/437/637}{Course Director}{enrollment 46}{}
+%%
+%%\cventry{Spring '19}{\href{https://github.com/NeuroDataDesign/Syllabus}{NeuroData Design II}}{EN.580.438/638}{Course Director}{enrollment 18}{}
+%%
+%%\cventry{Fall '18}{\href{https://github.com/NeuroDataDesign/Syllabus}{NeuroData Design I}}{EN.580.237/437/637}{Course Director}{enrollment 22}{}
+%%
+%%\cventry{Spring '17}{\href{https://github.com/NeuroDataDesign/Syllabus}{NeuroData Design II}}{EN.580.238/438/638}{Course Director}{enrollment 14}{}
+%%
+%%\cventry{Winter '17}{BME Research Intersession}{EN.580.574}{Course Director}{enrollment 6}{}
+%%
+%%
+%%\cventry{Fall '17}{\href{https://github.com/NeuroDataDesign/Syllabus}{NeuroData Design I}}{EN.580.247/437/637}{Course Director}{enrollment 15}{}
+%%
+%%\cventry{Spring '16}{\href{https://github.com/Upward-Spiral-Science/Syllabus}{The Art of Data Science}}{EN.580.468}{Course Director}{enrollment 24}{}
+%%
+%%\cventry{Fall '16}{\href{https://github.com/NeuroDataDesign/Syllabus}{NeuroData Design I}}{EN.580.437}{Course Director}{enrollment 16}{}
+%%
+%%\cventry{Fall '15}{Introduction to Computational Medicine}{}{Co-Teaching}{Course Co-Director}{}
+%%
+%%\cventry{Spring '15}{\href{https://github.com/openconnectome/Statistical-Connectomics-Class}{Statistical Connectomics}}{EN.580.694}{Course Director}{enrollment 26}{}
+%%
+%%% \cventry{Winter 2015}{Statistical Connectomics}{}{Neuroimaging Specialization}{Coursera}{}
+%%
+%%\section{Teaching Experience -- One-Time}
+%%\cventry{Spring '19}{Systems Bioengineering II}{EN.580.422}{}{2 Lectures}{}
+%%\cventry{Spring '19}{Computational Neuroscience}{AS.080.321}{}{2 Lectures}{}
+%%\cventry{Spring '18}{Systems Bioengineering II}{EN.580.422}{}{2 Lectures}{}
+%%\cventry{Spring '18}{Computational Neuroscience}{AS.080.321}{}{2 Lectures}{}
+%%\cventry{Spring '17}{Systems Bioengineering II}{EN.580.422}{}{2 Lectures}{}
+%%\cventry{Spring '16}{Systems Bioengineering II}{EN.580.422}{}{2 Lectures}{}
+%%\cventry{Winter '16}{Introduction to Connectomics}{EN.600.221}{}{1 Lecture}{}
+%%\cventry{Fall '16}{BME Modeling and Design}{EN.580.111}{}{1 Lecture}{}{}
+%%
+%%
+%%
+%%\section{Advisory Information}
+%%\subsection{Post-Doctoral Fellows}
+%%\cventry{08/18 -- now}{Jes\'us Arroyo, PhD}{Post-doctoral Fellow}{CIS}{JHU}{Working on graph matching and joint graph embedding.}
+%%\cventry{07/19 -- now}{Celine Drieu, PhD}{Post-doctoral Fellow}{Kavli NDI}{JHU}{Co-Advised by Assitant Prof. Kuchibhotla, Department of Psychological and Brain Sciences. Working on understanding learning and memory using two-photon calcium imaging.}
+%%\cventry{07/19 -- now}{Austin Grave, PhD}{Post-doctoral Fellow}{Kavli NDI}{JHU}{Co-Advised by  Prof. Richard Huganir, Department of Neuroscience. Working on understanding whole brain synaptic plasticity using genetic engineering and light microscopy imaging.}
+%%\cventry{07/18 -- now}{Audrey Branch, PhD}{Post-doctoral Fellow}{Kavli NDI}{JHU}{Co-Advised by Prof Michela Gallagher, extending brain clearing experimental technology from mice to rats. Currently with a manuscript on biorxiv.}
+%%
+%%\cventry{09/16 -- 08/18}{Cencheng Shen, PhD}{Post-Doctoral Fellow}{CIS}{JHU}{Developed Multiscale Graph Correlation, which is currently the premiere hypothesis testing framework, and about to be integrated into SciPy, by far the world's leading scientific computing package. Currently an Assistent Professor in Department of Statistics at University of Delaware, and still an actice collaborator and grantee.}
+%%\cventry{05/16 -- 06/17}{Leo Duan, PhD}{Post-doctoral Fellow}{CIS}{JHU}{Went on to do a second postdoc with Leo Dunson (who I did my second postdoc with). Currently an Assistant Professor at University of Florida.}
+%%\cventry{06/16 -- 07/17}{Guilherme Franca, PhD}{Post-doctoral Fellow}{CIS}{JHU}{Worked on non-parametric clustering, with an article about to be accepted in PAMI, the leading machine learning journal.  Currently a postdoc for Rene Vidal.}
+%%
+%%\subsection{Ph.D. Students}
+%%\cventry{08/19 -- now}{Michael Powell, MSE}{PhD advisee}{BME}{JHU}{Dissertation will focus on explainable artificial intelligence, spearheads collaboration with Andreas Muller, Co-Director of scikit-learn, the world's leading machine learning package.}
+%%\cventry{06/19 -- now}{Jaewon Chung, MSE}{PhD advisee}{BME}{JHU}{Dissertation will focus on statistics of populations of human networks. Already co-first author and middle author on multiple manuscripts.}
+%%\cventry{08/19 -- now}{Tommy Athey, BSE}{PhD advisee}{BME}{JHU}{Dissertation will focus on MouseLight project, spearheads collaborations with Prof. Jeremias Sulam and Michael I.~Miller.}
+%%\cventry{08/19 -- now}{Eric Bridgeford, BSE}{PhD advisee}{Department of Biostatistics}{JHU}{Dissertation will focus on statistics of human connectomes and mitigating batch effects.  Already first author on several manuscripts under review, and spearheads collaboration with Prof Brian Caffo at Biostatistics.}
+%%\cventry{08/18 -- now}{Benjamin Pedigo, BSE}{PhD advisee}{BME}{JHU}{Dissertation will focus on analysis and modeling of the world's first whole animal connectome, in collaboration with Marta Zlatic and Albert Cardona (formerly of Janelia Research Campus).  Already co-first author and middle author on multiple manuscripts.}
+%%%\cventry{??03/19 -- 09/19}{Derek Pisner}{PhD advisee}{}{JHU/ UT Austin}{}
+%%\cventry{08/18 -- now}{Meghana Madyastha, BSE}{PhD Co-advisee}{CS}{JHU}{Dissertation will focus on computational aspects of accelerationg learning and inference using decision forests.}
+%%\cventry{08/16 -- now}{Vikram Chandrashekhar, BSE}{PhD advisee}{BME}{JHU}{Dissertation has focused on extending LDDMM to whole cleared brain datasets, spearheads collaboration with Prof. Karl Deisseroth's lab at Stanford, one of the world's leading neuroscientists.}
+%%\cventry{08/14 -- 01/18}{Tyler Tomita, PhD}{}{BME}{JHU}{Developed Sparse Projection Oblique Randomer Forest in his dissertation, currently the best performing machine learning algorithm on a standard suite of over 100 benchmark problems. Currenly a postdoc with Assistant Prof. Chris Honey of Psychology and Brain Sciences.}
+%%
+%%\subsection{M.S. Students}
+%%\cventry{06/19 -- now}{Bijan Varjavand}{MS advisee}{BME}{JHU}{Submitted manuscript to PAMI on advancing statistics on populations of networks.}
+%%\cventry{06/19 -- now}{Sambit Panda}{MS advisee}{BME}{JHU}{Led development of Python implementation of MGC, to be integrated into SciPy.}
+%%\cventry{06/19 -- now}{Varun Kotharkar}{MS advisee}{AMS}{JHU}{Investigating theoretical advantages of oblique, as compared to axis-aligned, decision trees.}
+%%\cventry{06/18 -- now}{Drishti Mannan}{MS advisee}{BME}{JHU}{Preparing manuscript introducing novel specification for large attributed networks.}
+%%\cventry{06/18 -- 05/19}{Jaewon Chung}{MSE advisee}{BME}{JHU}{Co-first author of manuscript and co-lead developer of Python package for statistical analysis of networks. Currently a BME PhD student in my lab.}
+%%\cventry{08/14 -- 06/17}{Greg Kiar, MSE}{}{BME}{JHU}{Lead deveoper of NDMG, the only existing ``soup to nuts'' pipeline for both functional and diffusion pipelines; co-first author of manuscript under review. Currently a PhD student at McGill University.}
+%%
+%%\subsection{Undergraduate Students}
+%%\cventry{06/19 -- now}{Vivek Gopalakrishnan}{BSE}{BME}{JHU}{Winner of Pistritto Fellowship.}
+%%\cventry{06/19 -- now}{Richard Guo}{BSE}{BME}{JHU}{}
+%%\cventry{06/19 -- now}{Ronan Perry}{BSE}{BME}{JHU}{}
+%%\cventry{08/14 -- 08/18}{Eric Bridgeford, BSE}{}{BME}{JHU}{Currently a PhD student in Biostatistics at JHSPH in my lab.}
+%%\cventry{08/15 -- 08/16}{Albert Lee,BSE}{}{BME}{JHU}{}
+%%\cventry{06/15 -- 12/15}{Ron Boger, BSE}{}{BME}{JHU}{Currenly working at a computational medicine start-up in Silicon Valley.}
+%%\cventry{05/15 -- 05/16}{Jordan Matelsky, BSE}{}{CS and Neuroscience}{JHU}{Currently a data scientist at APL.}
+%%\cventry{02/15 -- 05/16}{Ivan Kuznetsov, BSE}{}{BME}{JHU}{Currently an MD/PhD Candidate at the UPenn, winner of \href{https://beblog.seas.upenn.edu/tag/ivan-kuznetsov/}{Soros Fellowship}.}
+%%
+%%%\subsection{High School Students}
+%%
+%%\subsection{Research Assistants}
+%%
+%%\cventry{09/19 -- now}{Ross Lawrence}{Research Assistant}{BME}{JHU}{Responsible for documenting and bug fixing NDMG.}
+%%\cventry{07/19 -- now}{Ronak Mehta}{Research Assistant}{BME}{JHU}{Finalizing three manuscripts on (1) uncertainty forests, (2) time-series dependence quantification, and (3) lifelong learning forests.}
+%%\cventry{06/19 -- now}{Devin Crowley}{Research Assistant}{BME}{JHU}{Lead developer of our scalable Python implementaiton of LDDMM.}
+%%\cventry{02/19 -- now}{Hayden Helm}{Assistant Research Faculty}{BME}{JHU}{Leading research efforts developing theory and methods for lifelong learning.}
+%%\cventry{10/18 -- now}{Alex Loftus}{Research Assistant}{BME}{JHU}{Current lead developer of NDMG, transitioning from a stand-alone package to be integrated with DiPy.}
+%%\cventry{06/18 -- now}{Benjamin Falk}{Research Engineer}{BME}{JHU}{Lead software engineer, overseas all development projects, solely responsible for all cloud infrastructure.}
+%%\cventry{03/16 -- now}{Jesse Patsolic}{Assistant Research Faculty}{BME}{JHU}{Lead developer converting our extensions to decision forests to be merged into sklearn.}
+%%
+%%\subsection{Summer Interns}
+%%
+%%\cventry{Summer '19}{Kareef Ullah}{Summer Intern}{BME}{JHU}{}
+%%\cventry{Summer '19}{Shunan Wu}{Summer Intern}{BME}{JHU}{}
+%%\cventry{Summer '19}{Shiyu Sun}{Summer Intern}{BME}{JHU}{}
+%%\cventry{Summer '19}{Sander Shulhoff}{Summer Intern}{BME}{JHU}{}
+%%\cventry{Summer '19}{Kiki Zhang}{Summer Intern}{BME}{JHU}{}
+%%\cventry{Summer '18}{Papa Kobina Van Dyck}{Summer Intern}{BME}{JHU}{}
+%%
+%%\section{Thesis Committee Service}% (BME unless otherwise noted)}
+%%\subsection{}
+%%\cventry{}{Kutten, Kwame}{JHU Ph.D. Student}{Graduated 2018}{}{}{}
+%%\subsection{}
+%%\cventry{}{Browne, James}{Computer Science}{JHU Ph.D. Student}{Graduated 2019}{}
+%%
+%%\cventry{}{Mhembere, Disa}{Computer Science}{JHU Ph.D. Student}{Graduated 2019}{}
+%%\cventry{}{Zheng, D}{Computer Science}{JHU Ph.D. Student}{Graduated 2017}{}
+%%\cventry{}{Wang, Shangsi}{Applied Mathematics and Statistics}{JHU Ph.D. Student}{Graduated 2018}{}
+%%\cventry{}{Tang, Runze}{Applied Mathematics and Statistics}{JHU Ph.D. Student}{Graduated 2018}{}
+%%\cventry{}{Lee, Youjin}{Biostatistics}{JHU Ph.D. Student}{Graduated 2018}{}
+%%\cventry{}{Binkiewicz, Norbert}{Statistics}{University of Wisconsin Ph.D. Student}{Graduated 2017}{}
+%%\cventry{}{Gray-Roncal, Will}{Computer Science}{JHU Ph.D. Student}{Graduated 2016}{}
+%%
+%%
+%%\section{Research}
+%%\textbf{A table showing my direct (total) cost expentidures since being hired is below, indicating a steady increase each year of over 30\%. Details for funding sources follow, including the average annual direct (total) costs per grant, when available.
+%%}
+%%\begin{flushleft}
+%%FY15:	\$113,761 (\$168,924), 
+%%\linebreak FY16:	\$360,123 (\$524,225),
+%%\linebreak FY17:	\$459,523 (\$709,019),
+%%\linebreak FY18:	\$550,011 (\$887,186),
+%%\linebreak FY19:	\$850,836 (\$1,366,308).
+%%\end{flushleft}
+%%
+%%%\subsection{External Research Support: Current}
+%%\subsection{\href{https://neurodata.io/about/funding/}{External Research Support: Current}}
+%%\cventry{9/19 -- 8/22}
+%%    {NIH}%
+%%    {}
+%%    {Mueller (PI)}
+%%    {\emph{Accessible technologies for high-throughput, whole-brain reconstructions of molecularly characterized mammalian neurons  P0} 
+%%    The  goal of this grant will be to develop scalable
+%%    and affordable cellular imaging and neuro-informatics tools,
+%%    running preliminary experiments to connect the transcriptome to
+%%    anatomy, in mice. Tools will be made available to researchers,
+%%    to help accelerate the creation of detailed maps at cell
+%%    resolution showing circuitry in whole brains.}
+%%    {JTV is responsible for all big data infrastructure and informatics.}
+%%    {}
+%%    
+%%    \cventry{12/19 -- 11/23}
+%%    {DARPA GARD}%
+%%    {}
+%%    {Arora (PI)}
+%%    {\emph{Understanding and improving robust learning against adversarial attacks}.}
+%%    {JTV is responsible for theory, methods, and algorithms using decision forests.}
+%%    {}
+%%
+%%\cventry{12/19 -- 11/23}
+%%    {NIH}%
+%%    {}
+%%    {Badea (PI)}
+%%    {\emph{Brain Networks in Mouse Models of Aging.} 
+%%    The  goal of this grant it to generate connectomes and RNA-seq transcriptomes to characterize and differentiate APOE mice as a model of aging.}
+%%    {JTV is responsible for all statistical analyses, particularly associated with connectomics.}
+%%    {}
+%%
+%%        
+%%\cventry{8/19 -- 5/24}
+%%    {NIH 1R01MH120482-01}%
+%%    {\$73,570} 
+%%    {Satterthwaite (PI)}
+%%    {\emph{Reproducible imaging-based brain growth charts for psychiatry.} 
+%%    This  goal of this proposal will have provide a new data resource, yield reproducible growth charts of brain development, and delineate novel mechanisms regarding the developmental basis of psychopathology in youth.}
+%%    {JTV is responsible for all statistical analyses, particularly associated with connectomics.}
+%%    {}
+%%
+%%
+%%\cventry{5/17 -- 4/20}
+%%    {NSF 1712947}%
+%%    {} 
+%%    {Shen (PI)}
+%%    {\href{http://grantome.com/grant/NSF/DMS-1921310}%
+%%    {Multiscale Generalized Correlation: A Unified Distance-Based Correlation Measure for Dependence Discovery} 
+%%    The  goal of this proposal is to establish a unified methodology framework for statistical testing in high-dimensional, noisy, big data, through theoretical advancements, comprehensive simulations, and real data experiments}%
+%%    {JTV is responsible for working with the PI on all aspects of methods development and assessments, as well as all real data applications.}
+%%    {}
+%%
+%%
+%%\cventry{7/17 -- 6/20}
+%%    {NIH 1R01DC016784-01}%
+%%    {} 
+%%    {Ratnanather (PI)}
+%%    {\href{http://grantome.com/grant/NIH/R01-DC016784-02}%
+%%    {CRCNS US-German Res Prop: functional computational anatomy of the auditory cortex.} 
+%%    The goal of this project is to create a robust computational framework for analyzing the cortical ribbon in a specific region: the auditory cortex}
+%%    {JTV is responsible for the big data aspects of this grant, including data sharing and open access properties.}
+%%    {}
+%%
+%%
+%%\cventry{10/16 -- 9/20}%
+%%    {DARPA D3M FA8750-17-2-0112}%
+%%    {}%
+%%    {Priebe (PI)}
+%%    {\emph{What Would Tukey Do?} 
+%%    The goal is to develop theory and methods for generating a discoverable archive of data modeling primitives and for automatically selecting model primitives and for composing selected primitives into complex modeling pipelines based on user-specified data and outcome(s) of interest}%
+%%    {JTV is responsible for connecting methods to real data applications, specifically in brain science.}
+%%    {}
+%%
+%%\cventry{9/17 -- 8/22}
+%%    {NIH U19 1U19NS104653-01}%
+%%    {\$67,209 (\$110,055)}%
+%%    {Engert (PI)}
+%%    {\href{http://grantome.com/grant/NIH/U19-NS104653-02}%
+%%    {Sensorimotor processing, decision-making, and internal states: towards a realistic multiscale circuit model of the larval zebrafish brain.} 
+%%    The general goal of the proposal is to generate a realistic multiscale circuit model of the larval zebrafish’s brain – the multiscale virtual fish (MSVF). The model will span spatial ranges from the nanoscale at the synaptic level, to local microcircuits to inter-area connectivity - and its ultimate purpose is to explain and simulate the quantitative and qualitative nature of behavioral output across various timescales}%
+%%    {JTV is the PI of the Data Core, and therefore responsible for all
+%%        aspects of data, including, storage, analysis, modeling, and
+%%        disseminating.\\
+%%    The above grant is the flagship NIH BRAIN Initiative granting mechanism.  In addition to being the PI of the Data Core, I am the co-chair of the consortium of U19 Data Science Cores.}
+%%
+%%
+%%\cventry{1/18 -- 12/19}
+%%    {Schmidt Sciences}%
+%%    {\$125,000}%
+%%    {Vogelstein (PI)}
+%%    {\emph{Connectome Coding at the Synaptic Scale.} 
+%%    This project will study learning and plasticity at an unprecedented scale, revealing the dynamics of large populations of synapses comprising an entire local cortical circuit. No previously conducted experiment could answer the questions about the dynamics of large populations of synapses, which is crucial to understanding the learning process}%
+%%    {}
+%%    {}
+%%
+%%\cventry{11/17 -- 10/21}
+%%    {DARPA L2M}%
+%%    {\$2,000,000}%
+%%    {Vogelstein (PI)}
+%%    {\emph{Lifelong Learning Forests.}
+%%    Our Lifelong Learning Forests (L2Fs) will learn continuously, selectively adapting to new environments and circumstances utilizing top-down feedback to impact low-level processing, with provable statistical guarantees, while maintaining computational tractability at scale.  }%
+%%    {}
+%%    {}
+%%
+%%\cventry{11/17 -- 10/21}
+%%    {DARPA L2M}%
+%%    {\$19,940}%
+%%    {Tolias (PI)}    
+%%    {\emph{Continual Learning Across Synapses, Circuits, and Brain Areas.}
+%%    Our  goal is to develop the pre-processing analysis pipeline for the imaging data collected in this project}%
+%%    {JTV is responsible for all informatics associated with data management, visualization, processing, and analysis starting in Phase II of the program.}
+%%    {}
+%%
+%%\cventry{7/18 -- 6/21}
+%%    {NSF}%
+%%    {\$599,757}%
+%%    {Shulman (PI)}
+%%    {\href{http://grantome.com/grant/NSF/MCB-1807546}%
+%%    {SemiSynBio: Collaborative Research: YeastOns: Neural Networks Implemented in Communication Yeast Cells.}
+%%    Our goal is to provide neuroscience and machine learning expertise to guide the design of the computational learning capabilities of the system}%
+%%    {JTV is responsible for providing insight into both biological and artificial neural network architecture and function.}
+%%    {}
+%%
+%%\cventry{7/17 -- 6/20}
+%%    {NSF, NeuroNex 16-569 Neural System Cluster 1707298}%
+%%    {\$400,000}
+%%    {Vogelstein (PI)}
+%%    {\href{https://www.nsf.gov/awardsearch/showAward?AWD_ID=1707298}%
+%%    NeuroNex Innovation Award: Towards Automatic Analysis of Multi-Terabyte Cleared Brains.}%
+%%    {The goal of this project is to develop an end-to-end pipeline for
+%%    the analysis of big brain volume data in the cloud.\\
+%%    The above grant is the flagship NSF BRAIN Initiative granting
+%%    mechanism.}{}
+%%
+%%\subsection{External Research Support: Completed}
+%%
+%%\cventry{10/17 -- 9/18}
+%%    {Dog Star Technologies, 90074647}
+%%    {\$48,151 (\$78,849)}
+%%    {Vogelstein (PI)}
+%%    {Brain Ark}
+%%    {JTV is responsible for estimating the connectomes from four coyotes and four sea lions.}
+%%    {}
+%%
+%%
+%%    \cventry{1/17 -- 2/18}
+%%    {Kavli Foundation}
+%%    {\$50,000}
+%%    {Vogelstein (PI)}    
+%%    {International Brain Station}
+%%    {JTV is responsible establishing the foundations of what could become an international brain station.}
+%%    {}
+%%
+%%
+%%\cventry{1/17 -- 10/18}
+%%    {NSF EAGER}
+%%    {\$24,188}
+%%    {Burns (PI), ACI-1649880}    
+%%    {\href{https://nsf.gov/awardsearch/showAward?AWD_ID=1649880&HistoricalAwards=false}%    
+%%    {Brain Comp Infra: EAGER: BrainLab CI: Collaborative, Community Experiments with Data-Quality     Controls through Continuous Integration}}
+%%    {JTV is responsible for integrating and applying this work in the context of brain science numerical experiments.}
+%%    {}
+%%
+%%
+%%    \cventry{4/16 -- 3/19}
+%%    {NSF 1637376}
+%%    {\$120,000}
+%%    {Vogelstein (PI)}    
+%%    {%    
+%%    A Scientific Planning Workshop for Coordinating Brain Research Around the Globe}
+%%    {JTV is responsible for organizing this series of meetings held at JHU, including the first ever international brain initiative workshop.}
+%%    {}
+%%
+%%
+%%
+%%
+%%\cventry{5/15 -- 8/18}
+%%    {DARPA SIMPLEX N66001-15-C-4041}
+%%    {\$65,842 (\$106,665)}
+%%    {Vogelstein (PI)}
+%%    {\emph{From RAGs to Riches: Utilizing Richly Attributed Graphs to Reason from Heterogenous Data}.}
+%%    {}
+%%    {}
+%%
+%%
+%%\cventry{9/14 -- 6/19}
+%%    {NIH Director's Transformative Research Award R01NS092474}
+%%    {\$116,838 (\$189,278)}
+%%    {Smith (PI)}
+%%    {\href{http://grantome.com/grant/NIH/R01-NS092474-01}%    
+%%    {Synaptomes of Mouse and Man}}
+%%    {JTV is responsible for all statistical analyses of data.\\
+%%    The above award is part of the High-Risk, High-Reward Research program directly from the NIH Director's budget.  It is the largest and most prestigious award given by NIH.}
+%%
+%%\cventry{5/14 -- 2/16}
+%%    {DARPA (GRAPHS), DARPA-BAA-13-15}
+%%    {\$38,060 (\$61,658)}
+%%    {Burns (PI)}
+%%    {\emph{Scalable Brain Graph Analyses Using Big-Memory, High-IOPS Compute Architectures}.}
+%%    {JTV is responsible for motivating and applying methods development for brain graph data. }
+%%    {}
+%%
+%%\cventry{3/13 -- 1/16}
+%%    {NIH/NSF (BIGDATA), 1R01DA036400}
+%%    {}
+%%    {Mitra (PI)}
+%%    {\href{https://www.nsf.gov/awardsearch/showAward?AWD_ID=1649865}%    
+%%    {Computational infrastructure for massive neuroscience image stacks}}
+%%    {JTV is responsible for computational infrastructure and statistical analysis.}
+%%    {}
+%%
+%%\cventry{2/13 -- 9/15}{Endeavor Scientists Training Fellowship}{}{Child Mind Institute}{Vogelstein (PI)}{}
+%%
+%%\cventry{9/12 -- 8/15}
+%%    {NIH/NIBIB (CRCNS), 1R01EB016411}
+%%    {\$42,190 \$52,979)}
+%%    {Burns (PI)}
+%%    {\href{http://grantome.com/grant/NIH/R01-EB016411-03}%    
+%%	{Data Sharing: The EM Open Connectome Project}}
+%%    {JTV is responsible all aspects of this grant that relate to brain science (as compared to computer science).}
+%%    {}
+%%
+%%\cventry{1/14 -- 12/14}
+%%    {Laboratory for Analytic Sciences}{}
+%%    {Harer (PI)}
+%%    {\emph{Data Readiness Level}}
+%%    {JTV is responsible for applications to brain science.}
+%%    {}
+%%
+%%
+%%\cventry{1/12 -- 10/13}
+%%    {DARPA (XDATA), FA8750-12-C-0239}
+%%    {\$111,467 (\$165,477)}
+%%    {Andrews (PI)}
+%%    {\emph{Graph-Based Scalable Analytics for Big Data}.}
+%%    {JTV is responsible to acquiring and cleaning big brain network data.}
+%%    {}
+%%
+%%\cventry{12/09 -- 1/13}
+%%    {NSF}{}
+%%    {RJ Vogelstein (PI)}
+%%    {\emph{National Center for Applied Neuroscience Project}.}
+%%    {JTV is responsbile for developing statistical connectomics methods.}    
+%%    {}
+%%
+%%
+%%
+%%
+%%\section{Service}
+%%
+%%\subsection{Department Service}
+%%\cventry{Winter '19}{Organizer}{Decision Forest Hackathon}{}{}{}
+%%\cventry{Summer '19}{Organizer}{NeuroData Workshop}{\url{https://neurodata.devpost.com}}{Hackashop to train brain scientists in machine learning for big data ()$\sim$ 50 participants from around the country).}{}
+%%\cventry{March '19}{Organizer}{Neuro Reproducibility Hackashop}{\url{https://brainx3.io/}}{Hackashop to train brain scientists in best practices in reproducible science, co-organized with two startups: Vathes, LLC and Gigantum ($\sim$ 50 participants)}{}
+%%
+%%\cventry{Spring '18}{Organizer}{NeuroData Hackathon}{}{}{}
+%%
+%%\cventry{Fall '17}{Organizer}{NeuroData Mini-Hackathon}{}{}{}
+%%
+%%\cventry{Summer '17}{Organizer}{NeuroStorm}{\url{https://brainx2.io}}{Workshop bring together thought leaders from academia, national labs, industry, and non-profits around the world to take next steps towards accelerating brain science discovery in the cloud ($\sim$ 50 participants and 5 observers from funding institutions)}{}
+%%
+%%\cventry{Winter '15}{Organizer}{Hack@NeuroData}{\url{http://hack.neurodata.io/}}{}{}
+%%
+%%\subsection{University Service}
+%%\cventry{2019}{Member}{Search Committee}{BME}{Neuroengineering, 2019}{}
+%%\cventry{2019}{Member}{Search Committee}{BME}{Data Science, 2019}{}
+%%\cventry{2018}{Member}{Search Committee}{BME}{Neuroengineering, 2018}{}
+%%
+%%\cventry{Winter '17}{Faculty Superviser}{MedHacks}{\url{http://medhacks.org/}}{}{}
+%%\cventry{Winter '16}{Faculty Superviser}{MedHacks}{\url{http://medhacks.org/}}{}{}
+%%
+%%\cventry{Spring '16}{Organizer}{Global Brain Workshop}{\url{http://brainx.io}}{First ever international Brain Initiative workshop, bringing together leaders from around the world, covered by Nature and Science ($\sim$ 75 participants)}{}
+%%
+%%\cventry{Winter '15}{Faculty Superviser}{MedHacks}{\url{http://medhacks.org/}}{}{}
+%%
+%%\subsection{Professional Service}
+%%
+%%
+%%
+%%\cventry{Fall '16}{Co-Organizer}{Brains and Bits: Neuroscience Meets Machine Learning, NIPS Workshop}{\url{http://www.stat.ucla.edu/~akfletcher/brainsbits_overview.html}}{}{}
+%%
+%%
+%%\cventry{Fall '15}{Co-Organizer}{BigNeuro2015: Making Sense of Big Neural Data, NIPS Workshop}{\url{http://neurodata.io/bigneuro2015}}{}{}
+%%
+%%\cventry{Fall '12}{Co-Organizer}{\href{https://openwiki.janelia.org/wiki/download/attachments/8687459/final+agenda+EM+Connectomics+100512.pdf}{Scaling up EM Connectomics Conference}}{}{The world's first connectomics workshop, now run annually alternating between Janelia Research and Max Plank locations ($\sim$ 80 participants)}{}
+%%
+%%
+%%
+%%\section{Other Scholarly and Technical Output}
+%%%\subsection{Patents}
+%%\subsection{Boards}
+%%\cventry{10/18 -- now}{Advisory Board}{\href{https://mind-x.io/}{Mind-X}}{}{}{}
+%%\cventry{01/17 -- now}{Advisory Board}{\href{https://www.pivotalpath.com/}{PivotalPath}}{}{}{}
+%%\subsection{Consultancy}
+%%\cventry{2017}{Consultant}{\href{https://www.greenspringassociates.com}{Greenspring Associates}}{}{}{}
+%%\cventry{2016}{Consultant}{Scanadu}{}{}{}
+%%
+%%%\subsection{Other Roles in Companies}
+
+\end{document}
