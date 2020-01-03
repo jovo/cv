@@ -1,6 +1,9 @@
 \documentclass[10pt,colorlinks=true,urlcolor=blue]{moderncv}
 \usepackage{ulem}
 \usepackage{utopia}
+\usepackage[unicode]{hyperref}
+\usepackage{color}
+\usepackage{pdfpages}
 \usepackage{breakurl}
 \usepackage[yyyymmdd]{datetime}
 \moderncvtheme[blue]{classic}
@@ -80,7 +83,7 @@
     }
 }
 
-\usepackage{pdfpages}
+%\usepackage{pdfpages}
 \usepackage{lastpage}
 \usepackage{fancyhdr}
 \pagestyle{fancy}
@@ -146,7 +149,7 @@
   \firstname{Joshua T.~}
   \familyname{Vogelstein}
   \address{Assistant Professor, \\
-   Institute for Computational Medicine \\
+   Department of Biomedical Engineering \\
    Johns Hopkins University \\
    }{}
   \email{jovo@jhu.edu}
@@ -154,6 +157,7 @@
 
 
 \begin{document}
+\pagecolor{white}
 \maketitle
 
 
@@ -162,14 +166,14 @@
 \subsection{Current Appointments}
 
     \cventry{09/19 -- now}{Joint Appointment}{Department of Biostatistics}{Johns Hopkins University (JHU)}{}{}
-    \cventry{08/15 -- now}{Joint Appointment}{Department of Applied Mathematics and Statistics}{}{}{}
-    \cventry{08/14 -- now}{Assistant Professor}{Department of Biomedical Engineering}{Johns Hopkins University (JHU)}{}{}
-    \cventry{08/14 -- now}{Core Faculty} {Institute for Computational Medicine  (ICM)}{}{}{}
-    \cventry{08/14 -- now}{Core Faculty} {Center for Imaging Science (CIS)}{}{}{}
-    \cventry{08/14 -- now}{Joint Appointment}{Department of Neuroscience}{}{}{}
-    \cventry{08/14 -- now}{Joint Appointment}{Department of Computer Science}{}{}{}
-    \cventry{08/14 -- now}{Assistant Research Faculty}{Human Language Technology Center of Excellence}{}{}{}
-    \cventry{10/12 -- now}{Affiliated Faculty}{Institute for Data Intensive Engineering and Sciences}{}{}{}
+    \cventry{08/15 -- now}{Joint Appointment}{Department of Applied Mathematics and Statistics}{(JHU)}{}{}
+    \cventry{08/14 -- now}{Assistant Professor}{Department of Biomedical Engineering}{(JHU)}{}{}
+    \cventry{08/14 -- now}{Core Faculty} {Institute for Computational Medicine  (ICM)}{(JHU)}{}{}
+    \cventry{08/14 -- now}{Core Faculty} {Center for Imaging Science (CIS)}{(JHU)}{}{}
+    \cventry{08/14 -- now}{Joint Appointment}{Department of Neuroscience}{(JHU)}{}{}
+    \cventry{08/14 -- now}{Joint Appointment}{Department of Computer Science}{(JHU)}{}{}
+    \cventry{08/14 -- now}{Assistant Research Faculty}{Human Language Technology Center of Excellence}{(JHU)}{}{}
+    \cventry{10/12 -- now}{Affiliated Faculty}{Institute for Data Intensive Engineering and Sciences}{(JHU)}{}{}
 
 
 \subsection{Education \& Training}
@@ -179,11 +183,11 @@
 
 
 \subsection{Academic Experience}
-    \cventry{08/18 -- now}{\href{https://www.bme.jhu.edu/graduate/mse/degree-requirements/biomedical-data-science/}{Director of Biomedical Data Science Focus Area}}{}{}{}{}
+    \cventry{08/18 -- now}{\href{https://www.bme.jhu.edu/graduate/mse/degree-requirements/biomedical-data-science/}{Director of Biomedical Data Science Focus Area}}{Department of Biomedical Engineering, Johns Hopkins University}{}{}{}
     \cventry{05/16 -- now}{Visiting Scientist} {Howard Hughes Medical Institute}{Janelia Research Campus}{}{}
     \cventry{10/12 -- 08/14}{Endeavor Scientist}{Child Mind Institute}{}{}{}
     \cventry{08/12 -- 08/14}{Affiliated Faculty}{Kenan Institute for Ethics}{}{}{Duke University}
-    \cventry{08/12 -- 08/14}{Adjunct Faculty}{Department of Computer Science}{}{}{}
+    \cventry{08/12 -- 08/14}{Adjunct Faculty}{Department of Computer Science, Johns Hopkins University}{}{}{}
     \cventry{12/09 -- 01/11}{Post-Doctoral Fellow}{Department of Applied Mathematics and Statistics}{Supervised by Carey E.~Priebe}{Johns Hopkins University}{\textbf{Research} Statistics of populations of networks.}
     
     \cventry{06/01 -- 09/01}{Research Assistant}{Prof. Randy O'Reilly, Dept.~of Psychology}{}{}{University of Colorado}
@@ -217,14 +221,16 @@
     ]
 \end{refsection}
 
-\clearpage
+\nopagecolor
+\includepdf[pages={1,2}]{funding_history_2019_01_03.pdf}
+
 
 \section{Talks}
 \begin{refsection}[talks_invited.bib]
 %\newrefcontext{I}
 \nocite{*}
 \printbibliography[%
-    title=\href{https://neurodata.io/talks/}{Institutional Talks},% 
+    title=\href{https://neurodata.io/talks/}{Invited Talks (Institutional)},% 
     %NB: Institutional means invited talks.  (No idea why)
     heading=subbibliography%
     ]
@@ -235,7 +241,7 @@
 %\newrefcontext{T}
 \nocite{*}
 \printbibliography[%
-    title=\href{https://neurodata.io/talks/}{International Talks},%
+    title=\href{https://neurodata.io/talks/}{Invited Talks (International)},%
     %NB: International means non-invited talks.  (Again, no idea why)
     heading=subbibliography%
     ]
@@ -354,12 +360,12 @@
 
 %\subsection{High School Students}
 \subsection{Summer Interns}
-    \cventry{Summer '19}{Kareef Ullah}{Summer Intern}{BME}{JHU}{Will begin undergrad in BME at JHU in the fall}
-    \cventry{Summer '19}{Shunan Wu}{Summer Intern}{BME}{JHU}{Applied to BME PhD Program for fall}
-    \cventry{Summer '19}{Shiyu Sun}{Summer Intern}{BME}{JHU}{Applied to BME PhD Program for fall}
+    \cventry{Summer '19}{Kareef Ullah}{Summer Intern}{BME}{JHU}{Will begin undergrad in BME at JHU in Fall 2020}
+    \cventry{Summer '19}{Shunan Wu}{Summer Intern}{BME}{JHU}{Applied to BME PhD Program in Fall 2020}
+    \cventry{Summer '19}{Shiyu Sun}{Summer Intern}{BME}{JHU}{Applied to BME PhD Program in Fall 2020}
     \cventry{Summer '19}{Sander Shulhoff}{Summer Intern}{BME}{JHU}{}
     \cventry{Summer '19}{Kiki Zhang}{Summer Intern}{BME}{JHU}{}
-    \cventry{Summer '18}{Papa Kobina Van Dyck}{Summer Intern}{BME}{JHU}{Applied to  PhD Program for fall}
+    \cventry{Summer '18}{Papa Kobina Van Dyck}{Summer Intern}{BME}{JHU}{Applied to  PhD Program in Fall 2019}
 
 \subsection{Examining Committees}% (BME unless otherwise noted)}
     \cventry{2019}{Browne, James}{Computer Science}{JHU Ph.D. Student}{Graduated 2019}{}
@@ -440,12 +446,13 @@
 
 \subsection{Conferences and Hackathon Organizer}
 
+    \cventry{Winter '19}{Track Organizer}{AI in Healthcare: From Bench to Bedside}{Organizer for Breakout Topic Sessions on artificial intelligence}{}{}
     \cventry{Winter '19}{Organizer}{Decision Forest Hackathon}{}{}{}
     \cventry{Summer '19}{Organizer}{NeuroData Workshop}{\url{https://neurodata.devpost.com}}{Hackashop to train brain scientists in machine learning for big data ($\sim$ 50) participants from around the country.}{}
     \cventry{March '19}{Organizer}{Neuro Reproducibility Hackashop}{\url{https://brainx3.io/}}{Hackashop to train brain scientists in best practices in reproducible science, co-organized with two startups: Vathes, LLC and Gigantum ($\sim$ 50 participants)}{}
     \cventry{Spring '18}{Organizer}{NeuroData Hackathon}{}{}{}    
     \cventry{Fall '17}{Organizer}{NeuroData Mini-Hackathon}{}{}{}
-    \cventry{Summer '17}{Organizer}{NeuroStorm}{\url{https://brainx2.io}}{Workshop bring together thought leaders from academia, national labs, industry, and non-profits around the world to take next steps towards accelerating brain science discovery in the cloud ($\sim$ 50 participants and 5 observers from funding institutions)}{}
+    \cventry{Summer '17}{Organizer}{NeuroStorm}{\url{https://brainx2.io}}{Workshop to bring together thought leaders from academia, national labs, industry, and non-profits around the world to take next steps towards accelerating brain science discovery in the cloud ($\sim$ 50 participants and 5 observers from funding institutions)}{}
     \cventry{Spring '16}{Organizer}{Global Brain Workshop}{\url{http://brainx.io}}{First ever international Brain Initiative workshop, bringing together leaders from around the world, covered by Nature and Science ($\sim$ 75 participants)}{}    
     \cventry{Fall '16}{Co-Organizer}{Brains and Bits: Neuroscience Meets Machine Learning, NIPS Workshop}{\url{http://www.stat.ucla.edu/~akfletcher/brainsbits_overview.html}}{}{}
     \cventry{Winter '15}{Organizer}{Hack@NeuroData}{\url{http://hack.neurodata.io/}}{}{}
@@ -471,7 +478,11 @@
         \cventry{2008}{Spotlight}{Computational and Systems Neuroscience (CoSyNe)}{}{}{}
     
 
+\section{Other Media}
+\subsection{Earned Media Coverage}
 
+\subsection{Professional/Social Media Presence}
+    \cventry{2019}{\href{https://twitter.com/neuro_data}{neurodata}}{My twitter account}{}{}{}{}
 
 \section{Translation / Technology Transfer Activities}
 \subsection{Open Datasets}
