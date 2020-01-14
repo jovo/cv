@@ -162,20 +162,25 @@
 \maketitle
 
 
-\section{Demographic \& Personal Information}
+\section{Personal Information}
 
-\subsection{Current Appointments}
+\subsection{Primary Appointment}
+\cventry{08/14 -- }{Assistant Professor}{Department of Biomedical Engineering}{JHU}{}{}
 
+
+\subsection{Joint Appointments}
     \cventry{09/19 -- }{Joint Appointment}{Department of Biostatistics}{Johns Hopkins University (JHU)}{}{}
-    \cventry{08/15 -- }{Joint Appointment}{Department of Applied Mathematics and Statistics}{(JHU)}{}{}
-    \cventry{08/15 -- }{Member}{Kavli Neuroscience Discovery Institute (KNDI)}{}{}{}
-    \cventry{08/14 -- }{Assistant Professor}{Department of Biomedical Engineering}{(JHU)}{}{}
-    \cventry{08/14 -- }{Core Faculty} {Institute for Computational Medicine}{(JHU)}{}{}
-    \cventry{08/14 -- }{Core Faculty} {Center for Imaging Science}{(JHU)}{}{}
-    \cventry{08/14 -- }{Joint Appointment}{Department of Neuroscience}{(JHU)}{}{}
-    \cventry{08/14 -- }{Joint Appointment}{Department of Computer Science}{(JHU)}{}{}
-    \cventry{08/14 -- }{Assistant Research Faculty}{Human Language Technology Center of Excellence}{(JHU)}{}{}
-    \cventry{10/12 -- }{Affiliated Faculty}{Institute for Data Intensive Engineering and Sciences}{(JHU)}{}{}
+    \cventry{08/15 -- }{Joint Appointment}{Department of Applied Mathematics and Statistics}{JHU}{}{}
+    \cventry{08/14 -- }{Joint Appointment}{Department of Neuroscience}{JHU}{}{}
+    \cventry{08/14 -- }{Joint Appointment}{Department of Computer Science}{JHU}{}{}
+
+
+\subsection{Institutional and Center Appointments}
+    \cventry{08/15 -- }{Steering Committee}{Kavli Neuroscience Discovery Institute (KNDI)}{}{}{}
+    \cventry{08/14 -- }{Core Faculty} {Institute for Computational Medicine}{JHU}{}{}
+    \cventry{08/14 -- }{Core Faculty} {Center for Imaging Science}{JHU}{}{}
+    \cventry{08/14 -- }{Assistant Research Faculty}{Human Language Technology Center of Excellence}{JHU}{}{}
+    \cventry{10/12 -- }{Affiliated Faculty}{Institute for Data Intensive Engineering and Sciences}{JHU}{}{}
 
 
 \subsection{Education \& Training}
@@ -201,13 +206,14 @@
 \section{Publications}
 %\subsection{Peer Reviewed Articles (accepted, in press, or published)}
 %\section{Published Peer-Review Research Articles}
+
 \begin{refsection}[pubs_peer_reviewed.bib] 
 %\newrefcontext{J}
 \nocite{*}
 \defbibnote{a1}{{Note: CV author in bold; Trainees in italics, \\
         \textbf{(55 papers; top 10 cited 3,128 times; H-index 30; 11 first, 8 last, 37 middle authorships)} as of \today}}
 \printbibliography[%
-    title=\href{https://neurodata.io/publications/\#peer_reviewed}{Published Peer-Reviewed Research Articles},%
+    title=\href{https://neurodata.io/publications/\#peer_reviewed}{Published (Peer-Reviewed Research Articles)},%
     prenote=a1,% 
     heading=subbibliography%
     ]
@@ -218,14 +224,35 @@
 %\newrefcontext{P}
 \nocite{*}
 \printbibliography[%
-    title=\href{https://neurodata.io/publications/\#pre_prints}{Manuscripts in Preparation for Submission},%
+    title=\href{https://neurodata.io/publications/\#pre_prints}{Submitted (Peer-Review Research Articles)},%
     heading=subbibliography%
     ]
 \end{refsection}
 
+%\subsection{Pre-Prints}
+\begin{refsection}[pubs_in_prep.bib] %, pubs_excluded_entries.bib]
+    %\newrefcontext{P}
+    \nocite{*}
+    \printbibliography[%
+        title=\href{https://neurodata.io/publications/\#pre_prints}{In Preparation (Peer-Review Research Articles)},%
+        heading=subbibliography%
+        ]
+    \end{refsection}
+
+ %\subsection{Pre-Prints}
+\begin{refsection}[pubs_tech_reports.bib] %, pubs_excluded_entries.bib]
+    %\newrefcontext{P}
+    \nocite{*}
+    \printbibliography[%
+        title=\href{https://neurodata.io/publications/\#pre_prints}{Technical Reports},%
+        heading=subbibliography%
+        ]
+    \end{refsection}
+       
+    
 %\nopagecolor
 %\includepdf[pages=-]{funding_history_2019_01_03.pdf}
-\newpage
+% \newpage
 \section{Funding}
 
 The below table shows my direct (total) cost expenditures since being hired, indicating a steady increase >30\% per year.
@@ -352,22 +379,22 @@ experiments}{}{}{}{}
 primitives and for automatically selecting model primitives and for composing selected primitives into complex
 modeling pipelines based on user-specified data and outcome(s) of interest}{}{}{}{}
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Pending}
 
-\todo{JOVO: Update dates or move to current}
 \cventry{2020 – 2025}{CAREER: Foundational Statistical Theory and Methods for Analysis of Populations of Attributed}{}
 {\newline NSF 17-537
 \newline Role on project: Principal Investigator
-\newline Term: \textcolor{red}{01-Jan-2020} to 31-Dec-2025
+\newline Term: {01-Mar-2020} to 31-Dec-2025
 \newline Budget: \$384,873 (direct) \$245,357 (indirect) \$630,230 (total)
 \newline The goal is to establish foundational theory and methods for analyzing populations of
 attributed connectomes}{}{}{}{}
 
-\todo{JOVO: Update dates or move to current}
 \cventry{2020 – 2023}{Graspy: A python package for rigorous statistical analysis of populations of attributed connectomes}{}
 {\newline NIH MN-19-147
 \newline Role on project: Principal Investigator
-\newline Term: \textcolor{red}{01-Jan-2020} to 30-June-2023
+\newline Term: {01-Mar-2020} to 30-June-2023
 \newline Budget: \$861,240 (direct) \$549,039 (indirect) \$1,410,279 (total)
 \newline The goal of this project is to establish a state-of-the-art toolbox for analysis of
 connectomes, spanning taxa, scale, and complexity. More specifically, we will develop and
@@ -375,6 +402,14 @@ extend implementations to enable neurobiologists to 1) estimate latent structure
 attributed connectomes, (2) identify meaningful clusters among populations of
 connectomes, and (3) detect relationships between connectomes and multivariate
 phenotypes, such as behavior, genetics, and physiology}{}{}{}{}
+
+\cventry{2020 – 2022}{High throughput mapping pipeline for incomplete and censored neuroimaging data}{}
+{\newline NIH / MH-19-148
+\newline Role on Project: Co-Investigator (PI: Miller)
+\newline Term: 01-Mar-2020 to 30-Nov-2022
+\newline Budget: \$1,107,698 (direct) \$637,159 (indirect) \$1,744,857 (total)
+\newline GOAL of Project (JOVO, please provide info)}{}{}{}{}
+
 
 \cventry{2020 – 2025}{NeuroNex: Enabling Identification and Impact of Synaptic Weight in Functional Networks}{}
 {\newline NSF 19-563
@@ -433,16 +468,10 @@ states at cellular-resolution in freely behaving mice}{}{}{}{}
 Sample}{}{}{}{}
 
 
-\todo{JOVO: Update start date or move to current}
-\cventry{2019 – 2022}{High throughput mapping pipeline for incomplete and censored neuroimaging data}{}
-{\newline NIH / MH-19-148
-\newline Role on Project: Co-Investigator (PI: Miller)
-\newline Term: 01-Dec-2019 to 30-Nov-2022
-\newline Budget: \$1,107,698 (direct) \$637,159 (indirect) \$1,744,857 (total)
-\newline GOAL of Project (JOVO, please provide info)}{}{}{}{}
 
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Previous}
 \cventry{2017 – 2018}{The Brain Ark}{}
@@ -682,16 +711,15 @@ of large-scale electron microscopy data}{}{}{}{}
 
 
 \section{Service}
-\todo{Jovo:  NIH or NSF grant review service? }
+
+\subsection{Grant Review Service}
+\cventry{2015}{NSF Review Panel}{Review for NSF BIG DATA Program.}{}{}{}
+
 \subsection{University Service}
-    \cventry{08/15 -- }{Steering Committee}{Kavli Neuroscience Discovery Institute (KNDI)}{}{}{}
     \cventry{Winter '19}{Track Organizer}{AI in Healthcare: From Bench to Bedside}{Organizer for Breakout Topic Sessions on artificial intelligence}{}{}
-    \cventry{08/15 -- 07/18}{Co-Developer}{\href{http://icm.jhu.edu/academics/undergraduate-minor/}{Computational Medicine Minor}}{For more information, please view as a PDF and click the weblink}{}{}
-    \cventry{05/15 -- 07/17}{Co-Founder and Faculty Advisor}{\href{http://medhacks.org}{MedHacks}}{For more information, please view as a PDF and click the weblink}{}{}
+    \cventry{08/15 -- 07/18}{Co-Developer}{\href{http://icm.jhu.edu/academics/undergraduate-minor/}{Computational Medicine Minor}}{}{}{}
+    \cventry{05/15 -- 07/17}{Co-Founder and Faculty Advisor}{\href{http://medhacks.org}{MedHacks}}{Medhacks is one of the first and largest hackathons dedicated specifically to hacking on medical advances, started entirely by BME undergrads at JHU.}{}{}
     \cventry{08/14 -- 08/18}{\href{http://icm.jhu.edu/academics/undergraduate-minor/}{Director of Undergraduate Studies}}{Institute for Computational Medicine}{}{}{}
-    \cventry{Winter '17}{Faculty Superviser}{MedHacks}{\url{http://medhacks.org/}}{}{}
-    \cventry{Winter '16}{Faculty Superviser}{MedHacks}{\url{http://medhacks.org/}}{}{}
-    \cventry{Winter '15}{Faculty Superviser}{MedHacks}{\url{http://medhacks.org/}}{}{}
 
 
 \subsection{Department Service}
@@ -701,7 +729,13 @@ of large-scale electron microscopy data}{}{}{}{}
 
 
 \subsection{Service in Scientific Community}
-\todo{JOVO: Fill in your memberships here}
+    \cventry{2017 -- }{Scientific Advisory Board}{NSF NeuroNex}{Enhanced resolution for 3DEM analysis of synapses across brain regions and taxa}{Provide scientific, computational, and statistical guidance to a flagship NSF funded BRAIN Initiative program}{}
+    \cventry{2017 -- }{Chair of Committee of Data  Cores}{U19 Data Cores}{}{The U19 program is NIH's flagship BRAIN Initative program, with five original awardees, each with a dedicated Data  Core and designated PI. I was elected the chair of the committee of Data Core PIs.}{}
+    \cventry{2017}{Consultant for Nature Publishing Group}{}{}{The journal Nature, flagship journal of Nature Publishing Group, decided to create a ``Code and Software Submission Checklist''.  They consulted me on their first draft, and I helped re-write it. An image of the final checklist is available \href{}{here}.  }{}
+    
+
+
+
 
 \subsection{Journal Service}
 
