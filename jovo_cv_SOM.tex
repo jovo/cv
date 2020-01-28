@@ -28,7 +28,7 @@
 \addbibresource{pubs_peer_reviewed.bib}
 \addbibresource{pubs_pre_prints.bib}
 \addbibresource{pubs_conf.bib}
-%\addbibresource{pubs_other.bib}
+\addbibresource{pubs_other.bib}
 \addbibresource{pubs_tech_reports.bib}
 \addbibresource{pubs_excluded_entries.bib}
 \addbibresource{talks_invited.bib}
@@ -256,7 +256,18 @@
     heading=subbibliography%
     ]
 \end{refsection}
-       
+
+%\subsection{Pre-Prints}
+\begin{refsection}[pubs_other.bib] %, pubs_excluded_entries.bib]
+%\newrefcontext{P}
+\nocite{*}
+\printbibliography[%
+    title=\href{https://neurodata.io/publications/\#other}{Other Publications},%
+    heading=subbibliography%
+    ]
+\end{refsection}
+    
+    
     
 %\nopagecolor
 %\includepdf[pages=-]{funding_history_2019_01_03.pdf}
