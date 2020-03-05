@@ -53,6 +53,9 @@
 \DeclareRefcontext{T}{labelprefix=T} %% Other Talks
 \DeclareRefcontext{A}{labelprefix=A} %% Abstacts and Posters
 
+%Change Journal name from being in quotes to being italicized 
+\DeclareFieldFormat[article]{journaltitle}{\textit{#1}}
+
 % Count total number of entries in each refsection
 \AtDataInput{%
   \csnumgdef{entrycount:\therefsection}{%
@@ -69,7 +72,7 @@
     {\textbf{#1}}
     {
         \ifitemannotation{trainee}
-            {\textit{#1}}
+            {\uline{#1}}
             {#1}
     }
 }
@@ -79,7 +82,7 @@
     {\textbf{#1}}
     {
         \ifitemannotation{trainee}
-            {\textit{#1}}
+            {\uline{#1}}
             {#1}
     }
 }
@@ -160,6 +163,577 @@
 \begin{document}
 \pagecolor{white}
 \maketitle
+
+
+\section{Professional Experience}
+\cventry{08/14 -- }{Assistant Professor}{Department of Biomedical Engineering}{JHU}{}{}
+\cventry{09/19 -- }{Joint Appointment}{Department of Biostatistics}{Johns Hopkins University (JHU)}{}{}
+\cventry{08/15 -- }{Joint Appointment}{Department of Applied Mathematics and Statistics}{JHU}{}{}
+\cventry{08/14 -- }{Joint Appointment}{Department of Neuroscience}{JHU}{}{}
+\cventry{08/14 -- }{Joint Appointment}{Department of Computer Science}{JHU}{}{}
+
+\cventry{08/18 -- }{\href{https://www.bme.jhu.edu/graduate/mse/degree-requirements/biomedical-data-science/}{Director of Biomedical Data Science Focus Area}}{Department of Biomedical Engineering, Johns Hopkins University}{}{}{}
+\cventry{05/16 -- }{Visiting Scientist} {Howard Hughes Medical Institute}{Janelia Research Campus}{}{}
+\cventry{10/12 -- 08/14}{Endeavor Scientist}{Child Mind Institute}{}{}{}
+\cventry{08/12 -- 08/14}{Affiliated Faculty}{Kenan Institute for Ethics}{}{}{Duke University}
+\cventry{08/12 -- 08/14}{Adjunct Faculty}{Department of Computer Science, Johns Hopkins University}{}{}{}
+\cventry{12/09 -- 01/11}{Post-Doctoral Fellow}{Department of Applied Mathematics and Statistics}{Supervised by Carey E.~Priebe}{Johns Hopkins University}{\textbf{Research} Statistics of populations of networks.}
+
+\cventry{06/01 -- 09/01}{Research Assistant}{Prof. Randy O'Reilly, Dept.~of Psychology}{}{}{University of Colorado}
+\cventry{06/00 -- 09/00}{Clinical Engineer}{Johns Hopkins Hospital}{}{}{}
+\cventry{06/99 -- 08/99}{Research Assistant under Dr. Jeffrey Williams}{Dept. of Neurosurgery, Johns Hopkins Hospital}{}{}{}
+\cventry{06/98 -- 08/98}{Research Assistant under Professor Kathy Cho}{Dept. of Pathology, Johns Hopkins School of Medicine}{}{}{}
+
+
+
+\section{Education}
+\cventry{2003 -- 2009}{Ph.D in Neuroscience}{Johns Hopkins School of Medicine}{\newline Advisor: Eric Young}{\newline \textbf{Thesis:} OOPSI: a family of optical spike inference algorithms for inferring neural connectivity from population calcium imaging }{}{}
+\cventry{2009 -- 2009}{M.S. in Applied Mathematics \& Statistics}{ Johns Hopkins University}{}{}{}
+\cventry{1998 -- 2002}{B.A. in Biomedical Engineering}{Washington University, St.~Louis}{}{}{}
+
+\section{Awards and Recognition}
+\section{\href{https://neurodata.io/about/awards/}{Awards and Recognition}}
+\subsection{Individual}
+        \cventry{2002}{Dean's List}{Washington University}{}{}{}
+    
+\subsection{Shared}
+    \cventry{2019}{\href{https://kavlijhu.org/funding/awards}{Kavli NDI Distinguished Postdoctoral Fellow}}{Celine Drieu, PhD}{}{}{}{}
+    \cventry{2019}{\href{https://kavlijhu.org/funding/awards}{Kavli NDI Distinguished Postdoctoral Fellow}}{Austin Graves, PhD}{}{}{}{}
+    \cventry{2019}{Winner of Pistritto Fellowship.}{Vivek Gopalakrishnan}{}{}{}{}
+    \cventry{2017}{\href{https://kavlijhu.org/funding/awards}{Kavli NDI Distinguished Postdoctoral Fellow}}{Audrey Branch, PhD}{}{}{}{} 
+    \cventry{2017}{\href{http://www.hpdc.org/2017/awards/best-paper-award}{Best Presentation Award HPDC}}{Mhembere et al. (2017)}{}{}{}
+    \cventry{2017}{Nonparametric Statistics of the American Statistical Association Student Paper Award}{Lee et al. (2017)}{}{}{}
+    \cventry{2014}{F1000 Prime Recommended}{Vogelstein et al. (2014)}{}{}{}
+    \cventry{2013}{Spotlight}{Neural Information Processing Systems (NIPS)}{}{}{}
+    \cventry{2011}{Trainee Abstract Award}{Organization for Human Brain Mapping}{}{}{}
+    \cventry{2008}{Spotlight}{Computational and Systems Neuroscience (CoSyNe)}{}{}{}
+
+\subsection{Other Media}
+    \cventry{2019}{Johns Hopkins Medicine}{\href{https://vimeo.com/hartlove/review/331872774/9dacde8acb}{BME Pioneers: Joshua Vogelstein}}{BME Pioneers}{}{}{}{}
+    \cventry{2019}{Johns Hopkins Medicine}{\href{https://www.youtube.com/watch?v=NqmbDPzJBgI}{Technology Connecting the Brain to the Human Experience}}{}{}{}{}
+    \cventry{2018}{J. M. Perkel.}{\href{https://www.nature.com/articles/d41586-018-07195-2}{Web service makes big data available to neuroscientists}}{Nature}{}{}{}{}
+    \cventry{2016}{Emerging Technology from the arXiv}{\href{https://www.technologyreview.com/s/602274/three-grand-challenges-for-brain-science-that-can-be-solved-in-10-years/}{Three Grand Challenges for Brain Science That Can Be Solved in 10 Years}}{MIT}{}{}{}{}
+    \cventry{2016}{P. Patel.}{\href{https://hub.jhu.edu/2016/11/02/johns-hopkins-neuroscientists-brain-trust/}{Johns Hopkins researchers want to use big data to chart the brain}}{Johns Hopkins University}{}{}{}{}
+    \cventry{2016}{S. Reardon.}{\href{http://www.nature.com/news/worldwide-brain-mapping-project-sparks-excitement-and-concern-1.20658}{Worldwide brain-mapping project sparks excitement --- an concern}}{Nature}{}{}{}{}
+    \cventry{2016}{E. Underwood.}{\href{http://science.sciencemag.org/content/352/6283/277}{International brain projects proposed}}{Science}{}{}{}{}
+    \cventry{2016}{National Institutes of Health}{\href{http://www.braininitiative.org/2016/04/22/international-brain-projects-considered/}{International Brain Projects Considered}}{BRAIN initiative}{}{}{}{}
+    \cventry{2016}{Office of the Spokesperson}{\href{https://2009-2017.state.gov/r/pa/prs/ps/2016/09/262200.htm}{International Brain Initiative Launch and VIP Dialog: Towards an International Brain Station}}{US Department of State}{}{}{}{}
+    \cventry{2016}{The Kavli Foundation}{\href{http://www.kavlifoundation.org/international-brain-initiative}{International Brain Initiative}}{Kavli}{}{}{}{}
+    \cventry{2015}{Dale Keiger}{\href{https://hub.jhu.edu/magazine/2015/winter/open-connectome-project-joshua-vogelstein-randal-burns/}{The Open Connectome Project takes a close look at the brain}}{Johns Hopkins Magazine}{}{}{}{}
+    \cventry{2014}{S. Begley}{\href{http://www.reuters.com/article/us-science-flybrain/fly-brain-atlas-opens-door-to-linking-human-neurons-to-actions-idUSBREA2Q23B20140327}{Fly brain 'atlas' opens door to linking human neurons to actions}}{Reuters}{}{}{}{}
+    \cventry{2014}{L. Gatlin}{\href{https://hub.jhu.edu/2014/08/22/cary-priebe-nsf-eager-grant/}{Johns Hopkins mathematician receives grant to support study of brain's circuitry}}{Johns Hopkins University}{}{}{}{}
+    \cventry{2014}{T. O'Leary and E. Marder}{\href{http://science.sciencemag.org/content/344/6182/372.full}{Mapping Neural Activation onto Behavior in an Entire Animal}}{Science}{}{}{}{}
+    \cventry{2014}{L. Sanders}{\href{https://www.sciencenews.org/node/188288}{Ten thousand neurons linked to behaviors in fly}}{ScienceNews}{}{}{}{}
+    \cventry{2014}{D. Son and J. Lee}{\href{http://www.cis.jhu.edu/~parky/CEP-Publications/Nature-highlight.pdf}{Research Highlights}}{Nature}{}{}{}{}
+    \cventry{2014}{K. Yandell}{\href{http://www.the-scientist.com/?articles.view/articleNo/39571/title/Linking-Neurons-to-Behaviors}{Linking Neurons to Behaviors}}{TheScientist}{}{}{}{}
+    \cventry{2014}{B. Yirka}{\href{https://medicalxpress.com/news/2014-03-atlas-neural-circuits-fruit-larvae.html}{Researchers create a reference atlas for neural circuits in fruit fly larvae}}{MedicalXpress}{}{}{}{}
+    \cventry{2012}{C. B. Begg and M. C. Pike}{\href{http://stm.sciencemag.org/content/4/135/135le3.full}{Comment on "The Predictive Capacity of Personal Genome Sequencing"}}{Science}{}{}{}{}
+    \cventry{2012}{B. Thomas}{\href{https://theconnectome.wordpress.com/2012/02/05/podcast-1-our-interview-with-joshua-vogelstein/}{“Open Access to the Brain” – Podcast 1: Joshua Vogelstein}}{The Connectome Podcast}{}{}{}{}
+    \cventry{2012}{E. J. Topol}{\href{http://stm.sciencemag.org/content/4/135/135le5.full}{Comment on "The Predictive Capacity of Personal Genome Sequencing"}}{Science}{}{}{}{}
+
+
+\section{Professional Memberships}
+
+
+\section{Published Peer-Reviewed Research Articles}
+\begin{refsection}[pubs_peer_reviewed.bib] 
+    %\newrefcontext{J}
+    \nocite{*}
+    \defbibnote{a1}{{Note: CV author in bold; Trainees are underlined, \\
+            \textbf{(55 papers; top 10 cited 3,128 times; H-index 30; 11 first, 10 last, 55 middle authorships)} as of \today}}
+    \printbibliography[%
+        title=\href{https://neurodata.io/publications/\#peer_reviewed}{Published (Peer-Reviewed Research Articles)},%
+        prenote=a1,% 
+        heading=subbibliography%
+        ]
+    \end{refsection}
+
+\section{Conference Papers}
+\begin{refsection}[pubs_conf.bib]
+    \nocite{*}
+    \printbibliography[%
+        title=\href{https://neurodata.io/publications/\#conf}{Peer-Reviewed Conference Proceedings},%
+        heading=subbibliography%
+        ]
+    \end{refsection}
+
+
+\section{Manuscripts in Revision}
+
+
+
+\section{Manuscripts in First Review}
+
+
+
+\section{Manuscripts in Preparation for Submission}
+\begin{refsection}[pubs_in_prep.bib] %, pubs_excluded_entries.bib]
+    %\newrefcontext{P}
+    \nocite{*}
+    \printbibliography[%
+        title=\href{https://neurodata.io/publications/\#pre_prints}{In Preparation (Peer-Review Research Articles)},%
+        heading=subbibliography%
+        ]
+    \end{refsection}
+
+
+\section{Invited Talks}
+\begin{refsection}[talks_invited.bib]
+    %\newrefcontext{I}
+    \nocite{*}
+    \printbibliography[%
+        title=\href{https://neurodata.io/talks/}{Invited Talks (Local)},% 
+        %NB: Institutional means invited talks.  (No idea why)
+        heading=subbibliography%
+        ]
+\end{refsection}
+    
+    
+\section{Other Talks}
+\begin{refsection}[talks_other.bib, talks_excluded_entries.bib]
+    %\newrefcontext{T}
+    \nocite{*}
+    \printbibliography[%
+        title=\href{https://neurodata.io/talks/}{Invited Talks (International)},%
+        %NB: International means non-invited talks.  (Again, no idea why)
+        heading=subbibliography%
+        ]
+\end{refsection}
+
+
+\section{Interviews}
+
+
+
+\section{Abstracts/Poster Presentations}
+\begin{refsection}[posters]
+    %\newrefcontext{T}
+    \nocite{*}
+    \printbibliography[%
+        title=\href{https://neurodata.io/posters/}{Abstracts / Posters},%
+        heading=bibliography%
+        ]
+\end{refsection}
+
+
+\section{Teaching Experience - Ongoing Courses}
+\cventry{Fall '19}{\href{https://github.com/NeuroDataDesign/Syllabus}{NeuroData Design I}}{EN.580.237/437/637}{Course Director}{enrollment 46}{}
+\cventry{Spring '19}{\href{https://github.com/NeuroDataDesign/Syllabus}{NeuroData Design II}}{EN.580.438/638}{Course Director}{enrollment 18}{}
+\cventry{Fall '18}{\href{https://github.com/NeuroDataDesign/Syllabus}{NeuroData Design I}}{EN.580.237/437/637}{Course Director}{enrollment 22}{}
+\cventry{Spring '17}{\href{https://github.com/NeuroDataDesign/Syllabus}{NeuroData Design II}}{EN.580.238/438/638}{Course Director}{enrollment 14}{}
+\cventry{Winter '17}{BME Research Intersession}{EN.580.574}{Course Director}{enrollment 6}{}
+\cventry{Fall '17}{\href{https://github.com/NeuroDataDesign/Syllabus}{NeuroData Design I}}{EN.580.247/437/637}{Course Director}{enrollment 15}{}
+\cventry{Spring '16}{\href{https://github.com/Upward-Spiral-Science/Syllabus}{The Art of Data Science}}{EN.580.468}{Course Director}{enrollment 24}{}
+\cventry{Fall '16}{\href{https://github.com/NeuroDataDesign/Syllabus}{NeuroData Design I}}{EN.580.437}{Course Director}{enrollment 16}{}
+\cventry{Spring '15}{\href{https://github.com/openconnectome/Statistical-Connectomics-Class}{Statistical Connectomics}}{EN.580.694}{Course Director}{enrollment 26}{}
+
+
+\section{Teaching Experience - One-Time}
+\cventry{Fall '15}{Introduction to Computational Medicine}{}{Co-Teaching}{Course Co-Director}{}
+\cventry{Spring '19}{Systems Bioengineering II}{EN.580.422}{}{2 Lectures}{}
+\cventry{Spring '19}{Computational Neuroscience}{AS.080.321}{}{2 Lectures}{}
+\cventry{Spring '18}{Systems Bioengineering II}{EN.580.422}{}{2 Lectures}{}
+\cventry{Spring '18}{Computational Neuroscience}{AS.080.321}{}{2 Lectures}{}
+\cventry{Spring '17}{Systems Bioengineering II}{EN.580.422}{}{2 Lectures}{}
+\cventry{Spring '16}{Systems Bioengineering II}{EN.580.422}{}{2 Lectures}{}
+\cventry{Winter '16}{Introduction to Connectomics}{EN.600.221}{}{1 Lecture}{}
+\cventry{Fall '16}{BME Modeling and Design}{EN.580.111}{}{1 Lecture}{}{}
+
+
+\section{Advisory Information}
+\subsection{Postdoctoral Fellows}
+    \cventry{07/19 -- }{Celine Drieu, PhD}{Post-doctoral Fellow}{Kavli NDI}{JHU}{Co-Advised by Assitant Prof. Kuchibhotla, Department of Psychological and Brain Sciences. Working on understanding learning and memory using two-photon calcium imaging.}
+    \cventry{07/19 -- }{Austin Grave, PhD}{Post-doctoral Fellow}{Kavli NDI}{JHU}{Co-Advised by  Prof. Richard Huganir, Department of Neuroscience. Working on understanding whole brain synaptic plasticity using genetic engineering and light microscopy imaging.}
+    \cventry{08/18 -- }{Jes\'us Arroyo, PhD}{Post-doctoral Fellow}{CIS}{JHU}{Working on graph matching and joint graph embedding.}
+    \cventry{07/18 -- }{Audrey Branch, PhD}{Post-doctoral Fellow}{Kavli NDI}{JHU}{Co-Advised by Prof Michela Gallagher, extending brain clearing experimental technology from mice to rats. Currently with a manuscript on biorxiv.}
+    \cventry{09/16 -- 08/18}{Cencheng Shen, PhD}{Post-Doctoral Fellow}{CIS}{JHU}{Developed Multiscale Graph Correlation, which is currently the premiere hypothesis testing framework, and about to be integrated into SciPy, by far the world's leading scientific computing package. Currently an Assistent Professor in Department of Statistics at University of Delaware, and still an actice collaborator and grantee.}
+    \cventry{05/16 -- 06/17}{Leo Duan, PhD}{Post-doctoral Fellow}{CIS}{JHU}{Went on to do a second postdoc with Leo Dunson (who I did my second postdoc with). Currently an Assistant Professor at University of Florida.}
+    \cventry{06/16 -- 07/17}{Guilherme Franca, PhD}{Post-doctoral Fellow}{CIS}{JHU}{Worked on non-parametric clustering, with an article about to be accepted in PAMI, the leading machine learning journal.  Currently a postdoc for Rene Vidal.}
+
+\subsection{Ph.D. Students}
+    \cventry{08/19 -- }{Michael Powell, MSE}{PhD advisee}{BME}{JHU}{Dissertation will focus on explainable artificial intelligence, spearheads collaboration with Andreas Muller, Co-Director of scikit-learn, the world's leading machine learning package.}
+    \cventry{06/19 -- }{Jaewon Chung, MSE}{PhD advisee}{BME}{JHU}{Dissertation will focus on statistics of populations of human networks. Already co-first author and middle author on multiple manuscripts.}
+    \cventry{08/19 -- }{Tommy Athey, BSE}{PhD advisee}{BME}{JHU}{Dissertation will focus on MouseLight project, spearheads collaborations with Prof. Jeremias Sulam and Michael I.~Miller.}
+    \cventry{08/19 -- }{Eric Bridgeford, BSE}{PhD advisee}{Department of Biostatistics}{JHU}{Dissertation will focus on statistics of human connectomes and mitigating batch effects.  Already first author on several manuscripts under review, and spearheads collaboration with Prof Brian Caffo at Biostatistics.}
+    \cventry{08/18 -- }{Benjamin Pedigo, BSE}{PhD advisee}{BME}{JHU}{Dissertation will focus on analysis and modeling of the world's first whole animal connectome, in collaboration with Marta Zlatic and Albert Cardona (formerly of Janelia Research Campus).  Already co-first author and middle author on multiple manuscripts.}
+    \cventry{08/18 -- }{Meghana Madyastha, BSE}{PhD Co-advisee}{CS}{JHU}{Dissertation will focus on computational aspects of accelerationg learning and inference using decision forests.}
+    \cventry{08/16 -- }{Vikram Chandrashekhar, BSE}{PhD advisee}{BME}{JHU}{Dissertation has focused on extending LDDMM to whole cleared brain datasets, spearheads collaboration with Prof. Karl Deisseroth's lab at Stanford, one of the world's leading neuroscientists.}
+    \cventry{08/14 -- 01/18}{Tyler Tomita, PhD}{}{BME}{JHU}{Developed Sparse Projection Oblique Randomer Forest in his dissertation, currently the best performing machine learning algorithm on a standard suite of over 100 benchmark problems. Currenly a postdoc with Assistant Prof. Chris Honey of Psychology and Brain Sciences.}
+
+
+    \subsection{M.S. Students}
+    \cventry{06/19 -- }{Bijan Varjavand}{MS advisee}{BME}{JHU}{Submitted manuscript to PAMI on advancing statistics on populations of networks.}
+    \cventry{06/19 -- }{Sambit Panda}{MS advisee}{BME}{JHU}{Led development of Python implementation of MGC, to be integrated into SciPy.}
+    \cventry{06/19 -- }{Varun Kotharkar}{MS advisee}{AMS}{JHU}{Investigating theoretical advantages of oblique, as compared to axis-aligned, decision trees.}
+    \cventry{06/18 -- }{Drishti Mannan}{MS advisee}{BME}{JHU}{Preparing manuscript introducing novel specification for large attributed networks.}
+    \cventry{06/18 -- 05/19}{Jaewon Chung}{MSE advisee}{BME}{JHU}{Co-first author of manuscript and co-lead developer of Python package for statistical analysis of networks. Currently a BME PhD student in my lab.}
+    \cventry{08/14 -- 06/17}{Greg Kiar, MSE}{}{BME}{JHU}{Lead deveoper of m2g, the only existing ``soup to nuts'' pipeline for both functional and diffusion pipelines; co-first author of manuscript under review. Currently a PhD student at McGill University.}
+
+
+\subsection{Undergraduate Students (BME unless noted otherwise)}
+    \cventry{06/19 -- }{Vivek Gopalakrishnan}{BSE}{BME}{JHU}{Winner of Pistritto Fellowship, worked on statistics of populations of connectomes in Austim mouse models and human data.}
+    \cventry{06/19 -- }{Ronan Perry}{BSE}{BME}{JHU}{Developed generalized canonical correlation analysis code for analysis of high-dimensional brain imaging data in a novel meditation dataset.}
+    \cventry{06/19 -- 12/19}{Richard Guo}{BSE}{BME}{JHU}{Developed uncertainty forests, an approach for estimated posterior class probabilities, conditional entropy, and mutual information for high-dimensional data common in brain science applications.}
+    \cventry{08/15 -- 08/16}{Albert Lee,BSE}{}{BME}{JHU}{Developed big data visualization tools.}
+    \cventry{06/15 -- 12/15}{Ron Boger, BSE}{}{BME}{JHU}{Currenly working at a computational medicine start-up in Silicon Valley, worked on high-dimensional low-sample size theory.}
+    \cventry{05/15 -- 05/16}{Jordan Matelsky, BSE}{}{CS and Neuroscience}{JHU}{Currently a data scientist at APL, developed a number of simple WebApps in support of big data management.}
+    \cventry{02/15 -- 05/16}{Ivan Kuznetsov, BSE}{}{BME}{JHU}{Currently an MD/PhD Candidate at the UPenn, winner of \href{https://beblog.seas.upenn.edu/tag/ivan-kuznetsov/}{Soros Fellowship}, worked on analysis of data from Dr. Daniel Amen, developed matrix exploratory data analysis package.}
+
+\subsection{High School Students}
+    \cventry{Summer '19}{Kareef Ullah}{Summer Intern}{BME}{JHU}{Will begin undergrad in BME at JHU in Fall 2020}
+    \cventry{Summer '19}{Shunan Wu}{Summer Intern}{BME}{JHU}{Applied to BME PhD Program in Fall 2020}
+    \cventry{Summer '19}{Shiyu Sun}{Summer Intern}{BME}{JHU}{Applied to BME PhD Program in Fall 2020}
+    \cventry{Summer '19}{Sander Shulhoff}{Summer Intern}{BME}{JHU}{}
+    \cventry{Summer '19}{Kiki Zhang}{Summer Intern}{BME}{JHU}{}
+    \cventry{Summer '18}{Papa Kobina Van Dyck}{Summer Intern}{BME}{JHU}{Applied to  PhD Program in Fall 2019}
+
+\subsection{Thesis Committee Service (BME unless noted otherwise)}
+    \cventry{2019}{Browne, James}{Computer Science}{JHU Ph.D. Student}{Graduated 2019}{}
+    \cventry{2019}{Mhembere, Disa}{Computer Science}{JHU Ph.D. Student}{Graduated 2019}{}
+    \cventry{2018}{Kutten, Kwame}{JHU Ph.D. Student}{Graduated 2018}{}{}{}
+    \cventry{2018}{Wang, Shangsi}{Applied Mathematics and Statistics}{JHU Ph.D. Student}{Graduated 2018}{}
+    \cventry{2018}{Tang, Runze}{Applied Mathematics and Statistics}{JHU Ph.D. Student}{Graduated 2018}{}
+    \cventry{2018}{Lee, Youjin}{Biostatistics}{JHU Ph.D. Student}{Graduated 2018}{}
+    \cventry{2017}{Zheng, D}{Computer Science}{JHU Ph.D. Student}{Graduated 2017}{}
+    \cventry{2017}{Binkiewicz, Norbert}{Statistics}{University of Wisconsin Ph.D. Student}{Graduated 2017}{}
+    \cventry{2016}{Gray-Roncal, Will}{Computer Science}{JHU Ph.D. Student}{Graduated 2016}{}
+
+
+
+\section{Research}
+The below table shows my direct (total) cost expenditures since being hired, indicating a steady increase >30\% per year.\newline \newline
+
+\centering
+\begin{tabular}{p{3cm}p{2cm}p{3cm}}
+Financial Year & Direct & Total \\
+2015: & \$113,761 & \$168,924 \\
+2016: & \$360,123 & \$524,225 \\
+2017: & \$459,523 & \$709,019 \\
+2018: & \$550,011 & \$887,186 \\
+2019: & \$850,836 & \$1,366,308
+\end{tabular}
+
+\subsection{External Research Support: Current}
+
+\cventry{2020 – 2025}{CAREER: Foundational Statistical Theory and Methods for Analysis of Populations of Attributed}{}
+{\newline NSF 17-537
+\newline Role on project: Principal Investigator
+\newline Term: {01-Mar-2020} to 31-Dec-2025
+\newline Budget: \$384,873 (direct) \$245,357 (indirect) \$630,230 (total)
+\newline The goal is to establish foundational theory and methods for analyzing populations of
+attributed connectomes}{}{}{}{}
+
+\cventry{2019 -- 2022}{Accessible technologies for high-throughput, whole-brain reconstructions of molecularly characterized mammalian neurons}{}
+{\newline NIH RO1 Research Grant
+\newline Role on project: Co-Investigator (PI: Muller, Miller)
+\newline Term: 01-Sept-2019 to 31-Aug-2022
+\newline Total budget: \$753,974 (direct) \$426,471 (indirect) \$1,180,445 (total cost)
+\newline The overall goal of the proposal is to develop technologies for the brain wide reconstruction
+of axonal arbors of molecularly defined neurons. The proposal aims at overcoming barriers
+in neuronal labeling, imaging and computation to achieve this goal, and to develop a
+technology platform that can be scaled to all neurons of the brain}{}{}{}{}
+
+\cventry{2019 – 2020}{Reproducible imaging-based brain growth charts for psychiatry}{}
+{\newline NIH R01 Research Grant 
+\newline Role on project: Co-Investigator (PI: Saterthwaite)
+\newline Term: 01-Aug-2019 to 31-May-2020
+\newline Budget: \$231,276 (direct) \$131,585 (indirect) \$362,861 (total cost)
+\newline Aggregate, harmonize, and analyze existing large-scale pediatric neuroimaging datasets to
+identify normative and clinical brain growth curves}{}{}{}{}
+
+\cventry{2019 -- }{Microsoft Research Award}{}
+{\newline Mircosoft Research Gift
+\newline Role on Project: Principal Investigator
+\newline Term: Unrestricted Gift
+\newline Budget: \$50,000 (total cost)
+\newline Research and development of neuroscience and connectomes around neuronal circuit and
+system modeling, application of time-series-of-graphs and dynamics to neuronal signaling
+analysis and connectomes, and in the abstractions of matter, math, machines that point
+toward complex systems composed of low-level components}{}{}{}{}
+
+\cventry{2018 – 2020}{Lifelong Learning Forests}{}
+{\newline Defense Advanced Research Projects Agency Research Grant FA8650-18-2-7834
+(128567)
+\newline Role on Project: Principal Investigator
+\newline Term: 01-Jul-2018 to 30-Jun-2020
+\newline Budget: \$1,123,474 (direct) \$715,834 (indirect) \$1,839,308 (total cost)
+\newline Lifelong Learning Forests (L2Fs) will learn continuously, selectively adapting to new
+environments and circumstances utilizing top-down feedback to impact low-level
+processing, with provable statistical guarantees, while maintaining computational tractability
+at scale}{}{}{}{}
+
+\cventry{2018 – 2021}{SemiSynBio: Collaborative Research: YeastOns: Neural Networks Implemented in Communication Yeast Cells}{}
+{\newline National Science Foundation Research Grant (129439)
+\newline Role on project: Co-Investigator (PI: Schuman)
+\newline Term: 01-Jul-2018 to 30-Jun-2021
+\newline Budget: \$172,971 (direct) \$90,971 (indirect) \$263,942 (total cost)
+\newline Provide neuroscience and machine learning expertise to guide the design of the
+computational learning capabilities of the system}{}{}{}{}
+
+\cventry{2018 – 2019}{Connectome Coding at the Synaptic Scale}{}
+{\newline Schmidt Science Foundation (128503)
+\newline Role on Project: Principal Investigator
+\newline Term: 01-Jan-2018 to 31-Dec-2019
+\newline Budget: \$250,000 (total cost)
+\newline Study learning and plasticity at an unprecedented scale, revealing the dynamics of large
+populations of synapses comprising an entire local cortical circuit. No previously conducted
+experiment could answer the questions about the dynamics of large populations of
+synapses, which is crucial to understanding the learning process}{}{}{}{}
+
+\cventry{2017 – 2021}{Continual Learning Across Synapses, Circuits, and Brain Areas}{}
+{\newline Defense Advanced Research Projects Agency Research Grant FA8650-18-2-7834 (129061)
+\newline Role on project: Co-Investigator (PI: Tolias)
+\newline Term: 01-Nov-2017 to 30-Oct-2021
+\newline Budget: \$486,666 (direct) \$310,049 (indirect) \$796,715 (total cost)
+\newline Develop the pre-processing analysis pipeline for the imaging data collected in this project}{}{}{}{}
+
+\cventry{2017 – 2020}{NeuroNex Innovation Award: Towards Automatic Analysis of Multi-Terabyte Cleared Brains}{}
+{\newline National Science Foundation 1707298
+\newline Role on Project: Principal Investigator
+\newline Term: 01-Sept-2017 to 31-Aug-2020 (No Cost Extension)
+\newline Budget: \$588,758 (direct) \$371,241 (indirect) \$959,999 (total cost)
+\newline We propose to lower the barrier to connecting data to analyses and models by providing a
+coherent cloud computational ecosystem that minimizes current bottlenecks in the scientific
+process}{}{}{}{}
+
+\cventry{2017 – 2022}{Sensorimotor processing, decision making, and internal states: towards a realistic multiscale circuit model of the larval zebrafish brain}{}
+{\newline NIH Research Grant 1U19NS104653-01 (127940)
+\newline Role on Project: Co-Investigator (PI: Engert)
+\newline Term: 01-Sept-2017 to 31-Aug-2022
+\newline Budget: \$655,206 (direct) \$394,794 (indirect) \$1,050,000 (total cost) (JHU sub-award)
+\newline Generate a realistic multiscale circuit model of the larval zebrafish’s brain – the multiscale
+virtual fish (MSVF). The model will span spatial ranges from the nanoscale at the synaptic
+level, to local microcircuits to inter-area connectivity - and its ultimate purpose is to explain
+and simulate the quantitative and qualitative nature of behavioral output across various
+timescales}{}{}{}{}
+
+\cventry{2017 – 2020}{CRCNS US-German Res Prop: functional computational anatomy of the auditory cortex}{}
+{\newline National Institutes of Health Research Grant 1R01DC016784-01 (126308)
+\newline Role on Project: Co-Investigator (PI: Ratnanather, J)
+\newline Term: 01-July-2017 to 30-June-2020
+\newline Budget: \$458,519 (direct) \$288,624 (indirect) \$747,143 (total cost)
+\newline Create a robust computational framework for analyzing the cortical ribbon in a specific
+region: the auditory cortex}{}{}{}{}
+
+\cventry{2017 – 2020}{Multiscale Generalized Correlation: A Unified Distance-Based Correlation Measure for Dependence Discovery}{}
+{\newline National Science Foundation Research Grant (132031)
+\newline Role on project: Co-Investigator (PI: Cencheng, S)
+\newline Term: 01-May-2017 to 30-April-2020
+\newline Budget: \$124,189 (direct) \$75,811 (indirect) \$200,000 (total cost)
+\newline Establish a unified methodology framework for statistical testing in high-dimensional, noisy,
+big data, through theoretical advancements, comprehensive simulations, and real data
+experiments}{}{}{}{}
+
+\cventry{2016 – 2020}{D3M: What Would Tukey Do?}{}
+{\newline Defense Advanced Research Projects Agency Research Grant FA8750-17-2-0112 (125863)
+\newline Role on project: Co-Investigator (PI: Priebe, C)
+\newline Term: 01-Oct-2016 to 30-Sep-2020
+\newline Budget: \$2,746,050 (direct) \$1,660,310 (indirect) \$4,406,360 (total cost)
+\newline Develop theory and methods for generating a discoverable archive of data modeling
+primitives and for automatically selecting model primitives and for composing selected primitives into complex
+modeling pipelines based on user-specified data and outcome(s) of interest}{}{}{}{}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{External Research Support: Pending}
+
+\cventry{2020 – 2023}{Graspy: A python package for rigorous statistical analysis of populations of attributed connectomes}{}
+{\newline NIH MN-19-147
+\newline Role on project: Principal Investigator
+\newline Term: {01-Mar-2020} to 30-June-2023
+\newline Budget: \$861,240 (direct) \$549,039 (indirect) \$1,410,279 (total)
+\newline The goal of this project is to establish a state-of-the-art toolbox for analysis of
+connectomes, spanning taxa, scale, and complexity. More specifically, we will develop and
+extend implementations to enable neurobiologists to 1) estimate latent structure from
+attributed connectomes, (2) identify meaningful clusters among populations of
+connectomes, and (3) detect relationships between connectomes and multivariate
+phenotypes, such as behavior, genetics, and physiology}{}{}{}{}
+
+\cventry{2020 – 2022}{High throughput mapping pipeline for incomplete and censored neuroimaging data}{}
+{\newline NIH / MH-19-148
+\newline Role on Project: Co-Investigator (PI: Miller)
+\newline Term: 01-Mar-2020 to 30-Nov-2022
+\newline Budget: \$1,107,698 (direct) \$637,159 (indirect) \$1,744,857 (total)
+\newline Develop technologies to map brain coordinates on incomplete MRI brain imaging data}{}{}{}{}
+
+
+\cventry{2020 – 2025}{NeuroNex: Enabling Identification and Impact of Synaptic Weight in Functional Networks}{}
+{\newline NSF 19-563
+\newline Role on project: Co-Investigator (PI: Harris)
+\newline Term: 01-April 2020 to 31-March-2025
+\newline Budget: \$609,294 (direct) \$388,425 (indirect) \$997,719 (total)
+\newline Develop the requisite technology to understand the impact of synaptic weight on functional
+networks}{}{}{}{}
+
+\cventry{2020 – 2025}{Identifying Neurobehavioral Pathways for Cannabis Use Disorder: Multimodal MRI Investigations of Control and Reward Neural Networks}{}
+{\newline NIH18-062 - National Institute on Drug Abuse
+\newline Role on project: Co-Investigator (PI: Hanson)
+\newline Term: 01-April-2020 to 31-March-2025
+\newline Budget: \$234,338 (direct) \$149,389 (indirect) \$383,727 (total)
+\newline This project will connect strong behavioral markers of addiction risk, measures of drug use,
+and measures of brain network connectivity to aid in understanding what causes drug use,
+versus what is a consequence of it}{}{}{}{}
+
+\cventry{2020 – 2023}{A Novel Framework for Mapping Brain Dynamics and Substrates of Human Cognition Across Species}{}
+{\newline NIH MH-20-120
+\newline Role on project: Co-Investigator (PI: Milham)
+\newline Term: 01-July-2020 to 30-June-2023
+\newline Budget: \$178,898 (direct) \$114,047 (indirect) \$292,945 (total)
+\newline Develop and apply modern alignment methods to compare and contrast human and non-
+human brain imaging}{}{}{}{}
+
+\cventry{2020 – 2023}{MBAc: Mouse Brain Atlasing in the Cloud}{}
+{\newline NIH MN-19-147
+\newline Role on project: Co-Investigator (PI: Osten)
+\newline Term: 01-July-2020 to 30-June-2023
+\newline Budget: \$1,520,570 (direct) \$969,363 (indirect) \$2,489,933 (total)
+\newline Develop and disseminate CloudReg, a cloud brain atlasing tool for microscale whole
+mouse brains}{}{}{}{}
+
+\cventry{2020 – 2024}{Exploiting latent structure for efficient and robust inference}{}
+{\newline NSF
+\newline Role on project: Co-Investigatror (PI: Priebe)
+\newline Term: 01-July-2020 to 30-June-2024
+\newline Budget: \$999,330 (direct) \$505,332 (indirect) \$1,504,662 (total)
+\newline Develop theory and methods for analysis of networks and populations thereof}{}{}{}{}
+
+\cventry{2020 – 2024}{Distributed ensemble neural representations of anxiety states}{}
+{\newline NIH 0 NS 18-303 BrainInitiative RO1
+\newline Role on project: Co-Investigator (PI: Adwanikar)
+\newline Term: 01-July-2020 to 30-June-2024
+\newline Budget: \$2,672,969 (total)
+\newline Imaging the coordinated, multi-area, ensemble neural signaling of anxiety and attention
+states at cellular-resolution in freely behaving mice}{}{}{}{}
+
+\cventry{2020 – 2025}{The NKI-Rockland Sample II: An open resource of multimodal brain, physiology, and behavior data from a community lifespan sample}{}
+{\newline NIH 19-056
+\newline Role on project: Co-Investigator (PI: Milham)
+\newline Term: 01-July-2020 to 30-June-2025
+\newline Budget: \$30,713 (direct) \$48,178 (indirect) \$78,891 (total)
+\newline We will continue collecting, organizing, and analyzing another cohort of the NKI-Rockland
+Sample}{}{}{}{}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{External Research Support: Completed}
+\cventry{2017 – 2018}{The Brain Ark}{}
+{\newline Defense Advance Research Project Agency Grant 90076467
+\newline Role of the Project: Principal Investigator
+\newline Budget: \$56,499.08 (direct) \$35,876.92 (indirect) \$92,376 (total cost)
+\newline Characterize the statistical properties of the individual graphs, to identify circuit motifs,
+both that specialize in a species specific fashion, and that are preserved across species.
+As a test, will compare the connectomes of sea lions and coyotes}{}{}{}{}
+
+\cventry{2017 – 2018}{The International Brain Station}{}
+{\newline The Kavli Foundation 90071826
+\newline Role of the Project: Principal Investigator
+\newline Budget: \$50,000 (direct) \$50,000 (total cost)
+\newline Take the first few steps towards building the international brain station}{}{}{}{}
+
+\cventry{2017 – 2018}{Brain Comp Infra: EAGER: BrainLab CI: Collaborative, Community Experiments}{}
+{\newline National Science Foundation ACI-1649880
+\newline Role of Project: Co-Investigator (PI: Miller, Burns)
+\newline Budget: \$180,736 (direct) \$113,863 (indirect) \$294,599 (total cost)
+\newline The BrainLab CI prototype system will deploy an experimental-management
+infrastructure that allows users to construct community-wide experiments that implement
+data and metadata controls on the inclusion and exclusion of data}{}{}{}{}
+
+\cventry{2016 – 2019}{A Scientific Planning Workshop for Coordinating Brain Research Around the Globe
+National Science Foundation 1637376 Part 1 of 2}{}
+{\newline Role of the Project: Principal Investigator
+\newline Budget: \$97,950 (direct) \$97,950 (total cost)
+\newline This travel grant is for the expressed purposes of gathering researchers from around the
+globe to discuss the new way to further brain research during part one of a two day
+conference}{}{}{}{}
+
+\cventry{2016 – 2019}{A Scientific Planning Workshop for Coordinating Brain Research Around the Globe
+National Science Foundation 1637376 Part 2 of 2}{}
+{\newline Role of the Project: Principal Investigator
+\newline Budget: \$14,491 (direct) \$1,836 (indirect) \$16,327 (total cost)
+\newline This travel grant is for the expressed purposes of gathering researchers from
+around the globe to further discuss advancements in brain research during the
+second part of a two day conference}{}{}{}{}
+
+\cventry{2015 – 2018}{From RAGs to Riches: Utilizing Richly Attributed Graphs to Reason from}{}
+{\newline Defense Advance Research Project Agency Grant N66001-15-C-40401
+\newline Role on Project: Principal Investigator
+\newline Budget: \$1,298,204 (direct) \$804,886.60 (indirect) \$2,103,091.60 (total cost)
+\newline Multiple, large, multifarious brain imaging datasets are rapidly becoming standards in
+neuroscience. Yet, we lack the tools to analyze individual datasets, much less
+populations thereof. Therefore, we will develop theory and methods to analyze and
+otherwise make such data available}{}{}{}{}
+
+\cventry{2014 – 2016}{Scalable Grain Graph Analyses Using Big-Memory, High-IPS Compute
+Architectures}{}
+{\newline Defense Advance Research Project Agency Grant N66001-14-1-4028
+\newline Role on Project: Co-Investigator (PI: Burns)
+\newline Budget: \$28,272 (direct) \$11,610 (indirect) \$39,882 (total cost)
+\newline Build software infrastructure to enable analytics on billion node, terabyte sized networks
+using commodity hardware}{}{}{}{}
+
+\cventry{2014 -- 2019}{Synaptomes of Mouse and Man}{}
+{\newline R01NS092474
+\newline Role on project: Co-Investigator (PI: Smith)
+\newline Budget: \$491,341 (direct) \$265,076 (indirect) \$756,417 (total cost)
+\newline The major goals of this project are to discover the synaptic diversity and complexity in
+mammalian brains, specifically comparing and contrasting humans with mice, the leading
+experimental animal}{}{}{}{}
+
+\cventry{2012 – 2015}{CRCNS: Data Sharing: The EM open Connectome Project}{}
+{\newline National Institute of Biomedical Imaging and Bioengineergng RO1EB16411
+\newline Role of Project: Co-Investigator (PI: Burns)
+\newline Budget: \$46,517 (direct) \$24,306 (indirect) \$70,823 (total cost)
+\newline Develop cyberinfrastructure to support management, visualization, storage, and analysis
+of large-scale electron microscopy data}{}{}{}{}
+
+
+
+\section{Service}
+\subsection{Department Service}
+\cventry{Summer '20}{Co-Chair}{SciPy mini-symposium: Biology and Bioinformatics}{}{}{}{}
+\cventry{Winter '19}{Track Organizer}{AI in Healthcare: From Bench to Bedside}{Organizer for Breakout Topic Sessions on artificial intelligence}{}{}
+\cventry{Winter '19}{Organizer}{Decision Forest Hackathon}{}{}{}
+\cventry{Summer '19}{Organizer}{NeuroData Workshop}{\url{https://neurodata.devpost.com}}{Hackashop to train brain scientists in machine learning for big data ($\sim$ 50) participants from around the country}{}
+\cventry{March '19}{Organizer}{Neuro Reproducibility Hackashop}{\url{https://brainx3.io/}}{Hackashop to train brain scientists in best practices in reproducible science, co-organized with two startups: Vathes, LLC and Gigantum ($\sim$ 50 participants)}{}
+\cventry{Spring '18}{Organizer}{NeuroData Hackathon}{}{}{}    
+\cventry{Fall '17}{Organizer}{NeuroData Mini-Hackathon}{}{}{}
+\cventry{Summer '17}{Organizer}{NeuroStorm}{\url{https://brainx2.io}}{Workshop to bring together thought leaders from academia, national labs, industry, and non-profits around the world to take next steps towards accelerating brain science discovery in the cloud ($\sim$ 50 participants and 5 observers from funding institutions)}{}
+\cventry{Spring '16}{Organizer}{Global Brain Workshop}{\url{http://brainx.io}}{First ever international Brain Initiative workshop, bringing together leaders from around the world, covered by Nature and Science ($\sim$ 75 participants)}{}    
+\cventry{Fall '16}{Co-Organizer}{Brains and Bits: Neuroscience Meets Machine Learning, NIPS Workshop}{\url{http://www.stat.ucla.edu/~akfletcher/brainsbits_overview.html}}{}{}
+\cventry{Winter '15}{Organizer}{Hack@NeuroData}{\url{http://hack.neurodata.io/}}{}{}
+\cventry{Fall '15}{Co-Organizer}{BigNeuro2015: Making Sense of Big Neural Data, NIPS Workshop}{\url{http://neurodata.io/bigneuro2015}}{}{}    
+\cventry{Fall '12}{Co-Organizer}{\href{https://openwiki.janelia.org/wiki/download/attachments/8687459/final+agenda+EM+Connectomics+100512.pdf}{Scaling up EM Connectomics Conference}}{}{The world's first connectomics workshop, now run annually alternating between Janelia Research and Max Plank locations ($\sim$ 80 participants)}{}
+
+
+\subsection{University Service}
+
+
+
+\subsection{Professional Service}
+
+
+
+
+\section{Other Scholarly and Technical Output}
+\subsection{Patents}
+
+
+\subsection{Boards}
+\cventry{10/18 -- }{Advisory Board}{\href{https://mind-x.io/}{Mind-X}}{A  neurotechnology company combining brain-computer interfaces and artificial intelligence to make the world’s information available with the speed and ease of a single thought.}{Incubated at Camden Partners Nexus, completed an initial round of funding for an undisclosed amount}{15  employees.}
+\cventry{01/17 -- }{Advisory Board}{\href{https://www.pivotalpath.com/}{PivotalPath}}{PivotalPath is a leading hedge fund research and intelligence organization built by a team of experienced alternative investment professionals and fintech developers.}{Raised undisclosed amount of funding}{11 employees.}
+
+
+\subsection{Consultancy}
+
+
+\subsection{Other Roles in Companies}
+\cventry{01/17 -- }{Co-Founder}{\href{http://gigantum.io}{gigantum}}{The future of data science is open, decentralized and user friendly. That is why we created a platform that enables anybody to create and share totally reproducible computational work with the world.}{Completed initial round of seed funding for undisclosed amount from \href{https://www.digital-science.com/}{Digital Science}, which also funds figshare, readcube, altmetric, overleaf, and more}{15 employees.}
+\cventry{01/16 -- }{Co-Founder}{\href{http://www.d8alab.com}{d8alab}}{Our services include evaluating model performance, building prototype R/Shiny web applications and basic data cleaning.}{Provides data science consulting for a variety of companies, specifically biomedical data science}{4 employees.}
+
 
 
 \section{Personal Information}
