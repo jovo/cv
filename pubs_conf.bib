@@ -1,3 +1,24 @@
+@inproceedings{GeoForests2020,
+author = {Madhyastha, Meghana and Li, Gongkai and Strnadov\'{a}-Neeley, Veronika and Browne, James and Vogelstein, Joshua T. and Burns, Randal and Priebe, Carey E.},
+title = {Geodesic Forests},
+year = {2020},
+month = {8},
+isbn = {9781450379984},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3394486.3403094},
+doi = {10.1145/3394486.3403094},
+abstract = {Together with the curse of dimensionality, nonlinear dependencies in large data sets persist as major challenges in data mining tasks. A reliable way to accurately preserve nonlinear structure is to compute geodesic distances between data points. Manifold learning methods, such as Isomap, aim to preserve geodesic distances in a Riemannian manifold. However, as manifold learning algorithms operate on the ambient dimensionality of the data, the essential step of geodesic distance computation is sensitive to high-dimensional noise. Therefore, a direct application of these algorithms to high-dimensional, noisy data often yields unsatisfactory results and does not accurately capture nonlinear structure.We propose an unsupervised random forest approach called geodesic forests (GF) to geodesic distance estimation in linear and nonlinear manifolds with noise. GF operates on low-dimensional sparse linear combinations of features, rather than the full observed dimensionality. To choose the optimal split in a computationally efficient fashion, we developed Fast-BIC, a fast Bayesian Information Criterion statistic for Gaussian mixture models.We additionally propose geodesic precision and geodesic recall as novel evaluation metrics that quantify how well the geodesic distances of a latent manifold are preserved. Empirical results on simulated and real data demonstrate that GF is robust to high-dimensional noise, whereas other methods, such as Isomap, UMAP, and FLANN, quickly deteriorate in such settings. Notably, GF is able to estimate geodesic distances better than other approaches on a real connectome dataset.},
+booktitle = {Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining},
+pages = {513–523},
+numpages = {11},
+keywords = {noisy data, unsupervised, manifold learning, random forest},
+location = {Virtual Event, CA, USA},
+series = {KDD '20}
+}
+
+
+
 @article{Browne2018,
  abstract = {Decision Forests are popular machine learning techniques that assist scientists to extract knowledge from massive data sets. This class of tool remains popular because of their interpretability and ease of use, unlike other modern machine learning methods, such as kernel machines and deep learning. Decision forests also scale well for use with large data because training and run time operations are trivially parallelizable allowing for high inference throughputs. A negative aspect of these forests, and an untenable property for many real time applications, is their high inference latency caused by the combination of large model sizes with random memory access patterns. We present memory packing techniques and a novel tree traversal method to overcome this deficiency. The result of our system is a grouping of trees into a hierarchical structure. At low levels, we pack the nodes of multiple trees into contiguous memory blocks so that each memory access fetches data for multiple trees. At higher levels, we use leaf cardinality to identify the most popular paths through a tree and collocate those paths in contiguous cache lines. We extend this layout with a re-ordering of the tree traversal algorithm to take advantage of the increased memory throughput provided by out-of-order execution and cache-line prefetching. Together, these optimizations increase the performance and parallel scalability of classification in ensembles by a factor of ten over an optimized C++ implementation and a popular R-language implementation.},
  archiveprefix = {arXiv},
