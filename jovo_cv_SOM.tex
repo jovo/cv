@@ -159,6 +159,22 @@
   \email{jovo@jhu.edu}
   \homepage{jovo.me}
 
+%change order and wrap into \cvline
+\DeclareBibliographyDriver{people}{%
+  \cventry{\printfield{number} -- \printfield{series}}{\usebibmacro{author}\printfield{userb}}{\printfield{userd}}{\printfield{usera}}{\printfield{userc}}{\usebibmacro{abstract}}}
+
+
+\DeclareBibliographyAlias{incollection}{people}
+
+\defbibenvironment{mypubs}
+ {\list
+     {}
+     {\setlength{\leftmargin}{\bibhang}%
+      \setlength{\itemindent}{-\leftmargin}%
+      \setlength{\itemsep}{\bibitemsep}%
+      \setlength{\parsep}{\bibparsep}}}
+  {\endlist}
+  {\item}
 
 \begin{document}
 \pagecolor{white}
@@ -588,6 +604,20 @@
 
 \section{Mentorship}
 \subsection{Research Track Faculty Mentorship (3)}
+\begin{refsection}[people.bib]
+    %\newrefcontext{T}
+    \nocite{*}
+    \printbibliography[%
+        title=\href{https://neurodata.io/posters/}{Abstracts / Posters},%
+        heading=none,%
+        keyword = {Faculty},
+        env=mypubs%
+        ]
+\end{refsection}
+
+
+
+\subsection{Research Track Faculty Mentorship (3)}
     \cventry{02/19 -- 12/19}{Hayden Helm, MSE}{Assistant Research Faculty}{BME}{JHU}{Lead research efforts developing theory and methods for lifelong learning}
     \cventry{08/16 -- 08/18}{Eric Perlman, PhD}{Assistant Research Scientist}{BME}{JHU}{Lead Scientist in developing storage, transfer, and visualization solutions for large data in our cloud infrastructure}
     \cventry{03/16 -- 06/20}{Jesse Patsolic, MA}{Assistant Research Faculty}{BME}{JHU}{Lead developer converting our extensions to decision forests to be merged into sklearn}
@@ -707,8 +737,8 @@
     \cventry{2016}{Guest Associate Editor}{PLoS Computational Biology}{}{}{}
 
 \subsubsection{Conference and Journal Reviewer}
-    \cventryreviewer{}{Annals of Applied Statistics (AOAS)}{}{}{}{}
-    \cventryreviewer{}{Bioinformatics}{}{}{}{}
+    \cventry{}{Annals of Applied Statistics (AOAS)}{}{}{}{}
+    \cventry{}{Bioinformatics}{}{}{}{}
     \cventry {} {International Conference on Learning Representations (ICLR)} {}{}{}{}
     \cventry {} {Network Science} {}{}{}{}
     \cventry {} {Current Opinion in Neurobiology} {}{}{}{}
